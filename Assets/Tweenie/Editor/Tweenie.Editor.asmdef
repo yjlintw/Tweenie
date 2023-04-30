@@ -1,0 +1,18 @@
+{
+    "name": "YJL.Tweenie.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:27af9ebe5eeb3624ea8963b54ae238da"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
