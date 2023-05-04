@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using YJL.Helper;
 
 namespace YJL.Tween
 {
@@ -20,7 +21,12 @@ namespace YJL.Tween
             return To(param, fromValue, toValue, duration, Vector3.Lerp);
         }
 
-        private static ITweener To<T>(Func<T, T> param, T fromValue, T toValue, float duration, Func<T,T,float,T> lerpFunc)
+        public static ITweener To(Func<Color, Color> param, Color fromValue, Color toValue, float duration)
+        {
+            return To(param, fromValue, toValue, duration, Color.Lerp);
+        }
+
+        public static ITweener To<T>(Func<T, T> param, T fromValue, T toValue, float duration, Func<T,T,float,T> lerpFunc)
         {
             Init();
             ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc);
@@ -37,6 +43,10 @@ namespace YJL.Tween
 
 
         // Unity Life Cycle
+        public void Start()
+        {
+        }
+        
         public void Update()
         {
             foreach (ITweener tweener in _tweenerSet)

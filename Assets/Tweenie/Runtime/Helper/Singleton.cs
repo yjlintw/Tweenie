@@ -1,46 +1,49 @@
 using UnityEngine;
 
-public class Singleton<T> : MonoBehaviour where T : Component
+namespace YJL.Helper
 {
-    private static T _instance;
-
-    public static T Instance
+    public class Singleton<T> : MonoBehaviour where T : Component
     {
-        get
-        {
-            Init();
-            return _instance;
-        }
-    }
+        private static T _instance;
 
-    public static void Init()
-    {
-        if (_instance == null)
+        public static T Instance
         {
-            // find generic instance
-            _instance = FindObjectOfType<T>();
-            
-            // if it is null again, create a new one
-            if (_instance == null)
+            get
             {
-                GameObject obj = new GameObject();
-                obj.name = typeof(T).Name;
-                _instance = obj.AddComponent<T>();
+                Init();
+                return _instance;
             }
         }
-    }
 
-    public void Awake()
-    {
-        // create the instance
-        if (_instance == null)
+        public static void Init()
         {
-            _instance = this as T;
-            DontDestroyOnLoad(this.gameObject);
+            if (_instance == null)
+            {
+                // find generic instance
+                _instance = FindObjectOfType<T>();
+            
+                // if it is null again, create a new one
+                if (_instance == null)
+                {
+                    GameObject obj = new GameObject();
+                    obj.name = typeof(T).Name;
+                    _instance = obj.AddComponent<T>();
+                }
+            }
         }
-        else
+
+        public void Awake()
         {
-            Destroy(gameObject);
+            // create the instance
+            if (_instance == null)
+            {
+                _instance = this as T;
+                DontDestroyOnLoad(this.gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ namespace YJL.Tween
         Action Callback { get; set; }
 
         internal void Tick(float deltaTime);
-        void OnComplete(Action callback);
+        ITweener OnComplete(Action callback);
     }
 
     public class Tweener<T> : ITweener, ITweenData<T>
@@ -60,9 +60,10 @@ namespace YJL.Tween
             }
         }
 
-        public void OnComplete(Action callback)
+        public ITweener OnComplete(Action callback)
         {
             Callback = callback;
+            return this;
         }
     }
 }
