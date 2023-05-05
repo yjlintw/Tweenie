@@ -29,6 +29,7 @@ namespace YJL.Tween.Test
                 transform.position, 
                 newPosition, 
                 duration)
+                .SetEase(Ease.EaseInOut)
                 .OnComplete(OnTweenerComplete);
             inProgress = true;
         }

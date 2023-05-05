@@ -1,7 +1,14 @@
 ﻿using System;
+using UnityEngine;
 
 namespace YJL.Tween
 {
+    public enum Ease
+    {
+        Linear,
+        EaseInOut
+    }
+
     public interface ITweenData<T>
     {
         Action<T> Param { get; set; }
@@ -19,6 +26,11 @@ namespace YJL.Tween
         Action CompleteCallback { get; set; }
 
         internal void Tick(float deltaTime);
+
+        ITweener SetEase(AnimationCurve curve);
+        ITweener SetEase(Ease ease);
+        
+        
         ITweener OnStart(Action callback);
         ITweener OnPlay(Action callback);
         ITweener OnComplete(Action callback);
@@ -38,6 +50,7 @@ namespace YJL.Tween
 
         private bool _hasStarted;
         private float _timer;
+        private AnimationCurve _curve;
 
         internal Tweener(Action<T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc)
         {
@@ -47,19 +60,24 @@ namespace YJL.Tween
             Duration = duration;
             LerpFunc = lerpFunc;
             _hasStarted = false;
+            _curve = AnimationCurve.Linear(0, 0, duration, 1);
         }
 
         void ITweener.Tick(float deltaTime)
         {
+            if (_curve == null)
+            {
+                SetEase(Ease.Linear);
+            }
             if (!_hasStarted)
             {
                 StartCallback?.Invoke();
                 _hasStarted = true;
             }
+
             _timer += deltaTime;
-            
-            // TODO: update this with Animation Curve
-            float t = _timer / Duration;
+
+            float t = _curve.Evaluate(_timer);
             t = t > 1 ? 1 : t;
             
             // implementation
@@ -75,6 +93,30 @@ namespace YJL.Tween
                 CompleteEvent?.Invoke(this);
                 CompleteCallback?.Invoke();
             }
+        }
+
+        public ITweener SetEase(AnimationCurve curve)
+        {
+            _curve = curve;
+            return this;
+        }
+
+        public ITweener SetEase(Ease easeType)
+        {
+            switch (easeType)
+            {
+                case Ease.EaseInOut:
+                    _curve = AnimationCurve.EaseInOut(0, 0, Duration, 1);
+                    break;
+                default:
+                case Ease.Linear:
+                    _curve = AnimationCurve.Linear(0, 0, Duration, 1);
+                    break;
+            }
+
+            return this;
+        }
+
         public ITweener OnStart(Action callback)
         {
             StartCallback = callback;
