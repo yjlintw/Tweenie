@@ -17,17 +17,17 @@ namespace YJL.Tween
             return To(param, fromValue, toValue, duration, Mathf.Lerp);
         }
 
-        public static ITweener To(Func<Vector3, Vector3> param, Vector3 fromValue, Vector3 toValue, float duration)
+        public static ITweener To(Action<Vector3> param, Vector3 fromValue, Vector3 toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Vector3.Lerp);
         }
 
-        public static ITweener To(Func<Color, Color> param, Color fromValue, Color toValue, float duration)
+        public static ITweener To(Action<Color> param, Color fromValue, Color toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Color.Lerp);
         }
 
-        public static ITweener To<T>(Func<T, T> param, T fromValue, T toValue, float duration, Func<T,T,float,T> lerpFunc)
+        public static ITweener To<T>(Action<T> param, T fromValue, T toValue, float duration, Func<T,T,float,T> lerpFunc)
         {
             Init();
             ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc);

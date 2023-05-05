@@ -4,7 +4,7 @@ namespace YJL.Tween
 {
     public interface ITweenData<T>
     {
-        Func<T, T> Param { get; set; }
+        Action<T> Param { get; set; }
         T FromValue { get; set; }
         T ToValue { get; set; }
         float Duration { get; set; }
@@ -22,7 +22,7 @@ namespace YJL.Tween
 
     public class Tweener<T> : ITweener, ITweenData<T>
     {
-        public Func<T, T> Param { get; set; }
+        public Action<T> Param { get; set; }
         public T FromValue { get; set; }
         public T ToValue { get; set; }
         public float Duration { get; set; }
@@ -32,7 +32,7 @@ namespace YJL.Tween
         
         private float _timer;
 
-        internal Tweener(Func<T, T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc)
+        internal Tweener(Action<T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc)
         {
             Param = param;
             FromValue = fromValue;
