@@ -66,7 +66,6 @@ namespace YJL.Tween
             foreach (ITweener toRemove in _toRemoveSet)
             {
                 _tweenerSet.Remove(toRemove);
-                toRemove.Callback?.Invoke();
             }
             
             _toRemoveSet.Clear();
