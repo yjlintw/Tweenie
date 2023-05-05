@@ -9,9 +9,10 @@ namespace YJL.Tween
     public class Tweenie : Singleton<Tweenie>
     {
         private static ISet<ITweener> _tweenerSet = new HashSet<ITweener>();
+        private static ISet<ITweener> _toAddSet = new HashSet<ITweener>();
         private static ISet<ITweener> _toRemoveSet = new HashSet<ITweener>();
 
-        public static ITweener To(Func<float, float> param, float fromValue, float toValue, float duration)
+        public static ITweener To(Action<float> param, float fromValue, float toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Mathf.Lerp);
         }
@@ -30,7 +31,7 @@ namespace YJL.Tween
         {
             Init();
             ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc);
-            _tweenerSet.Add(tweener);
+            _toAddSet.Add(tweener);
             tweener.CompleteEvent += OnTweenComplete;
 
             return tweener;
@@ -49,6 +50,10 @@ namespace YJL.Tween
         
         public void Update()
         {
+            // Add new tween
+            _tweenerSet.UnionWith(_toAddSet);
+            _toAddSet.Clear();
+            
             foreach (ITweener tweener in _tweenerSet)
             {
                 tweener.Tick(Time.deltaTime);
