@@ -36,7 +36,7 @@ namespace YJL.Tween
         ITweener OnComplete(Action callback);
     }
 
-    public class Tweener<T> : ITweener, ITweenData<T>
+    public sealed class Tweener<T> : ITweener, ITweenData<T>
     {
         public Action<T> Param { get; set; }
         public T FromValue { get; set; }

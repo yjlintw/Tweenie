@@ -6,7 +6,7 @@ using YJL.Helper;
 
 namespace YJL.Tween
 {
-    public class Tweenie : Singleton<Tweenie>
+    public sealed class Tweenie : Singleton<Tweenie>
     {
         private static ISet<ITweener> _tweenerSet = new HashSet<ITweener>();
         private static ISet<ITweener> _toAddSet = new HashSet<ITweener>();
@@ -59,7 +59,6 @@ namespace YJL.Tween
                 tweener.Tick(Time.deltaTime);
             }
         }
-
 
         public void LateUpdate()
         {
