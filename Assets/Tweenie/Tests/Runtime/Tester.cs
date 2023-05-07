@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,38 +5,63 @@ namespace YJL.Tween.Test
 {
     public class Tester : MonoBehaviour
     {
-        public float from;
-        public float to;
-
-        public Vector3 toPosition;
         public float duration;
+        private ITweener _tweener;
 
-        public float myValue;
-
-        public bool inProgress = false;
 
         // Update is called once per frame
-
-        [ContextMenu("Run")]
-        public void Run()
+        private void Update()
         {
-            Vector3 newPosition = new Vector3(Random.value * 10f, Random.value * 10f, Random.value * 10f);
-            Tweenie.To(x => myValue = x, myValue, newPosition.magnitude, duration);
-            Tweenie.To(x => transform.position = x, 
-                transform.position, 
-                newPosition, 
-                duration)
-                .SetEase(Ease.EaseInOut)
-                .OnComplete(OnTweenerComplete);
-            inProgress = true;
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                _tweener = Run();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                _tweener?.SetLoop(Loop.PingPong).Play();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                _tweener?.SetLoop(Loop.Default).Play();
+            }
+
+            if (Input.GetKeyDown(KeyCode.Alpha5))
+            {
+                _tweener?.SetLoop(0).Play();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.Alpha0))
+            {
+                _tweener?.Stop();
+                _tweener = null;
+            }
         }
 
+        public ITweener Run()
+        {
+            
+            Vector3 startPos = transform.position;
+            return Tweenie.To(x =>
+                    {
+                        Vector3 newPos = startPos;
+                        newPos.x = startPos.x + 5f * Mathf.Sin(x);
+                        newPos.z = startPos.z + 5f * Mathf.Cos(x);
+                        transform.position = newPos;
+                    }, 
+                0, 
+                Mathf.PI * 2, 
+                duration)
+                .SetEase(Ease.Linear)
+                .SetLoop(Loop.Default)
+                .OnComplete(OnTweenerComplete);
+        }
+        
 
         public void OnTweenerComplete()
         {
-            inProgress = false;
             Debug.Log("Tween Complete");
-            Run();
         }
     }
 }

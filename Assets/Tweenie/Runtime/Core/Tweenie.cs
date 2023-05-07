@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using YJL.Helper;
 
@@ -32,12 +33,18 @@ namespace YJL.Tween
             Init();
             ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc);
             _toAddSet.Add(tweener);
-            tweener.CompleteEvent += OnTweenComplete;
+            tweener.StopEvent += OnTweenStop;
 
             return tweener;
         }
 
-        private static void OnTweenComplete(ITweener obj)
+        public static ITweener AddTweener(ITweener newTweener)
+        {
+            _toAddSet.Add(newTweener);
+            return newTweener;
+        }
+
+        private static void OnTweenStop(ITweener obj)
         {
             _toRemoveSet.Add(obj);
         }
