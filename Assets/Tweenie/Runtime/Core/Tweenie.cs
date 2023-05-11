@@ -11,7 +11,9 @@ namespace YJL.Tween
     {
         private static ISet<ITweener> _tweenerSet = new HashSet<ITweener>();
         private static ISet<ITweener> _toAddSet = new HashSet<ITweener>();
-        private static ISet<ITweener> _toRemoveSet = new HashSet<ITweener>();
+        private static ISet<ITweener> _toPauseSet = new HashSet<ITweener>();
+        private static ISet<ITweener> _toStopSet = new HashSet<ITweener>();
+        private static ISet<ITweener> _toCompleteSet = new HashSet<ITweener>();
 
         public static ITweener To(Action<float> param, float fromValue, float toValue, float duration)
         {
@@ -33,20 +35,31 @@ namespace YJL.Tween
             Init();
             ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc);
             _toAddSet.Add(tweener);
-            tweener.StopEvent += OnTweenStop;
-
             return tweener;
         }
 
-        public static ITweener AddTweener(ITweener newTweener)
+        public static ITweener Play(ITweener tweener)
         {
-            _toAddSet.Add(newTweener);
-            return newTweener;
+            _toAddSet.Add(tweener);
+            return tweener;
         }
 
-        private static void OnTweenStop(ITweener obj)
+        public static ITweener Pause(ITweener tweener)
         {
-            _toRemoveSet.Add(obj);
+            _toPauseSet.Add(tweener);
+            return tweener;
+        }
+
+        public static ITweener Stop(ITweener tweener)
+        {
+            _toStopSet.Add(tweener);
+            return tweener;
+        }
+
+        public static ITweener Complete(ITweener tweener)
+        {
+            _toCompleteSet.Add(tweener);
+            return tweener;
         }
 
 
@@ -58,7 +71,14 @@ namespace YJL.Tween
         public void Update()
         {
             // Add new tween
-            _tweenerSet.UnionWith(_toAddSet);
+            foreach (ITweener tweener in _toAddSet)
+            {
+                if (!_tweenerSet.Contains(tweener))
+                {
+                    tweener.TweenStarted();
+                    _tweenerSet.Add(tweener);
+                }
+            }
             _toAddSet.Clear();
             
             foreach (ITweener tweener in _tweenerSet)
@@ -69,12 +89,26 @@ namespace YJL.Tween
 
         public void LateUpdate()
         {
-            foreach (ITweener toRemove in _toRemoveSet)
+            foreach (ITweener toRemove in _toStopSet)
             {
                 _tweenerSet.Remove(toRemove);
+                toRemove.TweenStopped();
             }
-            
-            _toRemoveSet.Clear();
+            _toStopSet.Clear();
+
+            foreach (ITweener toPause in _toPauseSet)
+            {
+                _tweenerSet.Remove(toPause);
+                toPause.TweenPaused();
+            }
+            _toPauseSet.Clear();
+
+            foreach (ITweener toComplete in _toCompleteSet)
+            {
+                _tweenerSet.Remove(toComplete);
+                toComplete.TweenCompleted();
+            }
+            _toCompleteSet.Clear();
         }
     }
 }
