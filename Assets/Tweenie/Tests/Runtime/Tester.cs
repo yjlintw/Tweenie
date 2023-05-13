@@ -36,7 +36,7 @@ namespace YJL.Tween.Test
 
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
-                _tweener?.SetLoopCount(0).Play();
+                _tweener?.StopAfterStepComplete();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha8))
@@ -52,7 +52,6 @@ namespace YJL.Tween.Test
             if (Input.GetKeyDown(KeyCode.Alpha0))
             {
                 _tweener?.Stop();
-                _tweener = null;
             }
         }
 

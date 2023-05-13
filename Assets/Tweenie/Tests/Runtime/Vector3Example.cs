@@ -14,9 +14,7 @@ public class Vector3Example : MonoBehaviour
     {
         _startPosition = transform.position;
         _targetPosition = new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), Random.Range(-5f, 5f));
-        Tweenie.To(x => transform.position = x, _startPosition, _targetPosition, 5)
-            .SetEase(Ease.EaseInOut)
-            .SetLoop(Loop.PingPong);
+        transform.MoveTo(_targetPosition, 5).SetEase(Ease.EaseInOut).SetLoop(Loop.PingPong);
     }
 
     private void OnDrawGizmos()
