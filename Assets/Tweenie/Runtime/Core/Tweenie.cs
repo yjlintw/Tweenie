@@ -172,5 +172,13 @@ namespace YJL.Tween
             _toCompleteSet.Clear();
         }
         #endregion
+        
+        #region Editor Related
+
+        public static int GetNumberOfRunningTweener()
+        {
+            return Tweenie._tweenerSet.Count;
+        }
+        #endregion
     }
 }
