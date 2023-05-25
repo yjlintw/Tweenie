@@ -174,6 +174,7 @@ namespace YJL.Tween
         private Loop _loopMode ;
         private int _loopCount;
         private bool _isReverse;
+        private bool _toDestroy;
         #endregion
 
         #region Constructor
@@ -207,7 +208,10 @@ namespace YJL.Tween
 
             
             // Update Parameter
-            Param(newValue);
+            if (!TrySetParam(newValue))
+            {
+                return;
+            }
             PlayCallback?.Invoke();
 
             // TODO:
@@ -297,6 +301,12 @@ namespace YJL.Tween
         public ITweener Complete()
         {
             return Tweenie.Complete(this);
+        }
+
+        public void Destroy()
+        {
+            _toDestroy = true;
+            Stop();
         }
         
         #endregion
@@ -394,7 +404,11 @@ namespace YJL.Tween
 
         void ITweener.TweenStopped()
         {
-            Param(FromValue);
+            if (_toDestroy)
+            {
+                return;
+            }
+            TrySetParam(FromValue);
             Reset();
             StopCallback?.Invoke();
         }
@@ -403,11 +417,11 @@ namespace YJL.Tween
         {
             if (_loopMode == Loop.PingPong)
             {
-                Param(_isReverse ? FromValue : ToValue);
+                TrySetParam(_isReverse ? FromValue : ToValue);
             }
             else
             {
-                Param(ToValue);
+                TrySetParam(ToValue);
             }
             Reset();
             CompleteCallback?.Invoke();
@@ -415,6 +429,30 @@ namespace YJL.Tween
         #endregion
 
         #region Private Method
+
+        bool TrySetParam(T value)
+        {
+            try
+            {
+                Param(value);
+            }
+            catch (MissingReferenceException e)
+            {
+                Debug.Log($"The parameter this tweener is setting is missing. " +
+                          "Don't worry. Tweenie handles it. This tweener will be destroy in next frame.\n" +
+                          $"{e.Message}");
+                Destroy();
+                return false;
+            }
+            catch (Exception e)
+            {
+                Debug.LogError(e);
+                Destroy();
+                return false;
+            }
+
+            return true;
+        }
         void Reset()
         {
             _timer = 0;
