@@ -1,0 +1,1126 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: YJL.Helper
+  name: YJL.Helper
+  href: api/YJL.Helper.html
+  commentId: N:YJL.Helper
+  fullName: YJL.Helper
+  nameWithType: YJL.Helper
+- uid: YJL.Helper.Singleton`1
+  name: Singleton<T>
+  href: api/YJL.Helper.Singleton-1.html
+  commentId: T:YJL.Helper.Singleton`1
+  name.vb: Singleton(Of T)
+  fullName: YJL.Helper.Singleton<T>
+  fullName.vb: YJL.Helper.Singleton(Of T)
+  nameWithType: Singleton<T>
+  nameWithType.vb: Singleton(Of T)
+- uid: YJL.Helper.Singleton`1.Awake
+  name: Awake()
+  href: api/YJL.Helper.Singleton-1.html#YJL_Helper_Singleton_1_Awake
+  commentId: M:YJL.Helper.Singleton`1.Awake
+  fullName: YJL.Helper.Singleton<T>.Awake()
+  fullName.vb: YJL.Helper.Singleton(Of T).Awake()
+  nameWithType: Singleton<T>.Awake()
+  nameWithType.vb: Singleton(Of T).Awake()
+- uid: YJL.Helper.Singleton`1.Awake*
+  name: Awake
+  href: api/YJL.Helper.Singleton-1.html#YJL_Helper_Singleton_1_Awake_
+  commentId: Overload:YJL.Helper.Singleton`1.Awake
+  isSpec: "True"
+  fullName: YJL.Helper.Singleton<T>.Awake
+  fullName.vb: YJL.Helper.Singleton(Of T).Awake
+  nameWithType: Singleton<T>.Awake
+  nameWithType.vb: Singleton(Of T).Awake
+- uid: YJL.Helper.Singleton`1.Init
+  name: Init()
+  href: api/YJL.Helper.Singleton-1.html#YJL_Helper_Singleton_1_Init
+  commentId: M:YJL.Helper.Singleton`1.Init
+  fullName: YJL.Helper.Singleton<T>.Init()
+  fullName.vb: YJL.Helper.Singleton(Of T).Init()
+  nameWithType: Singleton<T>.Init()
+  nameWithType.vb: Singleton(Of T).Init()
+- uid: YJL.Helper.Singleton`1.Init*
+  name: Init
+  href: api/YJL.Helper.Singleton-1.html#YJL_Helper_Singleton_1_Init_
+  commentId: Overload:YJL.Helper.Singleton`1.Init
+  isSpec: "True"
+  fullName: YJL.Helper.Singleton<T>.Init
+  fullName.vb: YJL.Helper.Singleton(Of T).Init
+  nameWithType: Singleton<T>.Init
+  nameWithType.vb: Singleton(Of T).Init
+- uid: YJL.Helper.Singleton`1.Instance
+  name: Instance
+  href: api/YJL.Helper.Singleton-1.html#YJL_Helper_Singleton_1_Instance
+  commentId: P:YJL.Helper.Singleton`1.Instance
+  fullName: YJL.Helper.Singleton<T>.Instance
+  fullName.vb: YJL.Helper.Singleton(Of T).Instance
+  nameWithType: Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+- uid: YJL.Helper.Singleton`1.Instance*
+  name: Instance
+  href: api/YJL.Helper.Singleton-1.html#YJL_Helper_Singleton_1_Instance_
+  commentId: Overload:YJL.Helper.Singleton`1.Instance
+  isSpec: "True"
+  fullName: YJL.Helper.Singleton<T>.Instance
+  fullName.vb: YJL.Helper.Singleton(Of T).Instance
+  nameWithType: Singleton<T>.Instance
+  nameWithType.vb: Singleton(Of T).Instance
+- uid: YJL.Tween
+  name: YJL.Tween
+  href: api/YJL.Tween.html
+  commentId: N:YJL.Tween
+  fullName: YJL.Tween
+  nameWithType: YJL.Tween
+- uid: YJL.Tween.Ease
+  name: Ease
+  href: api/YJL.Tween.Ease.html
+  commentId: T:YJL.Tween.Ease
+  fullName: YJL.Tween.Ease
+  nameWithType: Ease
+- uid: YJL.Tween.Ease.EaseInOut
+  name: EaseInOut
+  href: api/YJL.Tween.Ease.html#YJL_Tween_Ease_EaseInOut
+  commentId: F:YJL.Tween.Ease.EaseInOut
+  fullName: YJL.Tween.Ease.EaseInOut
+  nameWithType: Ease.EaseInOut
+- uid: YJL.Tween.Ease.Linear
+  name: Linear
+  href: api/YJL.Tween.Ease.html#YJL_Tween_Ease_Linear
+  commentId: F:YJL.Tween.Ease.Linear
+  fullName: YJL.Tween.Ease.Linear
+  nameWithType: Ease.Linear
+- uid: YJL.Tween.ITweenData`1
+  name: ITweenData<T>
+  href: api/YJL.Tween.ITweenData-1.html
+  commentId: T:YJL.Tween.ITweenData`1
+  name.vb: ITweenData(Of T)
+  fullName: YJL.Tween.ITweenData<T>
+  fullName.vb: YJL.Tween.ITweenData(Of T)
+  nameWithType: ITweenData<T>
+  nameWithType.vb: ITweenData(Of T)
+- uid: YJL.Tween.ITweenData`1.Duration
+  name: Duration
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_Duration
+  commentId: P:YJL.Tween.ITweenData`1.Duration
+  fullName: YJL.Tween.ITweenData<T>.Duration
+  fullName.vb: YJL.Tween.ITweenData(Of T).Duration
+  nameWithType: ITweenData<T>.Duration
+  nameWithType.vb: ITweenData(Of T).Duration
+- uid: YJL.Tween.ITweenData`1.Duration*
+  name: Duration
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_Duration_
+  commentId: Overload:YJL.Tween.ITweenData`1.Duration
+  isSpec: "True"
+  fullName: YJL.Tween.ITweenData<T>.Duration
+  fullName.vb: YJL.Tween.ITweenData(Of T).Duration
+  nameWithType: ITweenData<T>.Duration
+  nameWithType.vb: ITweenData(Of T).Duration
+- uid: YJL.Tween.ITweenData`1.FromValue
+  name: FromValue
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_FromValue
+  commentId: P:YJL.Tween.ITweenData`1.FromValue
+  fullName: YJL.Tween.ITweenData<T>.FromValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).FromValue
+  nameWithType: ITweenData<T>.FromValue
+  nameWithType.vb: ITweenData(Of T).FromValue
+- uid: YJL.Tween.ITweenData`1.FromValue*
+  name: FromValue
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_FromValue_
+  commentId: Overload:YJL.Tween.ITweenData`1.FromValue
+  isSpec: "True"
+  fullName: YJL.Tween.ITweenData<T>.FromValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).FromValue
+  nameWithType: ITweenData<T>.FromValue
+  nameWithType.vb: ITweenData(Of T).FromValue
+- uid: YJL.Tween.ITweenData`1.LerpFunc
+  name: LerpFunc
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_LerpFunc
+  commentId: P:YJL.Tween.ITweenData`1.LerpFunc
+  fullName: YJL.Tween.ITweenData<T>.LerpFunc
+  fullName.vb: YJL.Tween.ITweenData(Of T).LerpFunc
+  nameWithType: ITweenData<T>.LerpFunc
+  nameWithType.vb: ITweenData(Of T).LerpFunc
+- uid: YJL.Tween.ITweenData`1.LerpFunc*
+  name: LerpFunc
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_LerpFunc_
+  commentId: Overload:YJL.Tween.ITweenData`1.LerpFunc
+  isSpec: "True"
+  fullName: YJL.Tween.ITweenData<T>.LerpFunc
+  fullName.vb: YJL.Tween.ITweenData(Of T).LerpFunc
+  nameWithType: ITweenData<T>.LerpFunc
+  nameWithType.vb: ITweenData(Of T).LerpFunc
+- uid: YJL.Tween.ITweenData`1.Param
+  name: Param
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_Param
+  commentId: P:YJL.Tween.ITweenData`1.Param
+  fullName: YJL.Tween.ITweenData<T>.Param
+  fullName.vb: YJL.Tween.ITweenData(Of T).Param
+  nameWithType: ITweenData<T>.Param
+  nameWithType.vb: ITweenData(Of T).Param
+- uid: YJL.Tween.ITweenData`1.Param*
+  name: Param
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_Param_
+  commentId: Overload:YJL.Tween.ITweenData`1.Param
+  isSpec: "True"
+  fullName: YJL.Tween.ITweenData<T>.Param
+  fullName.vb: YJL.Tween.ITweenData(Of T).Param
+  nameWithType: ITweenData<T>.Param
+  nameWithType.vb: ITweenData(Of T).Param
+- uid: YJL.Tween.ITweenData`1.ToValue
+  name: ToValue
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_ToValue
+  commentId: P:YJL.Tween.ITweenData`1.ToValue
+  fullName: YJL.Tween.ITweenData<T>.ToValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).ToValue
+  nameWithType: ITweenData<T>.ToValue
+  nameWithType.vb: ITweenData(Of T).ToValue
+- uid: YJL.Tween.ITweenData`1.ToValue*
+  name: ToValue
+  href: api/YJL.Tween.ITweenData-1.html#YJL_Tween_ITweenData_1_ToValue_
+  commentId: Overload:YJL.Tween.ITweenData`1.ToValue
+  isSpec: "True"
+  fullName: YJL.Tween.ITweenData<T>.ToValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).ToValue
+  nameWithType: ITweenData<T>.ToValue
+  nameWithType.vb: ITweenData(Of T).ToValue
+- uid: YJL.Tween.ITweener
+  name: ITweener
+  href: api/YJL.Tween.ITweener.html
+  commentId: T:YJL.Tween.ITweener
+  fullName: YJL.Tween.ITweener
+  nameWithType: ITweener
+- uid: YJL.Tween.ITweener.Complete
+  name: Complete()
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Complete
+  commentId: M:YJL.Tween.ITweener.Complete
+  fullName: YJL.Tween.ITweener.Complete()
+  nameWithType: ITweener.Complete()
+- uid: YJL.Tween.ITweener.Complete*
+  name: Complete
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Complete_
+  commentId: Overload:YJL.Tween.ITweener.Complete
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.Complete
+  nameWithType: ITweener.Complete
+- uid: YJL.Tween.ITweener.IsCompleted
+  name: IsCompleted
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_IsCompleted
+  commentId: P:YJL.Tween.ITweener.IsCompleted
+  fullName: YJL.Tween.ITweener.IsCompleted
+  nameWithType: ITweener.IsCompleted
+- uid: YJL.Tween.ITweener.IsCompleted*
+  name: IsCompleted
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_IsCompleted_
+  commentId: Overload:YJL.Tween.ITweener.IsCompleted
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.IsCompleted
+  nameWithType: ITweener.IsCompleted
+- uid: YJL.Tween.ITweener.IsStepCompleted
+  name: IsStepCompleted
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_IsStepCompleted
+  commentId: P:YJL.Tween.ITweener.IsStepCompleted
+  fullName: YJL.Tween.ITweener.IsStepCompleted
+  nameWithType: ITweener.IsStepCompleted
+- uid: YJL.Tween.ITweener.IsStepCompleted*
+  name: IsStepCompleted
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_IsStepCompleted_
+  commentId: Overload:YJL.Tween.ITweener.IsStepCompleted
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.IsStepCompleted
+  nameWithType: ITweener.IsStepCompleted
+- uid: YJL.Tween.ITweener.OnComplete(System.Action)
+  name: OnComplete(Action)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnComplete_System_Action_
+  commentId: M:YJL.Tween.ITweener.OnComplete(System.Action)
+  fullName: YJL.Tween.ITweener.OnComplete(System.Action)
+  nameWithType: ITweener.OnComplete(Action)
+- uid: YJL.Tween.ITweener.OnComplete*
+  name: OnComplete
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnComplete_
+  commentId: Overload:YJL.Tween.ITweener.OnComplete
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.OnComplete
+  nameWithType: ITweener.OnComplete
+- uid: YJL.Tween.ITweener.OnPause(System.Action)
+  name: OnPause(Action)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnPause_System_Action_
+  commentId: M:YJL.Tween.ITweener.OnPause(System.Action)
+  fullName: YJL.Tween.ITweener.OnPause(System.Action)
+  nameWithType: ITweener.OnPause(Action)
+- uid: YJL.Tween.ITweener.OnPause*
+  name: OnPause
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnPause_
+  commentId: Overload:YJL.Tween.ITweener.OnPause
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.OnPause
+  nameWithType: ITweener.OnPause
+- uid: YJL.Tween.ITweener.OnPlay(System.Action)
+  name: OnPlay(Action)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnPlay_System_Action_
+  commentId: M:YJL.Tween.ITweener.OnPlay(System.Action)
+  fullName: YJL.Tween.ITweener.OnPlay(System.Action)
+  nameWithType: ITweener.OnPlay(Action)
+- uid: YJL.Tween.ITweener.OnPlay*
+  name: OnPlay
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnPlay_
+  commentId: Overload:YJL.Tween.ITweener.OnPlay
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.OnPlay
+  nameWithType: ITweener.OnPlay
+- uid: YJL.Tween.ITweener.OnStart(System.Action)
+  name: OnStart(Action)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnStart_System_Action_
+  commentId: M:YJL.Tween.ITweener.OnStart(System.Action)
+  fullName: YJL.Tween.ITweener.OnStart(System.Action)
+  nameWithType: ITweener.OnStart(Action)
+- uid: YJL.Tween.ITweener.OnStart*
+  name: OnStart
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnStart_
+  commentId: Overload:YJL.Tween.ITweener.OnStart
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.OnStart
+  nameWithType: ITweener.OnStart
+- uid: YJL.Tween.ITweener.OnStepComplete(System.Action)
+  name: OnStepComplete(Action)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnStepComplete_System_Action_
+  commentId: M:YJL.Tween.ITweener.OnStepComplete(System.Action)
+  fullName: YJL.Tween.ITweener.OnStepComplete(System.Action)
+  nameWithType: ITweener.OnStepComplete(Action)
+- uid: YJL.Tween.ITweener.OnStepComplete*
+  name: OnStepComplete
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnStepComplete_
+  commentId: Overload:YJL.Tween.ITweener.OnStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.OnStepComplete
+  nameWithType: ITweener.OnStepComplete
+- uid: YJL.Tween.ITweener.OnStop(System.Action)
+  name: OnStop(Action)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnStop_System_Action_
+  commentId: M:YJL.Tween.ITweener.OnStop(System.Action)
+  fullName: YJL.Tween.ITweener.OnStop(System.Action)
+  nameWithType: ITweener.OnStop(Action)
+- uid: YJL.Tween.ITweener.OnStop*
+  name: OnStop
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_OnStop_
+  commentId: Overload:YJL.Tween.ITweener.OnStop
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.OnStop
+  nameWithType: ITweener.OnStop
+- uid: YJL.Tween.ITweener.Pause
+  name: Pause()
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Pause
+  commentId: M:YJL.Tween.ITweener.Pause
+  fullName: YJL.Tween.ITweener.Pause()
+  nameWithType: ITweener.Pause()
+- uid: YJL.Tween.ITweener.Pause*
+  name: Pause
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Pause_
+  commentId: Overload:YJL.Tween.ITweener.Pause
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.Pause
+  nameWithType: ITweener.Pause
+- uid: YJL.Tween.ITweener.PauseAfterStepComplete
+  name: PauseAfterStepComplete()
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_PauseAfterStepComplete
+  commentId: M:YJL.Tween.ITweener.PauseAfterStepComplete
+  fullName: YJL.Tween.ITweener.PauseAfterStepComplete()
+  nameWithType: ITweener.PauseAfterStepComplete()
+- uid: YJL.Tween.ITweener.PauseAfterStepComplete*
+  name: PauseAfterStepComplete
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_PauseAfterStepComplete_
+  commentId: Overload:YJL.Tween.ITweener.PauseAfterStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.PauseAfterStepComplete
+  nameWithType: ITweener.PauseAfterStepComplete
+- uid: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  name: PauseAfterStepCompleteFlag
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_PauseAfterStepCompleteFlag
+  commentId: P:YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  nameWithType: ITweener.PauseAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.PauseAfterStepCompleteFlag*
+  name: PauseAfterStepCompleteFlag
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_PauseAfterStepCompleteFlag_
+  commentId: Overload:YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  nameWithType: ITweener.PauseAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.Play
+  name: Play()
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Play
+  commentId: M:YJL.Tween.ITweener.Play
+  fullName: YJL.Tween.ITweener.Play()
+  nameWithType: ITweener.Play()
+- uid: YJL.Tween.ITweener.Play*
+  name: Play
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Play_
+  commentId: Overload:YJL.Tween.ITweener.Play
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.Play
+  nameWithType: ITweener.Play
+- uid: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  name: SetEase(AnimationCurve)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetEase_UnityEngine_AnimationCurve_
+  commentId: M:YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  fullName: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  nameWithType: ITweener.SetEase(AnimationCurve)
+- uid: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  name: SetEase(Ease)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetEase_YJL_Tween_Ease_
+  commentId: M:YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  fullName: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  nameWithType: ITweener.SetEase(Ease)
+- uid: YJL.Tween.ITweener.SetEase*
+  name: SetEase
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetEase_
+  commentId: Overload:YJL.Tween.ITweener.SetEase
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.SetEase
+  nameWithType: ITweener.SetEase
+- uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  name: SetLoop(Loop, int)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetLoop_YJL_Tween_Loop_System_Int32_
+  commentId: M:YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  name.vb: SetLoop(Loop, Integer)
+  fullName: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop, int)
+  fullName.vb: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop, Integer)
+  nameWithType: ITweener.SetLoop(Loop, int)
+  nameWithType.vb: ITweener.SetLoop(Loop, Integer)
+- uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  name: SetLoop(Loop)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetLoop_YJL_Tween_Loop_
+  commentId: M:YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  fullName: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  nameWithType: ITweener.SetLoop(Loop)
+- uid: YJL.Tween.ITweener.SetLoop*
+  name: SetLoop
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetLoop_
+  commentId: Overload:YJL.Tween.ITweener.SetLoop
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.SetLoop
+  nameWithType: ITweener.SetLoop
+- uid: YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  name: SetLoopCount(int)
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetLoopCount_System_Int32_
+  commentId: M:YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  name.vb: SetLoopCount(Integer)
+  fullName: YJL.Tween.ITweener.SetLoopCount(int)
+  fullName.vb: YJL.Tween.ITweener.SetLoopCount(Integer)
+  nameWithType: ITweener.SetLoopCount(int)
+  nameWithType.vb: ITweener.SetLoopCount(Integer)
+- uid: YJL.Tween.ITweener.SetLoopCount*
+  name: SetLoopCount
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_SetLoopCount_
+  commentId: Overload:YJL.Tween.ITweener.SetLoopCount
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.SetLoopCount
+  nameWithType: ITweener.SetLoopCount
+- uid: YJL.Tween.ITweener.Stop
+  name: Stop()
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Stop
+  commentId: M:YJL.Tween.ITweener.Stop
+  fullName: YJL.Tween.ITweener.Stop()
+  nameWithType: ITweener.Stop()
+- uid: YJL.Tween.ITweener.Stop*
+  name: Stop
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_Stop_
+  commentId: Overload:YJL.Tween.ITweener.Stop
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.Stop
+  nameWithType: ITweener.Stop
+- uid: YJL.Tween.ITweener.StopAfterStepComplete
+  name: StopAfterStepComplete()
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_StopAfterStepComplete
+  commentId: M:YJL.Tween.ITweener.StopAfterStepComplete
+  fullName: YJL.Tween.ITweener.StopAfterStepComplete()
+  nameWithType: ITweener.StopAfterStepComplete()
+- uid: YJL.Tween.ITweener.StopAfterStepComplete*
+  name: StopAfterStepComplete
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_StopAfterStepComplete_
+  commentId: Overload:YJL.Tween.ITweener.StopAfterStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.StopAfterStepComplete
+  nameWithType: ITweener.StopAfterStepComplete
+- uid: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  name: StopAfterStepCompleteFlag
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_StopAfterStepCompleteFlag
+  commentId: P:YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  nameWithType: ITweener.StopAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.StopAfterStepCompleteFlag*
+  name: StopAfterStepCompleteFlag
+  href: api/YJL.Tween.ITweener.html#YJL_Tween_ITweener_StopAfterStepCompleteFlag_
+  commentId: Overload:YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  isSpec: "True"
+  fullName: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  nameWithType: ITweener.StopAfterStepCompleteFlag
+- uid: YJL.Tween.Loop
+  name: Loop
+  href: api/YJL.Tween.Loop.html
+  commentId: T:YJL.Tween.Loop
+  fullName: YJL.Tween.Loop
+  nameWithType: Loop
+- uid: YJL.Tween.Loop.Default
+  name: Default
+  href: api/YJL.Tween.Loop.html#YJL_Tween_Loop_Default
+  commentId: F:YJL.Tween.Loop.Default
+  fullName: YJL.Tween.Loop.Default
+  nameWithType: Loop.Default
+- uid: YJL.Tween.Loop.PingPong
+  name: PingPong
+  href: api/YJL.Tween.Loop.html#YJL_Tween_Loop_PingPong
+  commentId: F:YJL.Tween.Loop.PingPong
+  fullName: YJL.Tween.Loop.PingPong
+  nameWithType: Loop.PingPong
+- uid: YJL.Tween.Tweener`1
+  name: Tweener<T>
+  href: api/YJL.Tween.Tweener-1.html
+  commentId: T:YJL.Tween.Tweener`1
+  name.vb: Tweener(Of T)
+  fullName: YJL.Tween.Tweener<T>
+  fullName.vb: YJL.Tween.Tweener(Of T)
+  nameWithType: Tweener<T>
+  nameWithType.vb: Tweener(Of T)
+- uid: YJL.Tween.Tweener`1.Complete
+  name: Complete()
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Complete
+  commentId: M:YJL.Tween.Tweener`1.Complete
+  fullName: YJL.Tween.Tweener<T>.Complete()
+  fullName.vb: YJL.Tween.Tweener(Of T).Complete()
+  nameWithType: Tweener<T>.Complete()
+  nameWithType.vb: Tweener(Of T).Complete()
+- uid: YJL.Tween.Tweener`1.Complete*
+  name: Complete
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Complete_
+  commentId: Overload:YJL.Tween.Tweener`1.Complete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.Complete
+  fullName.vb: YJL.Tween.Tweener(Of T).Complete
+  nameWithType: Tweener<T>.Complete
+  nameWithType.vb: Tweener(Of T).Complete
+- uid: YJL.Tween.Tweener`1.Duration
+  name: Duration
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Duration
+  commentId: P:YJL.Tween.Tweener`1.Duration
+  fullName: YJL.Tween.Tweener<T>.Duration
+  fullName.vb: YJL.Tween.Tweener(Of T).Duration
+  nameWithType: Tweener<T>.Duration
+  nameWithType.vb: Tweener(Of T).Duration
+- uid: YJL.Tween.Tweener`1.Duration*
+  name: Duration
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Duration_
+  commentId: Overload:YJL.Tween.Tweener`1.Duration
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.Duration
+  fullName.vb: YJL.Tween.Tweener(Of T).Duration
+  nameWithType: Tweener<T>.Duration
+  nameWithType.vb: Tweener(Of T).Duration
+- uid: YJL.Tween.Tweener`1.FromValue
+  name: FromValue
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_FromValue
+  commentId: P:YJL.Tween.Tweener`1.FromValue
+  fullName: YJL.Tween.Tweener<T>.FromValue
+  fullName.vb: YJL.Tween.Tweener(Of T).FromValue
+  nameWithType: Tweener<T>.FromValue
+  nameWithType.vb: Tweener(Of T).FromValue
+- uid: YJL.Tween.Tweener`1.FromValue*
+  name: FromValue
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_FromValue_
+  commentId: Overload:YJL.Tween.Tweener`1.FromValue
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.FromValue
+  fullName.vb: YJL.Tween.Tweener(Of T).FromValue
+  nameWithType: Tweener<T>.FromValue
+  nameWithType.vb: Tweener(Of T).FromValue
+- uid: YJL.Tween.Tweener`1.IsCompleted
+  name: IsCompleted
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_IsCompleted
+  commentId: P:YJL.Tween.Tweener`1.IsCompleted
+  fullName: YJL.Tween.Tweener<T>.IsCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsCompleted
+  nameWithType: Tweener<T>.IsCompleted
+  nameWithType.vb: Tweener(Of T).IsCompleted
+- uid: YJL.Tween.Tweener`1.IsCompleted*
+  name: IsCompleted
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_IsCompleted_
+  commentId: Overload:YJL.Tween.Tweener`1.IsCompleted
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.IsCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsCompleted
+  nameWithType: Tweener<T>.IsCompleted
+  nameWithType.vb: Tweener(Of T).IsCompleted
+- uid: YJL.Tween.Tweener`1.IsStepCompleted
+  name: IsStepCompleted
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_IsStepCompleted
+  commentId: P:YJL.Tween.Tweener`1.IsStepCompleted
+  fullName: YJL.Tween.Tweener<T>.IsStepCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsStepCompleted
+  nameWithType: Tweener<T>.IsStepCompleted
+  nameWithType.vb: Tweener(Of T).IsStepCompleted
+- uid: YJL.Tween.Tweener`1.IsStepCompleted*
+  name: IsStepCompleted
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_IsStepCompleted_
+  commentId: Overload:YJL.Tween.Tweener`1.IsStepCompleted
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.IsStepCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsStepCompleted
+  nameWithType: Tweener<T>.IsStepCompleted
+  nameWithType.vb: Tweener(Of T).IsStepCompleted
+- uid: YJL.Tween.Tweener`1.LerpFunc
+  name: LerpFunc
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_LerpFunc
+  commentId: P:YJL.Tween.Tweener`1.LerpFunc
+  fullName: YJL.Tween.Tweener<T>.LerpFunc
+  fullName.vb: YJL.Tween.Tweener(Of T).LerpFunc
+  nameWithType: Tweener<T>.LerpFunc
+  nameWithType.vb: Tweener(Of T).LerpFunc
+- uid: YJL.Tween.Tweener`1.LerpFunc*
+  name: LerpFunc
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_LerpFunc_
+  commentId: Overload:YJL.Tween.Tweener`1.LerpFunc
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.LerpFunc
+  fullName.vb: YJL.Tween.Tweener(Of T).LerpFunc
+  nameWithType: Tweener<T>.LerpFunc
+  nameWithType.vb: Tweener(Of T).LerpFunc
+- uid: YJL.Tween.Tweener`1.OnComplete(System.Action)
+  name: OnComplete(Action)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnComplete_System_Action_
+  commentId: M:YJL.Tween.Tweener`1.OnComplete(System.Action)
+  fullName: YJL.Tween.Tweener<T>.OnComplete(System.Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnComplete(System.Action)
+  nameWithType: Tweener<T>.OnComplete(Action)
+  nameWithType.vb: Tweener(Of T).OnComplete(Action)
+- uid: YJL.Tween.Tweener`1.OnComplete*
+  name: OnComplete
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnComplete_
+  commentId: Overload:YJL.Tween.Tweener`1.OnComplete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.OnComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).OnComplete
+  nameWithType: Tweener<T>.OnComplete
+  nameWithType.vb: Tweener(Of T).OnComplete
+- uid: YJL.Tween.Tweener`1.OnPause(System.Action)
+  name: OnPause(Action)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnPause_System_Action_
+  commentId: M:YJL.Tween.Tweener`1.OnPause(System.Action)
+  fullName: YJL.Tween.Tweener<T>.OnPause(System.Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPause(System.Action)
+  nameWithType: Tweener<T>.OnPause(Action)
+  nameWithType.vb: Tweener(Of T).OnPause(Action)
+- uid: YJL.Tween.Tweener`1.OnPause*
+  name: OnPause
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnPause_
+  commentId: Overload:YJL.Tween.Tweener`1.OnPause
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.OnPause
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPause
+  nameWithType: Tweener<T>.OnPause
+  nameWithType.vb: Tweener(Of T).OnPause
+- uid: YJL.Tween.Tweener`1.OnPlay(System.Action)
+  name: OnPlay(Action)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnPlay_System_Action_
+  commentId: M:YJL.Tween.Tweener`1.OnPlay(System.Action)
+  fullName: YJL.Tween.Tweener<T>.OnPlay(System.Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPlay(System.Action)
+  nameWithType: Tweener<T>.OnPlay(Action)
+  nameWithType.vb: Tweener(Of T).OnPlay(Action)
+- uid: YJL.Tween.Tweener`1.OnPlay*
+  name: OnPlay
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnPlay_
+  commentId: Overload:YJL.Tween.Tweener`1.OnPlay
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.OnPlay
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPlay
+  nameWithType: Tweener<T>.OnPlay
+  nameWithType.vb: Tweener(Of T).OnPlay
+- uid: YJL.Tween.Tweener`1.OnStart(System.Action)
+  name: OnStart(Action)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnStart_System_Action_
+  commentId: M:YJL.Tween.Tweener`1.OnStart(System.Action)
+  fullName: YJL.Tween.Tweener<T>.OnStart(System.Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStart(System.Action)
+  nameWithType: Tweener<T>.OnStart(Action)
+  nameWithType.vb: Tweener(Of T).OnStart(Action)
+- uid: YJL.Tween.Tweener`1.OnStart*
+  name: OnStart
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnStart_
+  commentId: Overload:YJL.Tween.Tweener`1.OnStart
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.OnStart
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStart
+  nameWithType: Tweener<T>.OnStart
+  nameWithType.vb: Tweener(Of T).OnStart
+- uid: YJL.Tween.Tweener`1.OnStepComplete(System.Action)
+  name: OnStepComplete(Action)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnStepComplete_System_Action_
+  commentId: M:YJL.Tween.Tweener`1.OnStepComplete(System.Action)
+  fullName: YJL.Tween.Tweener<T>.OnStepComplete(System.Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStepComplete(System.Action)
+  nameWithType: Tweener<T>.OnStepComplete(Action)
+  nameWithType.vb: Tweener(Of T).OnStepComplete(Action)
+- uid: YJL.Tween.Tweener`1.OnStepComplete*
+  name: OnStepComplete
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnStepComplete_
+  commentId: Overload:YJL.Tween.Tweener`1.OnStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.OnStepComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStepComplete
+  nameWithType: Tweener<T>.OnStepComplete
+  nameWithType.vb: Tweener(Of T).OnStepComplete
+- uid: YJL.Tween.Tweener`1.OnStop(System.Action)
+  name: OnStop(Action)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnStop_System_Action_
+  commentId: M:YJL.Tween.Tweener`1.OnStop(System.Action)
+  fullName: YJL.Tween.Tweener<T>.OnStop(System.Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStop(System.Action)
+  nameWithType: Tweener<T>.OnStop(Action)
+  nameWithType.vb: Tweener(Of T).OnStop(Action)
+- uid: YJL.Tween.Tweener`1.OnStop*
+  name: OnStop
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_OnStop_
+  commentId: Overload:YJL.Tween.Tweener`1.OnStop
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.OnStop
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStop
+  nameWithType: Tweener<T>.OnStop
+  nameWithType.vb: Tweener(Of T).OnStop
+- uid: YJL.Tween.Tweener`1.Param
+  name: Param
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Param
+  commentId: P:YJL.Tween.Tweener`1.Param
+  fullName: YJL.Tween.Tweener<T>.Param
+  fullName.vb: YJL.Tween.Tweener(Of T).Param
+  nameWithType: Tweener<T>.Param
+  nameWithType.vb: Tweener(Of T).Param
+- uid: YJL.Tween.Tweener`1.Param*
+  name: Param
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Param_
+  commentId: Overload:YJL.Tween.Tweener`1.Param
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.Param
+  fullName.vb: YJL.Tween.Tweener(Of T).Param
+  nameWithType: Tweener<T>.Param
+  nameWithType.vb: Tweener(Of T).Param
+- uid: YJL.Tween.Tweener`1.Pause
+  name: Pause()
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Pause
+  commentId: M:YJL.Tween.Tweener`1.Pause
+  fullName: YJL.Tween.Tweener<T>.Pause()
+  fullName.vb: YJL.Tween.Tweener(Of T).Pause()
+  nameWithType: Tweener<T>.Pause()
+  nameWithType.vb: Tweener(Of T).Pause()
+- uid: YJL.Tween.Tweener`1.Pause*
+  name: Pause
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Pause_
+  commentId: Overload:YJL.Tween.Tweener`1.Pause
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.Pause
+  fullName.vb: YJL.Tween.Tweener(Of T).Pause
+  nameWithType: Tweener<T>.Pause
+  nameWithType.vb: Tweener(Of T).Pause
+- uid: YJL.Tween.Tweener`1.PauseAfterStepComplete
+  name: PauseAfterStepComplete()
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_PauseAfterStepComplete
+  commentId: M:YJL.Tween.Tweener`1.PauseAfterStepComplete
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepComplete()
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepComplete()
+  nameWithType: Tweener<T>.PauseAfterStepComplete()
+  nameWithType.vb: Tweener(Of T).PauseAfterStepComplete()
+- uid: YJL.Tween.Tweener`1.PauseAfterStepComplete*
+  name: PauseAfterStepComplete
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_PauseAfterStepComplete_
+  commentId: Overload:YJL.Tween.Tweener`1.PauseAfterStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepComplete
+  nameWithType: Tweener<T>.PauseAfterStepComplete
+  nameWithType.vb: Tweener(Of T).PauseAfterStepComplete
+- uid: YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  name: PauseAfterStepCompleteFlag
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_PauseAfterStepCompleteFlag
+  commentId: P:YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepCompleteFlag
+  nameWithType: Tweener<T>.PauseAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).PauseAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag*
+  name: PauseAfterStepCompleteFlag
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_PauseAfterStepCompleteFlag_
+  commentId: Overload:YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepCompleteFlag
+  nameWithType: Tweener<T>.PauseAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).PauseAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.Play
+  name: Play()
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Play
+  commentId: M:YJL.Tween.Tweener`1.Play
+  fullName: YJL.Tween.Tweener<T>.Play()
+  fullName.vb: YJL.Tween.Tweener(Of T).Play()
+  nameWithType: Tweener<T>.Play()
+  nameWithType.vb: Tweener(Of T).Play()
+- uid: YJL.Tween.Tweener`1.Play*
+  name: Play
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Play_
+  commentId: Overload:YJL.Tween.Tweener`1.Play
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.Play
+  fullName.vb: YJL.Tween.Tweener(Of T).Play
+  nameWithType: Tweener<T>.Play
+  nameWithType.vb: Tweener(Of T).Play
+- uid: YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
+  name: SetEase(AnimationCurve)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetEase_UnityEngine_AnimationCurve_
+  commentId: M:YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
+  fullName: YJL.Tween.Tweener<T>.SetEase(UnityEngine.AnimationCurve)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetEase(UnityEngine.AnimationCurve)
+  nameWithType: Tweener<T>.SetEase(AnimationCurve)
+  nameWithType.vb: Tweener(Of T).SetEase(AnimationCurve)
+- uid: YJL.Tween.Tweener`1.SetEase(YJL.Tween.Ease)
+  name: SetEase(Ease)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetEase_YJL_Tween_Ease_
+  commentId: M:YJL.Tween.Tweener`1.SetEase(YJL.Tween.Ease)
+  fullName: YJL.Tween.Tweener<T>.SetEase(YJL.Tween.Ease)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetEase(YJL.Tween.Ease)
+  nameWithType: Tweener<T>.SetEase(Ease)
+  nameWithType.vb: Tweener(Of T).SetEase(Ease)
+- uid: YJL.Tween.Tweener`1.SetEase*
+  name: SetEase
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetEase_
+  commentId: Overload:YJL.Tween.Tweener`1.SetEase
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.SetEase
+  fullName.vb: YJL.Tween.Tweener(Of T).SetEase
+  nameWithType: Tweener<T>.SetEase
+  nameWithType.vb: Tweener(Of T).SetEase
+- uid: YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop,System.Int32)
+  name: SetLoop(Loop, int)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetLoop_YJL_Tween_Loop_System_Int32_
+  commentId: M:YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop,System.Int32)
+  name.vb: SetLoop(Loop, Integer)
+  fullName: YJL.Tween.Tweener<T>.SetLoop(YJL.Tween.Loop, int)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoop(YJL.Tween.Loop, Integer)
+  nameWithType: Tweener<T>.SetLoop(Loop, int)
+  nameWithType.vb: Tweener(Of T).SetLoop(Loop, Integer)
+- uid: YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop)
+  name: SetLoop(Loop)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetLoop_YJL_Tween_Loop_
+  commentId: M:YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop)
+  fullName: YJL.Tween.Tweener<T>.SetLoop(YJL.Tween.Loop)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoop(YJL.Tween.Loop)
+  nameWithType: Tweener<T>.SetLoop(Loop)
+  nameWithType.vb: Tweener(Of T).SetLoop(Loop)
+- uid: YJL.Tween.Tweener`1.SetLoop*
+  name: SetLoop
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetLoop_
+  commentId: Overload:YJL.Tween.Tweener`1.SetLoop
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.SetLoop
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoop
+  nameWithType: Tweener<T>.SetLoop
+  nameWithType.vb: Tweener(Of T).SetLoop
+- uid: YJL.Tween.Tweener`1.SetLoopCount(System.Int32)
+  name: SetLoopCount(int)
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetLoopCount_System_Int32_
+  commentId: M:YJL.Tween.Tweener`1.SetLoopCount(System.Int32)
+  name.vb: SetLoopCount(Integer)
+  fullName: YJL.Tween.Tweener<T>.SetLoopCount(int)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoopCount(Integer)
+  nameWithType: Tweener<T>.SetLoopCount(int)
+  nameWithType.vb: Tweener(Of T).SetLoopCount(Integer)
+- uid: YJL.Tween.Tweener`1.SetLoopCount*
+  name: SetLoopCount
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_SetLoopCount_
+  commentId: Overload:YJL.Tween.Tweener`1.SetLoopCount
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.SetLoopCount
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoopCount
+  nameWithType: Tweener<T>.SetLoopCount
+  nameWithType.vb: Tweener(Of T).SetLoopCount
+- uid: YJL.Tween.Tweener`1.Stop
+  name: Stop()
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Stop
+  commentId: M:YJL.Tween.Tweener`1.Stop
+  fullName: YJL.Tween.Tweener<T>.Stop()
+  fullName.vb: YJL.Tween.Tweener(Of T).Stop()
+  nameWithType: Tweener<T>.Stop()
+  nameWithType.vb: Tweener(Of T).Stop()
+- uid: YJL.Tween.Tweener`1.Stop*
+  name: Stop
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_Stop_
+  commentId: Overload:YJL.Tween.Tweener`1.Stop
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.Stop
+  fullName.vb: YJL.Tween.Tweener(Of T).Stop
+  nameWithType: Tweener<T>.Stop
+  nameWithType.vb: Tweener(Of T).Stop
+- uid: YJL.Tween.Tweener`1.StopAfterStepComplete
+  name: StopAfterStepComplete()
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_StopAfterStepComplete
+  commentId: M:YJL.Tween.Tweener`1.StopAfterStepComplete
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepComplete()
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepComplete()
+  nameWithType: Tweener<T>.StopAfterStepComplete()
+  nameWithType.vb: Tweener(Of T).StopAfterStepComplete()
+- uid: YJL.Tween.Tweener`1.StopAfterStepComplete*
+  name: StopAfterStepComplete
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_StopAfterStepComplete_
+  commentId: Overload:YJL.Tween.Tweener`1.StopAfterStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepComplete
+  nameWithType: Tweener<T>.StopAfterStepComplete
+  nameWithType.vb: Tweener(Of T).StopAfterStepComplete
+- uid: YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  name: StopAfterStepCompleteFlag
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_StopAfterStepCompleteFlag
+  commentId: P:YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepCompleteFlag
+  nameWithType: Tweener<T>.StopAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).StopAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.StopAfterStepCompleteFlag*
+  name: StopAfterStepCompleteFlag
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_StopAfterStepCompleteFlag_
+  commentId: Overload:YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepCompleteFlag
+  nameWithType: Tweener<T>.StopAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).StopAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.ToValue
+  name: ToValue
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_ToValue
+  commentId: P:YJL.Tween.Tweener`1.ToValue
+  fullName: YJL.Tween.Tweener<T>.ToValue
+  fullName.vb: YJL.Tween.Tweener(Of T).ToValue
+  nameWithType: Tweener<T>.ToValue
+  nameWithType.vb: Tweener(Of T).ToValue
+- uid: YJL.Tween.Tweener`1.ToValue*
+  name: ToValue
+  href: api/YJL.Tween.Tweener-1.html#YJL_Tween_Tweener_1_ToValue_
+  commentId: Overload:YJL.Tween.Tweener`1.ToValue
+  isSpec: "True"
+  fullName: YJL.Tween.Tweener<T>.ToValue
+  fullName.vb: YJL.Tween.Tweener(Of T).ToValue
+  nameWithType: Tweener<T>.ToValue
+  nameWithType.vb: Tweener(Of T).ToValue
+- uid: YJL.Tween.TweenExtension
+  name: TweenExtension
+  href: api/YJL.Tween.TweenExtension.html
+  commentId: T:YJL.Tween.TweenExtension
+  fullName: YJL.Tween.TweenExtension
+  nameWithType: TweenExtension
+- uid: YJL.Tween.TweenExtension.MoveTo(UnityEngine.Transform,UnityEngine.Vector3,System.Single)
+  name: MoveTo(Transform, Vector3, float)
+  href: api/YJL.Tween.TweenExtension.html#YJL_Tween_TweenExtension_MoveTo_UnityEngine_Transform_UnityEngine_Vector3_System_Single_
+  commentId: M:YJL.Tween.TweenExtension.MoveTo(UnityEngine.Transform,UnityEngine.Vector3,System.Single)
+  name.vb: MoveTo(Transform, Vector3, Single)
+  fullName: YJL.Tween.TweenExtension.MoveTo(UnityEngine.Transform, UnityEngine.Vector3, float)
+  fullName.vb: YJL.Tween.TweenExtension.MoveTo(UnityEngine.Transform, UnityEngine.Vector3, Single)
+  nameWithType: TweenExtension.MoveTo(Transform, Vector3, float)
+  nameWithType.vb: TweenExtension.MoveTo(Transform, Vector3, Single)
+- uid: YJL.Tween.TweenExtension.MoveTo*
+  name: MoveTo
+  href: api/YJL.Tween.TweenExtension.html#YJL_Tween_TweenExtension_MoveTo_
+  commentId: Overload:YJL.Tween.TweenExtension.MoveTo
+  isSpec: "True"
+  fullName: YJL.Tween.TweenExtension.MoveTo
+  nameWithType: TweenExtension.MoveTo
+- uid: YJL.Tween.Tweenie
+  name: Tweenie
+  href: api/YJL.Tween.Tweenie.html
+  commentId: T:YJL.Tween.Tweenie
+  fullName: YJL.Tween.Tweenie
+  nameWithType: Tweenie
+- uid: YJL.Tween.Tweenie.Complete(YJL.Tween.ITweener)
+  name: Complete(ITweener)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Complete_YJL_Tween_ITweener_
+  commentId: M:YJL.Tween.Tweenie.Complete(YJL.Tween.ITweener)
+  fullName: YJL.Tween.Tweenie.Complete(YJL.Tween.ITweener)
+  nameWithType: Tweenie.Complete(ITweener)
+- uid: YJL.Tween.Tweenie.Complete*
+  name: Complete
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Complete_
+  commentId: Overload:YJL.Tween.Tweenie.Complete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.Complete
+  nameWithType: Tweenie.Complete
+- uid: YJL.Tween.Tweenie.GetNumberOfRunningTweener
+  name: GetNumberOfRunningTweener()
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_GetNumberOfRunningTweener
+  commentId: M:YJL.Tween.Tweenie.GetNumberOfRunningTweener
+  fullName: YJL.Tween.Tweenie.GetNumberOfRunningTweener()
+  nameWithType: Tweenie.GetNumberOfRunningTweener()
+- uid: YJL.Tween.Tweenie.GetNumberOfRunningTweener*
+  name: GetNumberOfRunningTweener
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_GetNumberOfRunningTweener_
+  commentId: Overload:YJL.Tween.Tweenie.GetNumberOfRunningTweener
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.GetNumberOfRunningTweener
+  nameWithType: Tweenie.GetNumberOfRunningTweener
+- uid: YJL.Tween.Tweenie.LateUpdate
+  name: LateUpdate()
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_LateUpdate
+  commentId: M:YJL.Tween.Tweenie.LateUpdate
+  fullName: YJL.Tween.Tweenie.LateUpdate()
+  nameWithType: Tweenie.LateUpdate()
+- uid: YJL.Tween.Tweenie.LateUpdate*
+  name: LateUpdate
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_LateUpdate_
+  commentId: Overload:YJL.Tween.Tweenie.LateUpdate
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.LateUpdate
+  nameWithType: Tweenie.LateUpdate
+- uid: YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
+  name: Pause(ITweener)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Pause_YJL_Tween_ITweener_
+  commentId: M:YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
+  fullName: YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
+  nameWithType: Tweenie.Pause(ITweener)
+- uid: YJL.Tween.Tweenie.Pause*
+  name: Pause
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Pause_
+  commentId: Overload:YJL.Tween.Tweenie.Pause
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.Pause
+  nameWithType: Tweenie.Pause
+- uid: YJL.Tween.Tweenie.PauseAfterStepComplete(YJL.Tween.ITweener)
+  name: PauseAfterStepComplete(ITweener)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_PauseAfterStepComplete_YJL_Tween_ITweener_
+  commentId: M:YJL.Tween.Tweenie.PauseAfterStepComplete(YJL.Tween.ITweener)
+  fullName: YJL.Tween.Tweenie.PauseAfterStepComplete(YJL.Tween.ITweener)
+  nameWithType: Tweenie.PauseAfterStepComplete(ITweener)
+- uid: YJL.Tween.Tweenie.PauseAfterStepComplete*
+  name: PauseAfterStepComplete
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_PauseAfterStepComplete_
+  commentId: Overload:YJL.Tween.Tweenie.PauseAfterStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.PauseAfterStepComplete
+  nameWithType: Tweenie.PauseAfterStepComplete
+- uid: YJL.Tween.Tweenie.Play(YJL.Tween.ITweener)
+  name: Play(ITweener)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Play_YJL_Tween_ITweener_
+  commentId: M:YJL.Tween.Tweenie.Play(YJL.Tween.ITweener)
+  fullName: YJL.Tween.Tweenie.Play(YJL.Tween.ITweener)
+  nameWithType: Tweenie.Play(ITweener)
+- uid: YJL.Tween.Tweenie.Play*
+  name: Play
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Play_
+  commentId: Overload:YJL.Tween.Tweenie.Play
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.Play
+  nameWithType: Tweenie.Play
+- uid: YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
+  name: Stop(ITweener)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Stop_YJL_Tween_ITweener_
+  commentId: M:YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
+  fullName: YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
+  nameWithType: Tweenie.Stop(ITweener)
+- uid: YJL.Tween.Tweenie.Stop*
+  name: Stop
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Stop_
+  commentId: Overload:YJL.Tween.Tweenie.Stop
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.Stop
+  nameWithType: Tweenie.Stop
+- uid: YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
+  name: StopAfterStepComplete(ITweener)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_StopAfterStepComplete_YJL_Tween_ITweener_
+  commentId: M:YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
+  fullName: YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
+  nameWithType: Tweenie.StopAfterStepComplete(ITweener)
+- uid: YJL.Tween.Tweenie.StopAfterStepComplete*
+  name: StopAfterStepComplete
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_StopAfterStepComplete_
+  commentId: Overload:YJL.Tween.Tweenie.StopAfterStepComplete
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.StopAfterStepComplete
+  nameWithType: Tweenie.StopAfterStepComplete
+- uid: YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single)
+  name: To(Action<float>, float, float, float)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_System_Action_System_Single__System_Single_System_Single_System_Single_
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single)
+  name.vb: To(Action(Of Single), Single, Single, Single)
+  fullName: YJL.Tween.Tweenie.To(System.Action<float>, float, float, float)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of Single), Single, Single, Single)
+  nameWithType: Tweenie.To(Action<float>, float, float, float)
+  nameWithType.vb: Tweenie.To(Action(Of Single), Single, Single, Single)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single)
+  name: To(Action<Color>, Color, Color, float)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_System_Action_UnityEngine_Color__UnityEngine_Color_UnityEngine_Color_System_Single_
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single)
+  name.vb: To(Action(Of Color), Color, Color, Single)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Color>, UnityEngine.Color, UnityEngine.Color, float)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Color), UnityEngine.Color, UnityEngine.Color, Single)
+  nameWithType: Tweenie.To(Action<Color>, Color, Color, float)
+  nameWithType.vb: Tweenie.To(Action(Of Color), Color, Color, Single)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+  name: To(Action<Quaternion>, Quaternion, Quaternion, float)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_System_Action_UnityEngine_Quaternion__UnityEngine_Quaternion_UnityEngine_Quaternion_System_Single_
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+  name.vb: To(Action(Of Quaternion), Quaternion, Quaternion, Single)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Quaternion>, UnityEngine.Quaternion, UnityEngine.Quaternion, float)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Quaternion), UnityEngine.Quaternion, UnityEngine.Quaternion, Single)
+  nameWithType: Tweenie.To(Action<Quaternion>, Quaternion, Quaternion, float)
+  nameWithType.vb: Tweenie.To(Action(Of Quaternion), Quaternion, Quaternion, Single)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  name: To(Action<Vector2>, Vector2, Vector2, float)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_System_Action_UnityEngine_Vector2__UnityEngine_Vector2_UnityEngine_Vector2_System_Single_
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  name.vb: To(Action(Of Vector2), Vector2, Vector2, Single)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector2>, UnityEngine.Vector2, UnityEngine.Vector2, float)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector2), UnityEngine.Vector2, UnityEngine.Vector2, Single)
+  nameWithType: Tweenie.To(Action<Vector2>, Vector2, Vector2, float)
+  nameWithType.vb: Tweenie.To(Action(Of Vector2), Vector2, Vector2, Single)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  name: To(Action<Vector3>, Vector3, Vector3, float)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_System_Action_UnityEngine_Vector3__UnityEngine_Vector3_UnityEngine_Vector3_System_Single_
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  name.vb: To(Action(Of Vector3), Vector3, Vector3, Single)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector3>, UnityEngine.Vector3, UnityEngine.Vector3, float)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector3), UnityEngine.Vector3, UnityEngine.Vector3, Single)
+  nameWithType: Tweenie.To(Action<Vector3>, Vector3, Vector3, float)
+  nameWithType.vb: Tweenie.To(Action(Of Vector3), Vector3, Vector3, Single)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
+  name: To(Action<Vector4>, Vector4, Vector4, float)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_System_Action_UnityEngine_Vector4__UnityEngine_Vector4_UnityEngine_Vector4_System_Single_
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
+  name.vb: To(Action(Of Vector4), Vector4, Vector4, Single)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector4>, UnityEngine.Vector4, UnityEngine.Vector4, float)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector4), UnityEngine.Vector4, UnityEngine.Vector4, Single)
+  nameWithType: Tweenie.To(Action<Vector4>, Vector4, Vector4, float)
+  nameWithType.vb: Tweenie.To(Action(Of Vector4), Vector4, Vector4, Single)
+- uid: YJL.Tween.Tweenie.To*
+  name: To
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To_
+  commentId: Overload:YJL.Tween.Tweenie.To
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.To
+  nameWithType: Tweenie.To
+- uid: YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0})
+  name: To<T>(Action<T>, T, T, float, Func<T, T, float, T>)
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_To__1_System_Action___0____0___0_System_Single_System_Func___0___0_System_Single___0__
+  commentId: M:YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0})
+  name.vb: To(Of T)(Action(Of T), T, T, Single, Func(Of T, T, Single, T))
+  fullName: YJL.Tween.Tweenie.To<T>(System.Action<T>, T, T, float, System.Func<T, T, float, T>)
+  fullName.vb: YJL.Tween.Tweenie.To(Of T)(System.Action(Of T), T, T, Single, System.Func(Of T, T, Single, T))
+  nameWithType: Tweenie.To<T>(Action<T>, T, T, float, Func<T, T, float, T>)
+  nameWithType.vb: Tweenie.To(Of T)(Action(Of T), T, T, Single, Func(Of T, T, Single, T))
+- uid: YJL.Tween.Tweenie.Update
+  name: Update()
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Update
+  commentId: M:YJL.Tween.Tweenie.Update
+  fullName: YJL.Tween.Tweenie.Update()
+  nameWithType: Tweenie.Update()
+- uid: YJL.Tween.Tweenie.Update*
+  name: Update
+  href: api/YJL.Tween.Tweenie.html#YJL_Tween_Tweenie_Update_
+  commentId: Overload:YJL.Tween.Tweenie.Update
+  isSpec: "True"
+  fullName: YJL.Tween.Tweenie.Update
+  nameWithType: Tweenie.Update

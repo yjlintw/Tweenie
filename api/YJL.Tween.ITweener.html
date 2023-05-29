@@ -1,0 +1,872 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ITweener
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ITweener
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/yjlintw/Tweenie/new/main/apiSpec/new?filename=YJL_Tween_ITweener.md&amp;value=---%0Auid%3A%20YJL.Tween.ITweener%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="YJL.Tween.ITweener">
+
+
+
+  <h1 id="YJL_Tween_ITweener" data-uid="YJL.Tween.ITweener" class="text-break">
+    Interface ITweener
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="YJL.html">YJL</a>.<a class="xref" href="YJL.Tween.html">Tween</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>YJL.Tweenie.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>The tweener interface</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITweener</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="YJL_Tween_ITweener_IsCompleted_" data-uid="YJL.Tween.ITweener.IsCompleted*"></a>
+
+  <h3 id="YJL_Tween_ITweener_IsCompleted" data-uid="YJL.Tween.ITweener.IsCompleted">
+  IsCompleted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag shows if current Tweener is completed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsCompleted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_IsStepCompleted_" data-uid="YJL.Tween.ITweener.IsStepCompleted*"></a>
+
+  <h3 id="YJL_Tween_ITweener_IsStepCompleted" data-uid="YJL.Tween.ITweener.IsStepCompleted">
+  IsStepCompleted
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag shows if current Tweener has a step completed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsStepCompleted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_PauseAfterStepCompleteFlag_" data-uid="YJL.Tween.ITweener.PauseAfterStepCompleteFlag*"></a>
+
+  <h3 id="YJL_Tween_ITweener_PauseAfterStepCompleteFlag" data-uid="YJL.Tween.ITweener.PauseAfterStepCompleteFlag">
+  PauseAfterStepCompleteFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag shows if the tweener should pause after it reaches to a step complete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PauseAfterStepCompleteFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_StopAfterStepCompleteFlag_" data-uid="YJL.Tween.ITweener.StopAfterStepCompleteFlag*"></a>
+
+  <h3 id="YJL_Tween_ITweener_StopAfterStepCompleteFlag" data-uid="YJL.Tween.ITweener.StopAfterStepCompleteFlag">
+  StopAfterStepCompleteFlag
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flag shows if the Tweener should stop after it reaches to a step complete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool StopAfterStepCompleteFlag { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="YJL_Tween_ITweener_Complete_" data-uid="YJL.Tween.ITweener.Complete*"></a>
+
+  <h3 id="YJL_Tween_ITweener_Complete" data-uid="YJL.Tween.ITweener.Complete">
+  Complete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L198"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Complete the tween, the param will set to ToValue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener Complete()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_OnComplete_" data-uid="YJL.Tween.ITweener.OnComplete*"></a>
+
+  <h3 id="YJL_Tween_ITweener_OnComplete_System_Action_" data-uid="YJL.Tween.ITweener.OnComplete(System.Action)">
+  OnComplete(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Callback that will be triggered when this tweener is completed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener OnComplete(Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_OnPause_" data-uid="YJL.Tween.ITweener.OnPause*"></a>
+
+  <h3 id="YJL_Tween_ITweener_OnPause_System_Action_" data-uid="YJL.Tween.ITweener.OnPause(System.Action)">
+  OnPause(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Callback that will be triggered when this tweener is paused</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener OnPause(Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_OnPlay_" data-uid="YJL.Tween.ITweener.OnPlay*"></a>
+
+  <h3 id="YJL_Tween_ITweener_OnPlay_System_Action_" data-uid="YJL.Tween.ITweener.OnPlay(System.Action)">
+  OnPlay(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L214"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Callback that will be triggered each frame this tweener is playing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener OnPlay(Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_OnStart_" data-uid="YJL.Tween.ITweener.OnStart*"></a>
+
+  <h3 id="YJL_Tween_ITweener_OnStart_System_Action_" data-uid="YJL.Tween.ITweener.OnStart(System.Action)">
+  OnStart(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Callback that will be triggered when the first frame of the Tweener starts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener OnStart(Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_OnStepComplete_" data-uid="YJL.Tween.ITweener.OnStepComplete*"></a>
+
+  <h3 id="YJL_Tween_ITweener_OnStepComplete_System_Action_" data-uid="YJL.Tween.ITweener.OnStepComplete(System.Action)">
+  OnStepComplete(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set callback that will be triggered when this tweener complete one step</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener OnStepComplete(Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_OnStop_" data-uid="YJL.Tween.ITweener.OnStop*"></a>
+
+  <h3 id="YJL_Tween_ITweener_OnStop_System_Action_" data-uid="YJL.Tween.ITweener.OnStop(System.Action)">
+  OnStop(Action)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Callback that will be triggered when this tweener is stopped</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener OnStop(Action callback)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>callback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_Pause_" data-uid="YJL.Tween.ITweener.Pause*"></a>
+
+  <h3 id="YJL_Tween_ITweener_Pause" data-uid="YJL.Tween.ITweener.Pause">
+  Pause()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pause the tween, the param will stay at its current value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener Pause()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_PauseAfterStepComplete_" data-uid="YJL.Tween.ITweener.PauseAfterStepComplete*"></a>
+
+  <h3 id="YJL_Tween_ITweener_PauseAfterStepComplete" data-uid="YJL.Tween.ITweener.PauseAfterStepComplete">
+  PauseAfterStepComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pause after tween complete current step</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener PauseAfterStepComplete()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_Play_" data-uid="YJL.Tween.ITweener.Play*"></a>
+
+  <h3 id="YJL_Tween_ITweener_Play" data-uid="YJL.Tween.ITweener.Play">
+  Play()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Play the tween</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener Play()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_SetEase_" data-uid="YJL.Tween.ITweener.SetEase*"></a>
+
+  <h3 id="YJL_Tween_ITweener_SetEase_UnityEngine_AnimationCurve_" data-uid="YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)">
+  SetEase(AnimationCurve)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Easing using Animation Curve</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener SetEase(AnimationCurve curve)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>curve</code> <span class="xref">AnimationCurve</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_SetEase_" data-uid="YJL.Tween.ITweener.SetEase*"></a>
+
+  <h3 id="YJL_Tween_ITweener_SetEase_YJL_Tween_Ease_" data-uid="YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)">
+  SetEase(Ease)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Easing using built-in Easing type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener SetEase(Ease ease)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ease</code> <a class="xref" href="YJL.Tween.Ease.html">Ease</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_SetLoop_" data-uid="YJL.Tween.ITweener.SetLoop*"></a>
+
+  <h3 id="YJL_Tween_ITweener_SetLoop_YJL_Tween_Loop_" data-uid="YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)">
+  SetLoop(Loop)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Loop Mode, Loop will run infinitely</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener SetLoop(Loop loopMode)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loopMode</code> <a class="xref" href="YJL.Tween.Loop.html">Loop</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_SetLoop_" data-uid="YJL.Tween.ITweener.SetLoop*"></a>
+
+  <h3 id="YJL_Tween_ITweener_SetLoop_YJL_Tween_Loop_System_Int32_" data-uid="YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)">
+  SetLoop(Loop, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Loop Mode and Loop Count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener SetLoop(Loop loopMode, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>loopMode</code> <a class="xref" href="YJL.Tween.Loop.html">Loop</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>How many times the loop will run, Loop will run infinitely if count is set to -1</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_SetLoopCount_" data-uid="YJL.Tween.ITweener.SetLoopCount*"></a>
+
+  <h3 id="YJL_Tween_ITweener_SetLoopCount_System_Int32_" data-uid="YJL.Tween.ITweener.SetLoopCount(System.Int32)">
+  SetLoopCount(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set Loop Count</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener SetLoopCount(int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_Stop_" data-uid="YJL.Tween.ITweener.Stop*"></a>
+
+  <h3 id="YJL_Tween_ITweener_Stop" data-uid="YJL.Tween.ITweener.Stop">
+  Stop()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop the tween, the param will jump back to FromValue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener Stop()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="YJL_Tween_ITweener_StopAfterStepComplete_" data-uid="YJL.Tween.ITweener.StopAfterStepComplete*"></a>
+
+  <h3 id="YJL_Tween_ITweener_StopAfterStepComplete" data-uid="YJL.Tween.ITweener.StopAfterStepComplete">
+  StopAfterStepComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stop after tween complete current step</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITweener StopAfterStepComplete()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="YJL.Tween.ITweener.html">ITweener</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/yjlintw/Tweenie/blob/main/Assets/Tweenie/Runtime/Core/Tweener.cs/#L67" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
