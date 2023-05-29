@@ -1,9 +1,12 @@
 name: Create Unity Package
 
-on: push
+on: 
+  push:
+    tags:
+      - '*'
 
 jobs:
-  echo:
+  publish-unity-package:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -20,4 +23,23 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         path: a
-        name: package
+        name: TweenieUnityPackage
+    - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+    - name: upload linux artifact
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: a/Tweenie.unitypackage
+        asset_name: Tweenie.unitypackage
+        asset_content_type: application/gzip
