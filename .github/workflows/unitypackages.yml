@@ -1,0 +1,23 @@
+name: Create Unity Package
+
+on: push
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: |
+        echo "Assets/Tweenie.meta" > metaList
+        find Assets/Tweenie/ -name \*.meta >> metaList
+
+    - run: mkdir a
+
+    - uses: pCYSl5EDgo/create-unitypackage@master
+      with:
+        package-path: 'a/Tweenie.unitypackage'
+        include-files: metaList
+    - uses: actions/upload-artifact@master
+      with:
+        path: a
+        name: package
