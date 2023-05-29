@@ -26,7 +26,7 @@ namespace YJL.Tween.Test
 
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                _tweener?.SetLoop(Loop.PingPong, 2).Play();
+                _tweener?.SetLoop(Loop.PingPong).Play();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -34,9 +34,19 @@ namespace YJL.Tween.Test
                 _tweener?.SetLoop(Loop.Default).Play();
             }
 
+            if (Input.GetKeyDown(KeyCode.Alpha4))
+            {
+                _tweener?.SetLoopCount(2);
+            }
+
             if (Input.GetKeyDown(KeyCode.Alpha5))
             {
                 _tweener?.StopAfterStepComplete();
+            }
+            
+            if (Input.GetKeyDown(KeyCode.Alpha6))
+            {
+                _tweener?.PauseAfterStepComplete();
             }
 
             if (Input.GetKeyDown(KeyCode.Alpha8))

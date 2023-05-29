@@ -5,40 +5,107 @@ using YJL.Helper;
 
 namespace YJL.Tween
 {
+    /// <summary>
+    /// The tweenie class
+    /// </summary>
+    /// <seealso cref="Singleton{Tweenie}"/>
     public sealed class Tweenie : Singleton<Tweenie>
     {
+        /// <summary>
+        ///     A set of tweeners that will run in this current frame
+        /// </summary>
         private static ISet<ITweener> _tweenerSet = new HashSet<ITweener>();
+        /// <summary>
+        ///     A set of tweeners that will be added to run at the start of this frame
+        /// </summary>
         private static ISet<ITweener> _toAddSet = new HashSet<ITweener>();
+        /// <summary>
+        ///     A set of tweeners that will be paused at the end of this frame
+        /// </summary>
         private static ISet<ITweener> _toPauseSet = new HashSet<ITweener>();
+        /// <summary>
+        ///     A set of tweeners that will be stopped at the end of this frame
+        /// </summary>
         private static ISet<ITweener> _toStopSet = new HashSet<ITweener>();
+        /// <summary>
+        ///     A set of tweeners that will be completed at the end of this frame
+        /// </summary>
         private static ISet<ITweener> _toCompleteSet = new HashSet<ITweener>();
 
         #region Tween Setup - Frequency used type overloading
+        /// <summary>
+        ///     Start a tweener, type float overload
+        /// </summary>
+        /// <param name="param">The param</param>
+        /// <param name="fromValue">The from value</param>
+        /// <param name="toValue">The to value</param>
+        /// <param name="duration">The duration</param>
+        /// <returns>The tweener</returns>
         public static ITweener To(Action<float> param, float fromValue, float toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Mathf.Lerp);
         }
 
+        /// <summary>
+        ///     Start a tweener, type Vector2 overload
+        /// </summary>
+        /// <param name="param">The param</param>
+        /// <param name="fromValue">The from value</param>
+        /// <param name="toValue">The to value</param>
+        /// <param name="duration">The duration</param>
+        /// <returns>The tweener</returns>
         public static ITweener To(Action<Vector2> param, Vector2 fromValue, Vector2 toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Vector2.Lerp);
         }
         
+        /// <summary>
+        ///     Start a tweener, type Vector3 overload
+        /// </summary>
+        /// <param name="param">The param</param>
+        /// <param name="fromValue">The from value</param>
+        /// <param name="toValue">The to value</param>
+        /// <param name="duration">The duration</param>
+        /// <returns>The tweener</returns>
         public static ITweener To(Action<Vector3> param, Vector3 fromValue, Vector3 toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Vector3.Lerp);
         }
 
+        /// <summary>
+        ///     Start a tweener, type Vector4 overload
+        /// </summary>
+        /// <param name="param">The param</param>
+        /// <param name="fromValue">The from value</param>
+        /// <param name="toValue">The to value</param>
+        /// <param name="duration">The duration</param>
+        /// <returns>The tweener</returns>
         public static ITweener To(Action<Vector4> param, Vector4 fromValue, Vector4 toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Vector4.Lerp);
         }
 
+        /// <summary>
+        ///     Start a tweener, type Quaternion overload
+        /// </summary>
+        /// <param name="param">The param</param>
+        /// <param name="fromValue">The from value</param>
+        /// <param name="toValue">The to value</param>
+        /// <param name="duration">The duration</param>
+        /// <returns>The tweener</returns>
         public static ITweener To(Action<Quaternion> param, Quaternion fromValue, Quaternion toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Quaternion.Lerp);
         }
 
+        /// <summary>
+        ///     Start a tweener, type Coilor overload
+        /// </summary>
+        /// <param name="param">The param</param>
+        /// <param name="fromValue">The from value</param>
+        /// <param name="toValue">The to value</param>
+        /// <param name="duration">The duration</param>
+        /// <returns>The tweener</returns>
         public static ITweener To(Action<Color> param, Color fromValue, Color toValue, float duration)
         {
             return To(param, fromValue, toValue, duration, Color.Lerp);
@@ -99,12 +166,6 @@ namespace YJL.Tween
             return tweener;
         }
 
-        //  TODO: WARNING
-        //  Of all the Tweener Control Function, only this one's direction is different than others
-        //  All other tween control has the implementation in the Tweenie class, Tweener counterpart calls Tweenie's
-        //  method
-        //  This one has the implementation in the Tweener class, Tweenie counterpart is calling Tweener's function
-        
         /// <summary>
         ///     Stop the tweener after the current step is completed
         /// </summary>
@@ -113,6 +174,16 @@ namespace YJL.Tween
         public static ITweener StopAfterStepComplete(ITweener tweener)
         {
             return tweener.StopAfterStepComplete();
+        }
+        
+        /// <summary>
+        ///     Pauses the tweener after the current step is completed
+        /// </summary>
+        /// <param name="tweener">The tweener</param>
+        /// <returns>The tweener</returns>
+        public static ITweener PauseAfterStepComplete(ITweener tweener)
+        {
+            return tweener.PauseAfterStepComplete();
         }
 
         /// <summary>
@@ -129,6 +200,9 @@ namespace YJL.Tween
         #endregion
         
         #region Unity Life Cycle
+        /// <summary>
+        ///     Unity's update function
+        /// </summary>
         public void Update()
         {
             // Add new tween
@@ -145,9 +219,33 @@ namespace YJL.Tween
             foreach (ITweener tweener in _tweenerSet)
             {
                 tweener.Tick(Time.deltaTime);
+                if (tweener.IsCompleted)
+                {
+                    _toCompleteSet.Add(tweener);
+                    continue;
+                }
+                if (!tweener.IsStepCompleted) continue;
+                
+                tweener.TweenStepCompleted();
+                // Handle condition when one tweener step completed
+                if (tweener.StopAfterStepCompleteFlag)
+                {
+                    _toStopSet.Add(tweener);
+                }
+                else if (tweener.PauseAfterStepCompleteFlag)
+                {
+                    _toPauseSet.Add(tweener);
+                }
+                else
+                {
+                    tweener.TweenContinue();
+                }
             }
         }
 
+        /// <summary>
+        ///     Unity's Late Update function
+        /// </summary>
         public void LateUpdate()
         {
             foreach (ITweener toRemove in _toStopSet)
@@ -175,6 +273,10 @@ namespace YJL.Tween
         
         #region Editor Related
 
+        /// <summary>
+        ///     Gets the number of running tweener
+        /// </summary>
+        /// <returns>The int</returns>
         public static int GetNumberOfRunningTweener()
         {
             return Tweenie._tweenerSet.Count;
