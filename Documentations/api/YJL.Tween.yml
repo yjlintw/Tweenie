@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: YJL.Tween
+  commentId: N:YJL.Tween
+  id: YJL.Tween
+  children:
+  - YJL.Tween.Ease
+  - YJL.Tween.ITweenData`1
+  - YJL.Tween.ITweener
+  - YJL.Tween.Loop
+  - YJL.Tween.TweenExtension
+  - YJL.Tween.Tweener`1
+  - YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: YJL.Tween
+  nameWithType: YJL.Tween
+  fullName: YJL.Tween
+  type: Namespace
+  assemblies:
+  - YJL.Tweenie
+references:
+- uid: YJL.Tween.Tweenie
+  commentId: T:YJL.Tween.Tweenie
+  href: YJL.Tween.Tweenie.html
+  name: Tweenie
+  nameWithType: Tweenie
+  fullName: YJL.Tween.Tweenie
+- uid: YJL.Tween.Ease
+  commentId: T:YJL.Tween.Ease
+  parent: YJL.Tween
+  href: YJL.Tween.Ease.html
+  name: Ease
+  nameWithType: Ease
+  fullName: YJL.Tween.Ease
+- uid: YJL.Tween.Loop
+  commentId: T:YJL.Tween.Loop
+  parent: YJL.Tween
+  href: YJL.Tween.Loop.html
+  name: Loop
+  nameWithType: Loop
+  fullName: YJL.Tween.Loop
+- uid: YJL.Tween.ITweenData`1
+  commentId: T:YJL.Tween.ITweenData`1
+  href: YJL.Tween.ITweenData-1.html
+  name: ITweenData<T>
+  nameWithType: ITweenData<T>
+  fullName: YJL.Tween.ITweenData<T>
+  nameWithType.vb: ITweenData(Of T)
+  fullName.vb: YJL.Tween.ITweenData(Of T)
+  name.vb: ITweenData(Of T)
+  spec.csharp:
+  - uid: YJL.Tween.ITweenData`1
+    name: ITweenData
+    href: YJL.Tween.ITweenData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YJL.Tween.ITweenData`1
+    name: ITweenData
+    href: YJL.Tween.ITweenData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YJL.Tween.ITweener
+  commentId: T:YJL.Tween.ITweener
+  parent: YJL.Tween
+  href: YJL.Tween.ITweener.html
+  name: ITweener
+  nameWithType: ITweener
+  fullName: YJL.Tween.ITweener
+- uid: YJL.Tween.Tweener`1
+  commentId: T:YJL.Tween.Tweener`1
+  href: YJL.Tween.Tweener-1.html
+  name: Tweener<T>
+  nameWithType: Tweener<T>
+  fullName: YJL.Tween.Tweener<T>
+  nameWithType.vb: Tweener(Of T)
+  fullName.vb: YJL.Tween.Tweener(Of T)
+  name.vb: Tweener(Of T)
+  spec.csharp:
+  - uid: YJL.Tween.Tweener`1
+    name: Tweener
+    href: YJL.Tween.Tweener-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YJL.Tween.Tweener`1
+    name: Tweener
+    href: YJL.Tween.Tweener-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YJL.Tween.TweenExtension
+  commentId: T:YJL.Tween.TweenExtension
+  href: YJL.Tween.TweenExtension.html
+  name: TweenExtension
+  nameWithType: TweenExtension
+  fullName: YJL.Tween.TweenExtension
+- uid: YJL.Tween
+  commentId: N:YJL.Tween
+  href: YJL.html
+  name: YJL.Tween
+  nameWithType: YJL.Tween
+  fullName: YJL.Tween
+  spec.csharp:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+  spec.vb:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html

@@ -1,0 +1,963 @@
+### YamlMime:ManagedReference
+items:
+- uid: YJL.Tween.ITweener
+  commentId: T:YJL.Tween.ITweener
+  id: ITweener
+  parent: YJL.Tween
+  children:
+  - YJL.Tween.ITweener.Complete
+  - YJL.Tween.ITweener.IsCompleted
+  - YJL.Tween.ITweener.IsStepCompleted
+  - YJL.Tween.ITweener.OnComplete(System.Action)
+  - YJL.Tween.ITweener.OnPause(System.Action)
+  - YJL.Tween.ITweener.OnPlay(System.Action)
+  - YJL.Tween.ITweener.OnStart(System.Action)
+  - YJL.Tween.ITweener.OnStepComplete(System.Action)
+  - YJL.Tween.ITweener.OnStop(System.Action)
+  - YJL.Tween.ITweener.Pause
+  - YJL.Tween.ITweener.PauseAfterStepComplete
+  - YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  - YJL.Tween.ITweener.Play
+  - YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  - YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  - YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  - YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  - YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  - YJL.Tween.ITweener.Stop
+  - YJL.Tween.ITweener.StopAfterStepComplete
+  - YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  langs:
+  - csharp
+  - vb
+  name: ITweener
+  nameWithType: ITweener
+  fullName: YJL.Tween.ITweener
+  type: Interface
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: ITweener
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 66
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The tweener interface
+  example: []
+  syntax:
+    content: public interface ITweener
+    content.vb: Public Interface ITweener
+- uid: YJL.Tween.ITweener.IsCompleted
+  commentId: P:YJL.Tween.ITweener.IsCompleted
+  id: IsCompleted
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: ITweener.IsCompleted
+  fullName: YJL.Tween.ITweener.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: IsCompleted
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 100
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if current Tweener is completed
+  example: []
+  syntax:
+    content: bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsCompleted As Boolean
+  overload: YJL.Tween.ITweener.IsCompleted*
+- uid: YJL.Tween.ITweener.IsStepCompleted
+  commentId: P:YJL.Tween.ITweener.IsStepCompleted
+  id: IsStepCompleted
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: IsStepCompleted
+  nameWithType: ITweener.IsStepCompleted
+  fullName: YJL.Tween.ITweener.IsStepCompleted
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: IsStepCompleted
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 104
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if current Tweener has a step completed
+  example: []
+  syntax:
+    content: bool IsStepCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsStepCompleted As Boolean
+  overload: YJL.Tween.ITweener.IsStepCompleted*
+- uid: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  commentId: P:YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  id: StopAfterStepCompleteFlag
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: StopAfterStepCompleteFlag
+  nameWithType: ITweener.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: StopAfterStepCompleteFlag
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 109
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if the Tweener should stop after it reaches to a step complete
+  example: []
+  syntax:
+    content: bool StopAfterStepCompleteFlag { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property StopAfterStepCompleteFlag As Boolean
+  overload: YJL.Tween.ITweener.StopAfterStepCompleteFlag*
+- uid: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  commentId: P:YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  id: PauseAfterStepCompleteFlag
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: PauseAfterStepCompleteFlag
+  nameWithType: ITweener.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PauseAfterStepCompleteFlag
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 113
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if the tweener should pause after it reaches to a step complete
+  example: []
+  syntax:
+    content: bool PauseAfterStepCompleteFlag { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property PauseAfterStepCompleteFlag As Boolean
+  overload: YJL.Tween.ITweener.PauseAfterStepCompleteFlag*
+- uid: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  commentId: M:YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  id: SetEase(UnityEngine.AnimationCurve)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: SetEase(AnimationCurve)
+  nameWithType: ITweener.SetEase(AnimationCurve)
+  fullName: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetEase
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 130
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Easing using Animation Curve
+  example: []
+  syntax:
+    content: ITweener SetEase(AnimationCurve curve)
+    parameters:
+    - id: curve
+      type: UnityEngine.AnimationCurve
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function SetEase(curve As AnimationCurve) As ITweener
+  overload: YJL.Tween.ITweener.SetEase*
+- uid: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  commentId: M:YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  id: SetEase(YJL.Tween.Ease)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: SetEase(Ease)
+  nameWithType: ITweener.SetEase(Ease)
+  fullName: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetEase
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 137
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Easing using built-in Easing type
+  example: []
+  syntax:
+    content: ITweener SetEase(Ease ease)
+    parameters:
+    - id: ease
+      type: YJL.Tween.Ease
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function SetEase(ease As Ease) As ITweener
+  overload: YJL.Tween.ITweener.SetEase*
+- uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  commentId: M:YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  id: SetLoop(YJL.Tween.Loop,System.Int32)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: SetLoop(Loop, int)
+  nameWithType: ITweener.SetLoop(Loop, int)
+  fullName: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetLoop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 145
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Loop Mode and Loop Count
+  example: []
+  syntax:
+    content: ITweener SetLoop(Loop loopMode, int count)
+    parameters:
+    - id: loopMode
+      type: YJL.Tween.Loop
+      description: ''
+    - id: count
+      type: System.Int32
+      description: How many times the loop will run, Loop will run infinitely if count is set to -1
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function SetLoop(loopMode As [Loop], count As Integer) As ITweener
+  overload: YJL.Tween.ITweener.SetLoop*
+  nameWithType.vb: ITweener.SetLoop(Loop, Integer)
+  fullName.vb: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop, Integer)
+  name.vb: SetLoop(Loop, Integer)
+- uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  commentId: M:YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  id: SetLoop(YJL.Tween.Loop)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: SetLoop(Loop)
+  nameWithType: ITweener.SetLoop(Loop)
+  fullName: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetLoop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 152
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Loop Mode, Loop will run infinitely
+  example: []
+  syntax:
+    content: ITweener SetLoop(Loop loopMode)
+    parameters:
+    - id: loopMode
+      type: YJL.Tween.Loop
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function SetLoop(loopMode As [Loop]) As ITweener
+  overload: YJL.Tween.ITweener.SetLoop*
+- uid: YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  commentId: M:YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  id: SetLoopCount(System.Int32)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: SetLoopCount(int)
+  nameWithType: ITweener.SetLoopCount(int)
+  fullName: YJL.Tween.ITweener.SetLoopCount(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetLoopCount
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 159
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Loop Count
+  example: []
+  syntax:
+    content: ITweener SetLoopCount(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function SetLoopCount(count As Integer) As ITweener
+  overload: YJL.Tween.ITweener.SetLoopCount*
+  nameWithType.vb: ITweener.SetLoopCount(Integer)
+  fullName.vb: YJL.Tween.ITweener.SetLoopCount(Integer)
+  name.vb: SetLoopCount(Integer)
+- uid: YJL.Tween.ITweener.Play
+  commentId: M:YJL.Tween.ITweener.Play
+  id: Play
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: ITweener.Play()
+  fullName: YJL.Tween.ITweener.Play()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Play
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 167
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Play the tween
+  example: []
+  syntax:
+    content: ITweener Play()
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function Play() As ITweener
+  overload: YJL.Tween.ITweener.Play*
+- uid: YJL.Tween.ITweener.Pause
+  commentId: M:YJL.Tween.ITweener.Pause
+  id: Pause
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: ITweener.Pause()
+  fullName: YJL.Tween.ITweener.Pause()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Pause
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 173
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Pause the tween, the param will stay at its current value
+  example: []
+  syntax:
+    content: ITweener Pause()
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function Pause() As ITweener
+  overload: YJL.Tween.ITweener.Pause*
+- uid: YJL.Tween.ITweener.Stop
+  commentId: M:YJL.Tween.ITweener.Stop
+  id: Stop
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: ITweener.Stop()
+  fullName: YJL.Tween.ITweener.Stop()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Stop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 179
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Stop the tween, the param will jump back to FromValue
+  example: []
+  syntax:
+    content: ITweener Stop()
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function [Stop]() As ITweener
+  overload: YJL.Tween.ITweener.Stop*
+- uid: YJL.Tween.ITweener.StopAfterStepComplete
+  commentId: M:YJL.Tween.ITweener.StopAfterStepComplete
+  id: StopAfterStepComplete
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: StopAfterStepComplete()
+  nameWithType: ITweener.StopAfterStepComplete()
+  fullName: YJL.Tween.ITweener.StopAfterStepComplete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: StopAfterStepComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 185
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Stop after tween complete current step
+  example: []
+  syntax:
+    content: ITweener StopAfterStepComplete()
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function StopAfterStepComplete() As ITweener
+  overload: YJL.Tween.ITweener.StopAfterStepComplete*
+- uid: YJL.Tween.ITweener.PauseAfterStepComplete
+  commentId: M:YJL.Tween.ITweener.PauseAfterStepComplete
+  id: PauseAfterStepComplete
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: PauseAfterStepComplete()
+  nameWithType: ITweener.PauseAfterStepComplete()
+  fullName: YJL.Tween.ITweener.PauseAfterStepComplete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PauseAfterStepComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 191
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Pause after tween complete current step
+  example: []
+  syntax:
+    content: ITweener PauseAfterStepComplete()
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function PauseAfterStepComplete() As ITweener
+  overload: YJL.Tween.ITweener.PauseAfterStepComplete*
+- uid: YJL.Tween.ITweener.Complete
+  commentId: M:YJL.Tween.ITweener.Complete
+  id: Complete
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: Complete()
+  nameWithType: ITweener.Complete()
+  fullName: YJL.Tween.ITweener.Complete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Complete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 197
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Complete the tween, the param will set to ToValue
+  example: []
+  syntax:
+    content: ITweener Complete()
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function Complete() As ITweener
+  overload: YJL.Tween.ITweener.Complete*
+- uid: YJL.Tween.ITweener.OnStart(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnStart(System.Action)
+  id: OnStart(System.Action)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: OnStart(Action)
+  nameWithType: ITweener.OnStart(Action)
+  fullName: YJL.Tween.ITweener.OnStart(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnStart
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 206
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Callback that will be triggered when the first frame of the Tweener starts
+  example: []
+  syntax:
+    content: ITweener OnStart(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function OnStart(callback As Action) As ITweener
+  overload: YJL.Tween.ITweener.OnStart*
+- uid: YJL.Tween.ITweener.OnPlay(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnPlay(System.Action)
+  id: OnPlay(System.Action)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: OnPlay(Action)
+  nameWithType: ITweener.OnPlay(Action)
+  fullName: YJL.Tween.ITweener.OnPlay(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnPlay
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 213
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Callback that will be triggered each frame this tweener is playing
+  example: []
+  syntax:
+    content: ITweener OnPlay(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function OnPlay(callback As Action) As ITweener
+  overload: YJL.Tween.ITweener.OnPlay*
+- uid: YJL.Tween.ITweener.OnPause(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnPause(System.Action)
+  id: OnPause(System.Action)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: OnPause(Action)
+  nameWithType: ITweener.OnPause(Action)
+  fullName: YJL.Tween.ITweener.OnPause(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnPause
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 220
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Callback that will be triggered when this tweener is paused
+  example: []
+  syntax:
+    content: ITweener OnPause(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function OnPause(callback As Action) As ITweener
+  overload: YJL.Tween.ITweener.OnPause*
+- uid: YJL.Tween.ITweener.OnStop(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnStop(System.Action)
+  id: OnStop(System.Action)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: OnStop(Action)
+  nameWithType: ITweener.OnStop(Action)
+  fullName: YJL.Tween.ITweener.OnStop(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnStop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 227
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Callback that will be triggered when this tweener is stopped
+  example: []
+  syntax:
+    content: ITweener OnStop(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function OnStop(callback As Action) As ITweener
+  overload: YJL.Tween.ITweener.OnStop*
+- uid: YJL.Tween.ITweener.OnComplete(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnComplete(System.Action)
+  id: OnComplete(System.Action)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: OnComplete(Action)
+  nameWithType: ITweener.OnComplete(Action)
+  fullName: YJL.Tween.ITweener.OnComplete(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 234
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set Callback that will be triggered when this tweener is completed
+  example: []
+  syntax:
+    content: ITweener OnComplete(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function OnComplete(callback As Action) As ITweener
+  overload: YJL.Tween.ITweener.OnComplete*
+- uid: YJL.Tween.ITweener.OnStepComplete(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnStepComplete(System.Action)
+  id: OnStepComplete(System.Action)
+  parent: YJL.Tween.ITweener
+  langs:
+  - csharp
+  - vb
+  name: OnStepComplete(Action)
+  nameWithType: ITweener.OnStepComplete(Action)
+  fullName: YJL.Tween.ITweener.OnStepComplete(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnStepComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 241
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when this tweener complete one step
+  example: []
+  syntax:
+    content: ITweener OnStepComplete(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Function OnStepComplete(callback As Action) As ITweener
+  overload: YJL.Tween.ITweener.OnStepComplete*
+references:
+- uid: YJL.Tween
+  commentId: N:YJL.Tween
+  href: YJL.html
+  name: YJL.Tween
+  nameWithType: YJL.Tween
+  fullName: YJL.Tween
+  spec.csharp:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+  spec.vb:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+- uid: YJL.Tween.ITweener.IsCompleted*
+  commentId: Overload:YJL.Tween.ITweener.IsCompleted
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.IsCompleted
+  name: IsCompleted
+  nameWithType: ITweener.IsCompleted
+  fullName: YJL.Tween.ITweener.IsCompleted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YJL.Tween.ITweener.IsStepCompleted*
+  commentId: Overload:YJL.Tween.ITweener.IsStepCompleted
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.IsStepCompleted
+  name: IsStepCompleted
+  nameWithType: ITweener.IsStepCompleted
+  fullName: YJL.Tween.ITweener.IsStepCompleted
+- uid: YJL.Tween.ITweener.StopAfterStepCompleteFlag*
+  commentId: Overload:YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  name: StopAfterStepCompleteFlag
+  nameWithType: ITweener.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.PauseAfterStepCompleteFlag*
+  commentId: Overload:YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  name: PauseAfterStepCompleteFlag
+  nameWithType: ITweener.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.SetEase*
+  commentId: Overload:YJL.Tween.ITweener.SetEase
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  name: SetEase
+  nameWithType: ITweener.SetEase
+  fullName: YJL.Tween.ITweener.SetEase
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+- uid: YJL.Tween.ITweener
+  commentId: T:YJL.Tween.ITweener
+  parent: YJL.Tween
+  href: YJL.Tween.ITweener.html
+  name: ITweener
+  nameWithType: ITweener
+  fullName: YJL.Tween.ITweener
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YJL.Tween.Ease
+  commentId: T:YJL.Tween.Ease
+  parent: YJL.Tween
+  href: YJL.Tween.Ease.html
+  name: Ease
+  nameWithType: Ease
+  fullName: YJL.Tween.Ease
+- uid: YJL.Tween.ITweener.SetLoop*
+  commentId: Overload:YJL.Tween.ITweener.SetLoop
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  name: SetLoop
+  nameWithType: ITweener.SetLoop
+  fullName: YJL.Tween.ITweener.SetLoop
+- uid: YJL.Tween.Loop
+  commentId: T:YJL.Tween.Loop
+  parent: YJL.Tween
+  href: YJL.Tween.Loop.html
+  name: Loop
+  nameWithType: Loop
+  fullName: YJL.Tween.Loop
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: YJL.Tween.ITweener.SetLoopCount*
+  commentId: Overload:YJL.Tween.ITweener.SetLoopCount
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  name: SetLoopCount
+  nameWithType: ITweener.SetLoopCount
+  fullName: YJL.Tween.ITweener.SetLoopCount
+- uid: YJL.Tween.ITweener.Play*
+  commentId: Overload:YJL.Tween.ITweener.Play
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Play
+  name: Play
+  nameWithType: ITweener.Play
+  fullName: YJL.Tween.ITweener.Play
+- uid: YJL.Tween.ITweener.Pause*
+  commentId: Overload:YJL.Tween.ITweener.Pause
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Pause
+  name: Pause
+  nameWithType: ITweener.Pause
+  fullName: YJL.Tween.ITweener.Pause
+- uid: YJL.Tween.ITweener.Stop*
+  commentId: Overload:YJL.Tween.ITweener.Stop
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Stop
+  name: Stop
+  nameWithType: ITweener.Stop
+  fullName: YJL.Tween.ITweener.Stop
+- uid: YJL.Tween.ITweener.StopAfterStepComplete*
+  commentId: Overload:YJL.Tween.ITweener.StopAfterStepComplete
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.StopAfterStepComplete
+  name: StopAfterStepComplete
+  nameWithType: ITweener.StopAfterStepComplete
+  fullName: YJL.Tween.ITweener.StopAfterStepComplete
+- uid: YJL.Tween.ITweener.PauseAfterStepComplete*
+  commentId: Overload:YJL.Tween.ITweener.PauseAfterStepComplete
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.PauseAfterStepComplete
+  name: PauseAfterStepComplete
+  nameWithType: ITweener.PauseAfterStepComplete
+  fullName: YJL.Tween.ITweener.PauseAfterStepComplete
+- uid: YJL.Tween.ITweener.Complete*
+  commentId: Overload:YJL.Tween.ITweener.Complete
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Complete
+  name: Complete
+  nameWithType: ITweener.Complete
+  fullName: YJL.Tween.ITweener.Complete
+- uid: YJL.Tween.ITweener.OnStart*
+  commentId: Overload:YJL.Tween.ITweener.OnStart
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStart(System.Action)
+  name: OnStart
+  nameWithType: ITweener.OnStart
+  fullName: YJL.Tween.ITweener.OnStart
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: YJL.Tween.ITweener.OnPlay*
+  commentId: Overload:YJL.Tween.ITweener.OnPlay
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPlay(System.Action)
+  name: OnPlay
+  nameWithType: ITweener.OnPlay
+  fullName: YJL.Tween.ITweener.OnPlay
+- uid: YJL.Tween.ITweener.OnPause*
+  commentId: Overload:YJL.Tween.ITweener.OnPause
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPause(System.Action)
+  name: OnPause
+  nameWithType: ITweener.OnPause
+  fullName: YJL.Tween.ITweener.OnPause
+- uid: YJL.Tween.ITweener.OnStop*
+  commentId: Overload:YJL.Tween.ITweener.OnStop
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStop(System.Action)
+  name: OnStop
+  nameWithType: ITweener.OnStop
+  fullName: YJL.Tween.ITweener.OnStop
+- uid: YJL.Tween.ITweener.OnComplete*
+  commentId: Overload:YJL.Tween.ITweener.OnComplete
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnComplete(System.Action)
+  name: OnComplete
+  nameWithType: ITweener.OnComplete
+  fullName: YJL.Tween.ITweener.OnComplete
+- uid: YJL.Tween.ITweener.OnStepComplete*
+  commentId: Overload:YJL.Tween.ITweener.OnStepComplete
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStepComplete(System.Action)
+  name: OnStepComplete
+  nameWithType: ITweener.OnStepComplete
+  fullName: YJL.Tween.ITweener.OnStepComplete

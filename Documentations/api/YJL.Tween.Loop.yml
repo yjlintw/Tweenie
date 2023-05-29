@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: YJL.Tween.Loop
+  commentId: T:YJL.Tween.Loop
+  id: Loop
+  parent: YJL.Tween
+  children:
+  - YJL.Tween.Loop.Default
+  - YJL.Tween.Loop.PingPong
+  langs:
+  - csharp
+  - vb
+  name: Loop
+  nameWithType: Loop
+  fullName: YJL.Tween.Loop
+  type: Enum
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Loop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 23
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The loop enum
+  example: []
+  syntax:
+    content: public enum Loop
+    content.vb: Public Enum [Loop]
+- uid: YJL.Tween.Loop.Default
+  commentId: F:YJL.Tween.Loop.Default
+  id: Default
+  parent: YJL.Tween.Loop
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: Loop.Default
+  fullName: YJL.Tween.Loop.Default
+  type: Field
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Default
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 28
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The default loop
+  example: []
+  syntax:
+    content: Default = 0
+    return:
+      type: YJL.Tween.Loop
+- uid: YJL.Tween.Loop.PingPong
+  commentId: F:YJL.Tween.Loop.PingPong
+  id: PingPong
+  parent: YJL.Tween.Loop
+  langs:
+  - csharp
+  - vb
+  name: PingPong
+  nameWithType: Loop.PingPong
+  fullName: YJL.Tween.Loop.PingPong
+  type: Field
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PingPong
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 32
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The ping pong loop
+  example: []
+  syntax:
+    content: PingPong = 1
+    return:
+      type: YJL.Tween.Loop
+references:
+- uid: YJL.Tween
+  commentId: N:YJL.Tween
+  href: YJL.html
+  name: YJL.Tween
+  nameWithType: YJL.Tween
+  fullName: YJL.Tween
+  spec.csharp:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+  spec.vb:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+- uid: YJL.Tween.Loop
+  commentId: T:YJL.Tween.Loop
+  parent: YJL.Tween
+  href: YJL.Tween.Loop.html
+  name: Loop
+  nameWithType: Loop
+  fullName: YJL.Tween.Loop

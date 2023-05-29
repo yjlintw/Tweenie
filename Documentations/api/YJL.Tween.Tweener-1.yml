@@ -1,0 +1,2306 @@
+### YamlMime:ManagedReference
+items:
+- uid: YJL.Tween.Tweener`1
+  commentId: T:YJL.Tween.Tweener`1
+  id: Tweener`1
+  parent: YJL.Tween
+  children:
+  - YJL.Tween.Tweener`1.Complete
+  - YJL.Tween.Tweener`1.Duration
+  - YJL.Tween.Tweener`1.FromValue
+  - YJL.Tween.Tweener`1.IsCompleted
+  - YJL.Tween.Tweener`1.IsStepCompleted
+  - YJL.Tween.Tweener`1.LerpFunc
+  - YJL.Tween.Tweener`1.OnComplete(System.Action)
+  - YJL.Tween.Tweener`1.OnPause(System.Action)
+  - YJL.Tween.Tweener`1.OnPlay(System.Action)
+  - YJL.Tween.Tweener`1.OnStart(System.Action)
+  - YJL.Tween.Tweener`1.OnStepComplete(System.Action)
+  - YJL.Tween.Tweener`1.OnStop(System.Action)
+  - YJL.Tween.Tweener`1.Param
+  - YJL.Tween.Tweener`1.Pause
+  - YJL.Tween.Tweener`1.PauseAfterStepComplete
+  - YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  - YJL.Tween.Tweener`1.Play
+  - YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
+  - YJL.Tween.Tweener`1.SetEase(YJL.Tween.Ease)
+  - YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop)
+  - YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop,System.Int32)
+  - YJL.Tween.Tweener`1.SetLoopCount(System.Int32)
+  - YJL.Tween.Tweener`1.Stop
+  - YJL.Tween.Tweener`1.StopAfterStepComplete
+  - YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  - YJL.Tween.Tweener`1.ToValue
+  langs:
+  - csharp
+  - vb
+  name: Tweener<T>
+  nameWithType: Tweener<T>
+  fullName: YJL.Tween.Tweener<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Tweener
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 250
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The tweener class
+  example: []
+  syntax:
+    content: 'public sealed class Tweener<T> : ITweener, ITweenData<T>'
+    typeParameters:
+    - id: T
+    content.vb: Public NotInheritable Class Tweener(Of T) Implements ITweener, ITweenData(Of T)
+  seealso:
+  - linkId: YJL.Tween.ITweener
+    commentId: T:YJL.Tween.ITweener
+  - linkId: YJL.Tween.ITweenData`1
+    commentId: T:YJL.Tween.ITweenData`1
+  inheritance:
+  - System.Object
+  implements:
+  - YJL.Tween.ITweener
+  - YJL.Tween.ITweenData{{T}}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: Tweener(Of T)
+  fullName.vb: YJL.Tween.Tweener(Of T)
+  name.vb: Tweener(Of T)
+- uid: YJL.Tween.Tweener`1.Param
+  commentId: P:YJL.Tween.Tweener`1.Param
+  id: Param
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Param
+  nameWithType: Tweener<T>.Param
+  fullName: YJL.Tween.Tweener<T>.Param
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Param
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 256
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Parameter Setter
+  example: []
+  syntax:
+    content: public Action<T> Param { get; set; }
+    parameters: []
+    return:
+      type: System.Action{{T}}
+    content.vb: Public Property Param As Action(Of T)
+  overload: YJL.Tween.Tweener`1.Param*
+  implements:
+  - YJL.Tween.ITweenData{{T}}.Param
+  nameWithType.vb: Tweener(Of T).Param
+  fullName.vb: YJL.Tween.Tweener(Of T).Param
+- uid: YJL.Tween.Tweener`1.FromValue
+  commentId: P:YJL.Tween.Tweener`1.FromValue
+  id: FromValue
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: FromValue
+  nameWithType: Tweener<T>.FromValue
+  fullName: YJL.Tween.Tweener<T>.FromValue
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: FromValue
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 260
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The value this Tweener starts from
+  example: []
+  syntax:
+    content: public T FromValue { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property FromValue As T
+  overload: YJL.Tween.Tweener`1.FromValue*
+  implements:
+  - YJL.Tween.ITweenData{{T}}.FromValue
+  nameWithType.vb: Tweener(Of T).FromValue
+  fullName.vb: YJL.Tween.Tweener(Of T).FromValue
+- uid: YJL.Tween.Tweener`1.ToValue
+  commentId: P:YJL.Tween.Tweener`1.ToValue
+  id: ToValue
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: ToValue
+  nameWithType: Tweener<T>.ToValue
+  fullName: YJL.Tween.Tweener<T>.ToValue
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: ToValue
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 264
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The value this Tweener will be set to
+  example: []
+  syntax:
+    content: public T ToValue { get; set; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public Property ToValue As T
+  overload: YJL.Tween.Tweener`1.ToValue*
+  implements:
+  - YJL.Tween.ITweenData{{T}}.ToValue
+  nameWithType.vb: Tweener(Of T).ToValue
+  fullName.vb: YJL.Tween.Tweener(Of T).ToValue
+- uid: YJL.Tween.Tweener`1.Duration
+  commentId: P:YJL.Tween.Tweener`1.Duration
+  id: Duration
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Tweener<T>.Duration
+  fullName: YJL.Tween.Tweener<T>.Duration
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Duration
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 268
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The time in seconds it will take from FromValue to ToValue
+  example: []
+  syntax:
+    content: public float Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property Duration As Single
+  overload: YJL.Tween.Tweener`1.Duration*
+  implements:
+  - YJL.Tween.ITweenData{{T}}.Duration
+  nameWithType.vb: Tweener(Of T).Duration
+  fullName.vb: YJL.Tween.Tweener(Of T).Duration
+- uid: YJL.Tween.Tweener`1.LerpFunc
+  commentId: P:YJL.Tween.Tweener`1.LerpFunc
+  id: LerpFunc
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: LerpFunc
+  nameWithType: Tweener<T>.LerpFunc
+  fullName: YJL.Tween.Tweener<T>.LerpFunc
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: LerpFunc
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 272
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The interpolation function from FromValue to ToValue, controlled by a t(0.0f to 1.0f)
+  example: []
+  syntax:
+    content: public Func<T, T, float, T> LerpFunc { get; set; }
+    parameters: []
+    return:
+      type: System.Func{{T},{T},System.Single,{T}}
+    content.vb: Public Property LerpFunc As Func(Of T, T, Single, T)
+  overload: YJL.Tween.Tweener`1.LerpFunc*
+  implements:
+  - YJL.Tween.ITweenData{{T}}.LerpFunc
+  nameWithType.vb: Tweener(Of T).LerpFunc
+  fullName.vb: YJL.Tween.Tweener(Of T).LerpFunc
+- uid: YJL.Tween.Tweener`1.IsCompleted
+  commentId: P:YJL.Tween.Tweener`1.IsCompleted
+  id: IsCompleted
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: IsCompleted
+  nameWithType: Tweener<T>.IsCompleted
+  fullName: YJL.Tween.Tweener<T>.IsCompleted
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: IsCompleted
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 279
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if current Tweener is completed
+  example: []
+  syntax:
+    content: public bool IsCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsCompleted As Boolean
+  overload: YJL.Tween.Tweener`1.IsCompleted*
+  implements:
+  - YJL.Tween.ITweener.IsCompleted
+  nameWithType.vb: Tweener(Of T).IsCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsCompleted
+- uid: YJL.Tween.Tweener`1.IsStepCompleted
+  commentId: P:YJL.Tween.Tweener`1.IsStepCompleted
+  id: IsStepCompleted
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: IsStepCompleted
+  nameWithType: Tweener<T>.IsStepCompleted
+  fullName: YJL.Tween.Tweener<T>.IsStepCompleted
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: IsStepCompleted
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 283
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if current Tweener has a step completed
+  example: []
+  syntax:
+    content: public bool IsStepCompleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsStepCompleted As Boolean
+  overload: YJL.Tween.Tweener`1.IsStepCompleted*
+  implements:
+  - YJL.Tween.ITweener.IsStepCompleted
+  nameWithType.vb: Tweener(Of T).IsStepCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsStepCompleted
+- uid: YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  commentId: P:YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  id: StopAfterStepCompleteFlag
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: StopAfterStepCompleteFlag
+  nameWithType: Tweener<T>.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepCompleteFlag
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: StopAfterStepCompleteFlag
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 288
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if the Tweener should stop after it reaches to a step complete
+  example: []
+  syntax:
+    content: public bool StopAfterStepCompleteFlag { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property StopAfterStepCompleteFlag As Boolean
+  overload: YJL.Tween.Tweener`1.StopAfterStepCompleteFlag*
+  implements:
+  - YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).StopAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  commentId: P:YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  id: PauseAfterStepCompleteFlag
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: PauseAfterStepCompleteFlag
+  nameWithType: Tweener<T>.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepCompleteFlag
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PauseAfterStepCompleteFlag
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 292
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Flag shows if the tweener should pause after it reaches to a step complete
+  example: []
+  syntax:
+    content: public bool PauseAfterStepCompleteFlag { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property PauseAfterStepCompleteFlag As Boolean
+  overload: YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag*
+  implements:
+  - YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).PauseAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.Play
+  commentId: M:YJL.Tween.Tweener`1.Play
+  id: Play
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Play()
+  nameWithType: Tweener<T>.Play()
+  fullName: YJL.Tween.Tweener<T>.Play()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Play
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 425
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Plays this Tweener
+  example: []
+  syntax:
+    content: public ITweener Play()
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function Play() As ITweener
+  overload: YJL.Tween.Tweener`1.Play*
+  implements:
+  - YJL.Tween.ITweener.Play
+  nameWithType.vb: Tweener(Of T).Play()
+  fullName.vb: YJL.Tween.Tweener(Of T).Play()
+- uid: YJL.Tween.Tweener`1.Pause
+  commentId: M:YJL.Tween.Tweener`1.Pause
+  id: Pause
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Pause()
+  nameWithType: Tweener<T>.Pause()
+  fullName: YJL.Tween.Tweener<T>.Pause()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Pause
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 438
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Pauses this Tweener
+  example: []
+  syntax:
+    content: public ITweener Pause()
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function Pause() As ITweener
+  overload: YJL.Tween.Tweener`1.Pause*
+  implements:
+  - YJL.Tween.ITweener.Pause
+  nameWithType.vb: Tweener(Of T).Pause()
+  fullName.vb: YJL.Tween.Tweener(Of T).Pause()
+- uid: YJL.Tween.Tweener`1.Stop
+  commentId: M:YJL.Tween.Tweener`1.Stop
+  id: Stop
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: Tweener<T>.Stop()
+  fullName: YJL.Tween.Tweener<T>.Stop()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Stop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 447
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Stops this Tweener
+  example: []
+  syntax:
+    content: public ITweener Stop()
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function [Stop]() As ITweener
+  overload: YJL.Tween.Tweener`1.Stop*
+  implements:
+  - YJL.Tween.ITweener.Stop
+  nameWithType.vb: Tweener(Of T).Stop()
+  fullName.vb: YJL.Tween.Tweener(Of T).Stop()
+- uid: YJL.Tween.Tweener`1.StopAfterStepComplete
+  commentId: M:YJL.Tween.Tweener`1.StopAfterStepComplete
+  id: StopAfterStepComplete
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: StopAfterStepComplete()
+  nameWithType: Tweener<T>.StopAfterStepComplete()
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepComplete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: StopAfterStepComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 456
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Stops the after step complete
+  example: []
+  syntax:
+    content: public ITweener StopAfterStepComplete()
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function StopAfterStepComplete() As ITweener
+  overload: YJL.Tween.Tweener`1.StopAfterStepComplete*
+  implements:
+  - YJL.Tween.ITweener.StopAfterStepComplete
+  nameWithType.vb: Tweener(Of T).StopAfterStepComplete()
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepComplete()
+- uid: YJL.Tween.Tweener`1.PauseAfterStepComplete
+  commentId: M:YJL.Tween.Tweener`1.PauseAfterStepComplete
+  id: PauseAfterStepComplete
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: PauseAfterStepComplete()
+  nameWithType: Tweener<T>.PauseAfterStepComplete()
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepComplete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PauseAfterStepComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 466
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Pauses this Tweener after step complete
+  example: []
+  syntax:
+    content: public ITweener PauseAfterStepComplete()
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function PauseAfterStepComplete() As ITweener
+  overload: YJL.Tween.Tweener`1.PauseAfterStepComplete*
+  implements:
+  - YJL.Tween.ITweener.PauseAfterStepComplete
+  nameWithType.vb: Tweener(Of T).PauseAfterStepComplete()
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepComplete()
+- uid: YJL.Tween.Tweener`1.Complete
+  commentId: M:YJL.Tween.Tweener`1.Complete
+  id: Complete
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Complete()
+  nameWithType: Tweener<T>.Complete()
+  fullName: YJL.Tween.Tweener<T>.Complete()
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Complete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 476
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Completes this Tweener
+  example: []
+  syntax:
+    content: public ITweener Complete()
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function Complete() As ITweener
+  overload: YJL.Tween.Tweener`1.Complete*
+  implements:
+  - YJL.Tween.ITweener.Complete
+  nameWithType.vb: Tweener(Of T).Complete()
+  fullName.vb: YJL.Tween.Tweener(Of T).Complete()
+- uid: YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
+  commentId: M:YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
+  id: SetEase(UnityEngine.AnimationCurve)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: SetEase(AnimationCurve)
+  nameWithType: Tweener<T>.SetEase(AnimationCurve)
+  fullName: YJL.Tween.Tweener<T>.SetEase(UnityEngine.AnimationCurve)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetEase
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 490
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Sets the ease using the specified curve
+  example: []
+  syntax:
+    content: public ITweener SetEase(AnimationCurve curve)
+    parameters:
+    - id: curve
+      type: UnityEngine.AnimationCurve
+      description: The curve
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function SetEase(curve As AnimationCurve) As ITweener
+  overload: YJL.Tween.Tweener`1.SetEase*
+  implements:
+  - YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  nameWithType.vb: Tweener(Of T).SetEase(AnimationCurve)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetEase(UnityEngine.AnimationCurve)
+- uid: YJL.Tween.Tweener`1.SetEase(YJL.Tween.Ease)
+  commentId: M:YJL.Tween.Tweener`1.SetEase(YJL.Tween.Ease)
+  id: SetEase(YJL.Tween.Ease)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: SetEase(Ease)
+  nameWithType: Tweener<T>.SetEase(Ease)
+  fullName: YJL.Tween.Tweener<T>.SetEase(YJL.Tween.Ease)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetEase
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 501
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Sets the ease using the specified ease type
+  example: []
+  syntax:
+    content: public ITweener SetEase(Ease easeType)
+    parameters:
+    - id: easeType
+      type: YJL.Tween.Ease
+      description: The ease type
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function SetEase(easeType As Ease) As ITweener
+  overload: YJL.Tween.Tweener`1.SetEase*
+  implements:
+  - YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  nameWithType.vb: Tweener(Of T).SetEase(Ease)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetEase(YJL.Tween.Ease)
+- uid: YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop)
+  commentId: M:YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop)
+  id: SetLoop(YJL.Tween.Loop)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: SetLoop(Loop)
+  nameWithType: Tweener<T>.SetLoop(Loop)
+  fullName: YJL.Tween.Tweener<T>.SetLoop(YJL.Tween.Loop)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetLoop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 522
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Sets the loop using the specified loop mode
+  example: []
+  syntax:
+    content: public ITweener SetLoop(Loop loopMode)
+    parameters:
+    - id: loopMode
+      type: YJL.Tween.Loop
+      description: The loop mode
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function SetLoop(loopMode As [Loop]) As ITweener
+  overload: YJL.Tween.Tweener`1.SetLoop*
+  implements:
+  - YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  nameWithType.vb: Tweener(Of T).SetLoop(Loop)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoop(YJL.Tween.Loop)
+- uid: YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop,System.Int32)
+  commentId: M:YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop,System.Int32)
+  id: SetLoop(YJL.Tween.Loop,System.Int32)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: SetLoop(Loop, int)
+  nameWithType: Tweener<T>.SetLoop(Loop, int)
+  fullName: YJL.Tween.Tweener<T>.SetLoop(YJL.Tween.Loop, int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetLoop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 533
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Sets the loop using the specified loop mode
+  example: []
+  syntax:
+    content: public ITweener SetLoop(Loop loopMode, int count)
+    parameters:
+    - id: loopMode
+      type: YJL.Tween.Loop
+      description: The loop mode
+    - id: count
+      type: System.Int32
+      description: The count
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function SetLoop(loopMode As [Loop], count As Integer) As ITweener
+  overload: YJL.Tween.Tweener`1.SetLoop*
+  implements:
+  - YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  nameWithType.vb: Tweener(Of T).SetLoop(Loop, Integer)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoop(YJL.Tween.Loop, Integer)
+  name.vb: SetLoop(Loop, Integer)
+- uid: YJL.Tween.Tweener`1.SetLoopCount(System.Int32)
+  commentId: M:YJL.Tween.Tweener`1.SetLoopCount(System.Int32)
+  id: SetLoopCount(System.Int32)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: SetLoopCount(int)
+  nameWithType: Tweener<T>.SetLoopCount(int)
+  fullName: YJL.Tween.Tweener<T>.SetLoopCount(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: SetLoopCount
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 545
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Sets the loop count using the specified count
+  example: []
+  syntax:
+    content: public ITweener SetLoopCount(int count)
+    parameters:
+    - id: count
+      type: System.Int32
+      description: The count
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function SetLoopCount(count As Integer) As ITweener
+  overload: YJL.Tween.Tweener`1.SetLoopCount*
+  implements:
+  - YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  nameWithType.vb: Tweener(Of T).SetLoopCount(Integer)
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoopCount(Integer)
+  name.vb: SetLoopCount(Integer)
+- uid: YJL.Tween.Tweener`1.OnStart(System.Action)
+  commentId: M:YJL.Tween.Tweener`1.OnStart(System.Action)
+  id: OnStart(System.Action)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: OnStart(Action)
+  nameWithType: Tweener<T>.OnStart(Action)
+  fullName: YJL.Tween.Tweener<T>.OnStart(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnStart
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 558
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when the tweener has started
+  example: []
+  syntax:
+    content: public ITweener OnStart(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: The callback
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function OnStart(callback As Action) As ITweener
+  overload: YJL.Tween.Tweener`1.OnStart*
+  implements:
+  - YJL.Tween.ITweener.OnStart(System.Action)
+  nameWithType.vb: Tweener(Of T).OnStart(Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStart(System.Action)
+- uid: YJL.Tween.Tweener`1.OnPlay(System.Action)
+  commentId: M:YJL.Tween.Tweener`1.OnPlay(System.Action)
+  id: OnPlay(System.Action)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: OnPlay(Action)
+  nameWithType: Tweener<T>.OnPlay(Action)
+  fullName: YJL.Tween.Tweener<T>.OnPlay(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnPlay
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 569
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when the tweener is playing
+  example: []
+  syntax:
+    content: public ITweener OnPlay(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: The callback
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function OnPlay(callback As Action) As ITweener
+  overload: YJL.Tween.Tweener`1.OnPlay*
+  implements:
+  - YJL.Tween.ITweener.OnPlay(System.Action)
+  nameWithType.vb: Tweener(Of T).OnPlay(Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPlay(System.Action)
+- uid: YJL.Tween.Tweener`1.OnPause(System.Action)
+  commentId: M:YJL.Tween.Tweener`1.OnPause(System.Action)
+  id: OnPause(System.Action)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: OnPause(Action)
+  nameWithType: Tweener<T>.OnPause(Action)
+  fullName: YJL.Tween.Tweener<T>.OnPause(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnPause
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 580
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when the tweener is paused
+  example: []
+  syntax:
+    content: public ITweener OnPause(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: The callback
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function OnPause(callback As Action) As ITweener
+  overload: YJL.Tween.Tweener`1.OnPause*
+  implements:
+  - YJL.Tween.ITweener.OnPause(System.Action)
+  nameWithType.vb: Tweener(Of T).OnPause(Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPause(System.Action)
+- uid: YJL.Tween.Tweener`1.OnStop(System.Action)
+  commentId: M:YJL.Tween.Tweener`1.OnStop(System.Action)
+  id: OnStop(System.Action)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: OnStop(Action)
+  nameWithType: Tweener<T>.OnStop(Action)
+  fullName: YJL.Tween.Tweener<T>.OnStop(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnStop
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 591
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when the tweener is stopped
+  example: []
+  syntax:
+    content: public ITweener OnStop(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: The callback
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function OnStop(callback As Action) As ITweener
+  overload: YJL.Tween.Tweener`1.OnStop*
+  implements:
+  - YJL.Tween.ITweener.OnStop(System.Action)
+  nameWithType.vb: Tweener(Of T).OnStop(Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStop(System.Action)
+- uid: YJL.Tween.Tweener`1.OnComplete(System.Action)
+  commentId: M:YJL.Tween.Tweener`1.OnComplete(System.Action)
+  id: OnComplete(System.Action)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: OnComplete(Action)
+  nameWithType: Tweener<T>.OnComplete(Action)
+  fullName: YJL.Tween.Tweener<T>.OnComplete(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 602
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when the tweener is completed
+  example: []
+  syntax:
+    content: public ITweener OnComplete(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: The callback
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function OnComplete(callback As Action) As ITweener
+  overload: YJL.Tween.Tweener`1.OnComplete*
+  implements:
+  - YJL.Tween.ITweener.OnComplete(System.Action)
+  nameWithType.vb: Tweener(Of T).OnComplete(Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnComplete(System.Action)
+- uid: YJL.Tween.Tweener`1.OnStepComplete(System.Action)
+  commentId: M:YJL.Tween.Tweener`1.OnStepComplete(System.Action)
+  id: OnStepComplete(System.Action)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: OnStepComplete(Action)
+  nameWithType: Tweener<T>.OnStepComplete(Action)
+  fullName: YJL.Tween.Tweener<T>.OnStepComplete(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: OnStepComplete
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 613
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Set callback that will be triggered when the tweener completed one step
+  example: []
+  syntax:
+    content: public ITweener OnStepComplete(Action callback)
+    parameters:
+    - id: callback
+      type: System.Action
+      description: The callback
+    return:
+      type: YJL.Tween.ITweener
+      description: The tweener
+    content.vb: Public Function OnStepComplete(callback As Action) As ITweener
+  overload: YJL.Tween.Tweener`1.OnStepComplete*
+  implements:
+  - YJL.Tween.ITweener.OnStepComplete(System.Action)
+  nameWithType.vb: Tweener(Of T).OnStepComplete(Action)
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStepComplete(System.Action)
+references:
+- uid: YJL.Tween.ITweener
+  commentId: T:YJL.Tween.ITweener
+  parent: YJL.Tween
+  href: YJL.Tween.ITweener.html
+  name: ITweener
+  nameWithType: ITweener
+  fullName: YJL.Tween.ITweener
+- uid: YJL.Tween.ITweenData`1
+  commentId: T:YJL.Tween.ITweenData`1
+  href: YJL.Tween.ITweenData-1.html
+  name: ITweenData<T>
+  nameWithType: ITweenData<T>
+  fullName: YJL.Tween.ITweenData<T>
+  nameWithType.vb: ITweenData(Of T)
+  fullName.vb: YJL.Tween.ITweenData(Of T)
+  name.vb: ITweenData(Of T)
+  spec.csharp:
+  - uid: YJL.Tween.ITweenData`1
+    name: ITweenData
+    href: YJL.Tween.ITweenData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YJL.Tween.ITweenData`1
+    name: ITweenData
+    href: YJL.Tween.ITweenData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YJL.Tween
+  commentId: N:YJL.Tween
+  href: YJL.html
+  name: YJL.Tween
+  nameWithType: YJL.Tween
+  fullName: YJL.Tween
+  spec.csharp:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+  spec.vb:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: YJL.Tween.ITweenData{{T}}
+  commentId: T:YJL.Tween.ITweenData{`0}
+  parent: YJL.Tween
+  definition: YJL.Tween.ITweenData`1
+  href: YJL.Tween.ITweenData-1.html
+  name: ITweenData<T>
+  nameWithType: ITweenData<T>
+  fullName: YJL.Tween.ITweenData<T>
+  nameWithType.vb: ITweenData(Of T)
+  fullName.vb: YJL.Tween.ITweenData(Of T)
+  name.vb: ITweenData(Of T)
+  spec.csharp:
+  - uid: YJL.Tween.ITweenData`1
+    name: ITweenData
+    href: YJL.Tween.ITweenData-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: YJL.Tween.ITweenData`1
+    name: ITweenData
+    href: YJL.Tween.ITweenData-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: YJL.Tween.Tweener`1.Param*
+  commentId: Overload:YJL.Tween.Tweener`1.Param
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Param
+  name: Param
+  nameWithType: Tweener<T>.Param
+  fullName: YJL.Tween.Tweener<T>.Param
+  nameWithType.vb: Tweener(Of T).Param
+  fullName.vb: YJL.Tween.Tweener(Of T).Param
+- uid: YJL.Tween.ITweenData{{T}}.Param
+  commentId: P:YJL.Tween.ITweenData{`0}.Param
+  parent: YJL.Tween.ITweenData{{T}}
+  definition: YJL.Tween.ITweenData`1.Param
+  href: YJL.Tween.ITweenData{-0}.html#YJL.Tween.ITweenData{`0}.Param
+  name: Param
+  nameWithType: ITweenData<T>.Param
+  fullName: YJL.Tween.ITweenData<T>.Param
+  nameWithType.vb: ITweenData(Of T).Param
+  fullName.vb: YJL.Tween.ITweenData(Of T).Param
+- uid: System.Action{{T}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YJL.Tween.ITweenData`1.Param
+  commentId: P:YJL.Tween.ITweenData`1.Param
+  href: YJL.Tween.ITweenData-1.html#YJL.Tween.ITweenData`1.Param
+  name: Param
+  nameWithType: ITweenData<T>.Param
+  fullName: YJL.Tween.ITweenData<T>.Param
+  nameWithType.vb: ITweenData(Of T).Param
+  fullName.vb: YJL.Tween.ITweenData(Of T).Param
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: YJL.Tween.Tweener`1.FromValue*
+  commentId: Overload:YJL.Tween.Tweener`1.FromValue
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.FromValue
+  name: FromValue
+  nameWithType: Tweener<T>.FromValue
+  fullName: YJL.Tween.Tweener<T>.FromValue
+  nameWithType.vb: Tweener(Of T).FromValue
+  fullName.vb: YJL.Tween.Tweener(Of T).FromValue
+- uid: YJL.Tween.ITweenData{{T}}.FromValue
+  commentId: P:YJL.Tween.ITweenData{`0}.FromValue
+  parent: YJL.Tween.ITweenData{{T}}
+  definition: YJL.Tween.ITweenData`1.FromValue
+  href: YJL.Tween.ITweenData{-0}.html#YJL.Tween.ITweenData{`0}.FromValue
+  name: FromValue
+  nameWithType: ITweenData<T>.FromValue
+  fullName: YJL.Tween.ITweenData<T>.FromValue
+  nameWithType.vb: ITweenData(Of T).FromValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).FromValue
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: YJL.Tween.ITweenData`1.FromValue
+  commentId: P:YJL.Tween.ITweenData`1.FromValue
+  href: YJL.Tween.ITweenData-1.html#YJL.Tween.ITweenData`1.FromValue
+  name: FromValue
+  nameWithType: ITweenData<T>.FromValue
+  fullName: YJL.Tween.ITweenData<T>.FromValue
+  nameWithType.vb: ITweenData(Of T).FromValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).FromValue
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: YJL.Tween.Tweener`1.ToValue*
+  commentId: Overload:YJL.Tween.Tweener`1.ToValue
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.ToValue
+  name: ToValue
+  nameWithType: Tweener<T>.ToValue
+  fullName: YJL.Tween.Tweener<T>.ToValue
+  nameWithType.vb: Tweener(Of T).ToValue
+  fullName.vb: YJL.Tween.Tweener(Of T).ToValue
+- uid: YJL.Tween.ITweenData{{T}}.ToValue
+  commentId: P:YJL.Tween.ITweenData{`0}.ToValue
+  parent: YJL.Tween.ITweenData{{T}}
+  definition: YJL.Tween.ITweenData`1.ToValue
+  href: YJL.Tween.ITweenData{-0}.html#YJL.Tween.ITweenData{`0}.ToValue
+  name: ToValue
+  nameWithType: ITweenData<T>.ToValue
+  fullName: YJL.Tween.ITweenData<T>.ToValue
+  nameWithType.vb: ITweenData(Of T).ToValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).ToValue
+- uid: YJL.Tween.ITweenData`1.ToValue
+  commentId: P:YJL.Tween.ITweenData`1.ToValue
+  href: YJL.Tween.ITweenData-1.html#YJL.Tween.ITweenData`1.ToValue
+  name: ToValue
+  nameWithType: ITweenData<T>.ToValue
+  fullName: YJL.Tween.ITweenData<T>.ToValue
+  nameWithType.vb: ITweenData(Of T).ToValue
+  fullName.vb: YJL.Tween.ITweenData(Of T).ToValue
+- uid: YJL.Tween.Tweener`1.Duration*
+  commentId: Overload:YJL.Tween.Tweener`1.Duration
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Duration
+  name: Duration
+  nameWithType: Tweener<T>.Duration
+  fullName: YJL.Tween.Tweener<T>.Duration
+  nameWithType.vb: Tweener(Of T).Duration
+  fullName.vb: YJL.Tween.Tweener(Of T).Duration
+- uid: YJL.Tween.ITweenData{{T}}.Duration
+  commentId: P:YJL.Tween.ITweenData{`0}.Duration
+  parent: YJL.Tween.ITweenData{{T}}
+  definition: YJL.Tween.ITweenData`1.Duration
+  href: YJL.Tween.ITweenData{-0}.html#YJL.Tween.ITweenData{`0}.Duration
+  name: Duration
+  nameWithType: ITweenData<T>.Duration
+  fullName: YJL.Tween.ITweenData<T>.Duration
+  nameWithType.vb: ITweenData(Of T).Duration
+  fullName.vb: YJL.Tween.ITweenData(Of T).Duration
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: YJL.Tween.ITweenData`1.Duration
+  commentId: P:YJL.Tween.ITweenData`1.Duration
+  href: YJL.Tween.ITweenData-1.html#YJL.Tween.ITweenData`1.Duration
+  name: Duration
+  nameWithType: ITweenData<T>.Duration
+  fullName: YJL.Tween.ITweenData<T>.Duration
+  nameWithType.vb: ITweenData(Of T).Duration
+  fullName.vb: YJL.Tween.ITweenData(Of T).Duration
+- uid: YJL.Tween.Tweener`1.LerpFunc*
+  commentId: Overload:YJL.Tween.Tweener`1.LerpFunc
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.LerpFunc
+  name: LerpFunc
+  nameWithType: Tweener<T>.LerpFunc
+  fullName: YJL.Tween.Tweener<T>.LerpFunc
+  nameWithType.vb: Tweener(Of T).LerpFunc
+  fullName.vb: YJL.Tween.Tweener(Of T).LerpFunc
+- uid: YJL.Tween.ITweenData{{T}}.LerpFunc
+  commentId: P:YJL.Tween.ITweenData{`0}.LerpFunc
+  parent: YJL.Tween.ITweenData{{T}}
+  definition: YJL.Tween.ITweenData`1.LerpFunc
+  href: YJL.Tween.ITweenData{-0}.html#YJL.Tween.ITweenData{`0}.LerpFunc
+  name: LerpFunc
+  nameWithType: ITweenData<T>.LerpFunc
+  fullName: YJL.Tween.ITweenData<T>.LerpFunc
+  nameWithType.vb: ITweenData(Of T).LerpFunc
+  fullName.vb: YJL.Tween.ITweenData(Of T).LerpFunc
+- uid: System.Func{{T},{T},System.Single,{T}}
+  commentId: T:System.Func{``0,``0,System.Single,``0}
+  parent: System
+  definition: System.Func`4
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<T, T, float, T>
+  nameWithType: Func<T, T, float, T>
+  fullName: System.Func<T, T, float, T>
+  nameWithType.vb: Func(Of T, T, Single, T)
+  fullName.vb: System.Func(Of T, T, Single, T)
+  name.vb: Func(Of T, T, Single, T)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - name: T
+  - name: )
+- uid: YJL.Tween.ITweenData`1.LerpFunc
+  commentId: P:YJL.Tween.ITweenData`1.LerpFunc
+  href: YJL.Tween.ITweenData-1.html#YJL.Tween.ITweenData`1.LerpFunc
+  name: LerpFunc
+  nameWithType: ITweenData<T>.LerpFunc
+  fullName: YJL.Tween.ITweenData<T>.LerpFunc
+  nameWithType.vb: ITweenData(Of T).LerpFunc
+  fullName.vb: YJL.Tween.ITweenData(Of T).LerpFunc
+- uid: System.Func`4
+  commentId: T:System.Func`4
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-4
+  name: Func<T1, T2, T3, TResult>
+  nameWithType: Func<T1, T2, T3, TResult>
+  fullName: System.Func<T1, T2, T3, TResult>
+  nameWithType.vb: Func(Of T1, T2, T3, TResult)
+  fullName.vb: System.Func(Of T1, T2, T3, TResult)
+  name.vb: Func(Of T1, T2, T3, TResult)
+  spec.csharp:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`4
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-4
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: YJL.Tween.Tweener`1.IsCompleted*
+  commentId: Overload:YJL.Tween.Tweener`1.IsCompleted
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.IsCompleted
+  name: IsCompleted
+  nameWithType: Tweener<T>.IsCompleted
+  fullName: YJL.Tween.Tweener<T>.IsCompleted
+  nameWithType.vb: Tweener(Of T).IsCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsCompleted
+- uid: YJL.Tween.ITweener.IsCompleted
+  commentId: P:YJL.Tween.ITweener.IsCompleted
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.IsCompleted
+  name: IsCompleted
+  nameWithType: ITweener.IsCompleted
+  fullName: YJL.Tween.ITweener.IsCompleted
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: YJL.Tween.Tweener`1.IsStepCompleted*
+  commentId: Overload:YJL.Tween.Tweener`1.IsStepCompleted
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.IsStepCompleted
+  name: IsStepCompleted
+  nameWithType: Tweener<T>.IsStepCompleted
+  fullName: YJL.Tween.Tweener<T>.IsStepCompleted
+  nameWithType.vb: Tweener(Of T).IsStepCompleted
+  fullName.vb: YJL.Tween.Tweener(Of T).IsStepCompleted
+- uid: YJL.Tween.ITweener.IsStepCompleted
+  commentId: P:YJL.Tween.ITweener.IsStepCompleted
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.IsStepCompleted
+  name: IsStepCompleted
+  nameWithType: ITweener.IsStepCompleted
+  fullName: YJL.Tween.ITweener.IsStepCompleted
+- uid: YJL.Tween.Tweener`1.StopAfterStepCompleteFlag*
+  commentId: Overload:YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  name: StopAfterStepCompleteFlag
+  nameWithType: Tweener<T>.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).StopAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  commentId: P:YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.StopAfterStepCompleteFlag
+  name: StopAfterStepCompleteFlag
+  nameWithType: ITweener.StopAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.StopAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag*
+  commentId: Overload:YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.PauseAfterStepCompleteFlag
+  name: PauseAfterStepCompleteFlag
+  nameWithType: Tweener<T>.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepCompleteFlag
+  nameWithType.vb: Tweener(Of T).PauseAfterStepCompleteFlag
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepCompleteFlag
+- uid: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  commentId: P:YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+  name: PauseAfterStepCompleteFlag
+  nameWithType: ITweener.PauseAfterStepCompleteFlag
+  fullName: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.Play*
+  commentId: Overload:YJL.Tween.Tweener`1.Play
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Play
+  name: Play
+  nameWithType: Tweener<T>.Play
+  fullName: YJL.Tween.Tweener<T>.Play
+  nameWithType.vb: Tweener(Of T).Play
+  fullName.vb: YJL.Tween.Tweener(Of T).Play
+- uid: YJL.Tween.ITweener.Play
+  commentId: M:YJL.Tween.ITweener.Play
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Play
+  name: Play()
+  nameWithType: ITweener.Play()
+  fullName: YJL.Tween.ITweener.Play()
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.Play
+    name: Play
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Play
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.Play
+    name: Play
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Play
+  - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.Pause*
+  commentId: Overload:YJL.Tween.Tweener`1.Pause
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Pause
+  name: Pause
+  nameWithType: Tweener<T>.Pause
+  fullName: YJL.Tween.Tweener<T>.Pause
+  nameWithType.vb: Tweener(Of T).Pause
+  fullName.vb: YJL.Tween.Tweener(Of T).Pause
+- uid: YJL.Tween.ITweener.Pause
+  commentId: M:YJL.Tween.ITweener.Pause
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Pause
+  name: Pause()
+  nameWithType: ITweener.Pause()
+  fullName: YJL.Tween.ITweener.Pause()
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.Pause
+    name: Pause
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Pause
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.Pause
+    name: Pause
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Pause
+  - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.Stop*
+  commentId: Overload:YJL.Tween.Tweener`1.Stop
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Stop
+  name: Stop
+  nameWithType: Tweener<T>.Stop
+  fullName: YJL.Tween.Tweener<T>.Stop
+  nameWithType.vb: Tweener(Of T).Stop
+  fullName.vb: YJL.Tween.Tweener(Of T).Stop
+- uid: YJL.Tween.ITweener.Stop
+  commentId: M:YJL.Tween.ITweener.Stop
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Stop
+  name: Stop()
+  nameWithType: ITweener.Stop()
+  fullName: YJL.Tween.ITweener.Stop()
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.Stop
+    name: Stop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Stop
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.Stop
+    name: Stop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Stop
+  - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.StopAfterStepComplete*
+  commentId: Overload:YJL.Tween.Tweener`1.StopAfterStepComplete
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.StopAfterStepComplete
+  name: StopAfterStepComplete
+  nameWithType: Tweener<T>.StopAfterStepComplete
+  fullName: YJL.Tween.Tweener<T>.StopAfterStepComplete
+  nameWithType.vb: Tweener(Of T).StopAfterStepComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).StopAfterStepComplete
+- uid: YJL.Tween.ITweener.StopAfterStepComplete
+  commentId: M:YJL.Tween.ITweener.StopAfterStepComplete
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.StopAfterStepComplete
+  name: StopAfterStepComplete()
+  nameWithType: ITweener.StopAfterStepComplete()
+  fullName: YJL.Tween.ITweener.StopAfterStepComplete()
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.StopAfterStepComplete
+    name: StopAfterStepComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.StopAfterStepComplete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.StopAfterStepComplete
+    name: StopAfterStepComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.StopAfterStepComplete
+  - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.PauseAfterStepComplete*
+  commentId: Overload:YJL.Tween.Tweener`1.PauseAfterStepComplete
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.PauseAfterStepComplete
+  name: PauseAfterStepComplete
+  nameWithType: Tweener<T>.PauseAfterStepComplete
+  fullName: YJL.Tween.Tweener<T>.PauseAfterStepComplete
+  nameWithType.vb: Tweener(Of T).PauseAfterStepComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepComplete
+- uid: YJL.Tween.ITweener.PauseAfterStepComplete
+  commentId: M:YJL.Tween.ITweener.PauseAfterStepComplete
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.PauseAfterStepComplete
+  name: PauseAfterStepComplete()
+  nameWithType: ITweener.PauseAfterStepComplete()
+  fullName: YJL.Tween.ITweener.PauseAfterStepComplete()
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.PauseAfterStepComplete
+    name: PauseAfterStepComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.PauseAfterStepComplete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.PauseAfterStepComplete
+    name: PauseAfterStepComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.PauseAfterStepComplete
+  - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.Complete*
+  commentId: Overload:YJL.Tween.Tweener`1.Complete
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Complete
+  name: Complete
+  nameWithType: Tweener<T>.Complete
+  fullName: YJL.Tween.Tweener<T>.Complete
+  nameWithType.vb: Tweener(Of T).Complete
+  fullName.vb: YJL.Tween.Tweener(Of T).Complete
+- uid: YJL.Tween.ITweener.Complete
+  commentId: M:YJL.Tween.ITweener.Complete
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Complete
+  name: Complete()
+  nameWithType: ITweener.Complete()
+  fullName: YJL.Tween.ITweener.Complete()
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.Complete
+    name: Complete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Complete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.Complete
+    name: Complete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Complete
+  - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.SetEase*
+  commentId: Overload:YJL.Tween.Tweener`1.SetEase
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
+  name: SetEase
+  nameWithType: Tweener<T>.SetEase
+  fullName: YJL.Tween.Tweener<T>.SetEase
+  nameWithType.vb: Tweener(Of T).SetEase
+  fullName.vb: YJL.Tween.Tweener(Of T).SetEase
+- uid: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  commentId: M:YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  name: SetEase(AnimationCurve)
+  nameWithType: ITweener.SetEase(AnimationCurve)
+  fullName: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+    name: SetEase
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  - name: (
+  - uid: UnityEngine.AnimationCurve
+    name: AnimationCurve
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+    name: SetEase
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(UnityEngine.AnimationCurve)
+  - name: (
+  - uid: UnityEngine.AnimationCurve
+    name: AnimationCurve
+    isExternal: true
+  - name: )
+- uid: UnityEngine.AnimationCurve
+  commentId: T:UnityEngine.AnimationCurve
+  parent: UnityEngine
+  isExternal: true
+  name: AnimationCurve
+  nameWithType: AnimationCurve
+  fullName: UnityEngine.AnimationCurve
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  commentId: M:YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  name: SetEase(Ease)
+  nameWithType: ITweener.SetEase(Ease)
+  fullName: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+    name: SetEase
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  - name: (
+  - uid: YJL.Tween.Ease
+    name: Ease
+    href: YJL.Tween.Ease.html
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+    name: SetEase
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetEase(YJL.Tween.Ease)
+  - name: (
+  - uid: YJL.Tween.Ease
+    name: Ease
+    href: YJL.Tween.Ease.html
+  - name: )
+- uid: YJL.Tween.Ease
+  commentId: T:YJL.Tween.Ease
+  parent: YJL.Tween
+  href: YJL.Tween.Ease.html
+  name: Ease
+  nameWithType: Ease
+  fullName: YJL.Tween.Ease
+- uid: YJL.Tween.Tweener`1.SetLoop*
+  commentId: Overload:YJL.Tween.Tweener`1.SetLoop
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.SetLoop(YJL.Tween.Loop)
+  name: SetLoop
+  nameWithType: Tweener<T>.SetLoop
+  fullName: YJL.Tween.Tweener<T>.SetLoop
+  nameWithType.vb: Tweener(Of T).SetLoop
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoop
+- uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  commentId: M:YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  name: SetLoop(Loop)
+  nameWithType: ITweener.SetLoop(Loop)
+  fullName: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+    name: SetLoop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  - name: (
+  - uid: YJL.Tween.Loop
+    name: Loop
+    href: YJL.Tween.Loop.html
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+    name: SetLoop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop)
+  - name: (
+  - uid: YJL.Tween.Loop
+    name: Loop
+    href: YJL.Tween.Loop.html
+  - name: )
+- uid: YJL.Tween.Loop
+  commentId: T:YJL.Tween.Loop
+  parent: YJL.Tween
+  href: YJL.Tween.Loop.html
+  name: Loop
+  nameWithType: Loop
+  fullName: YJL.Tween.Loop
+- uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  commentId: M:YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  name: SetLoop(Loop, int)
+  nameWithType: ITweener.SetLoop(Loop, int)
+  fullName: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop, int)
+  nameWithType.vb: ITweener.SetLoop(Loop, Integer)
+  fullName.vb: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop, Integer)
+  name.vb: SetLoop(Loop, Integer)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+    name: SetLoop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  - name: (
+  - uid: YJL.Tween.Loop
+    name: Loop
+    href: YJL.Tween.Loop.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+    name: SetLoop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoop(YJL.Tween.Loop,System.Int32)
+  - name: (
+  - uid: YJL.Tween.Loop
+    name: Loop
+    href: YJL.Tween.Loop.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: YJL.Tween.Tweener`1.SetLoopCount*
+  commentId: Overload:YJL.Tween.Tweener`1.SetLoopCount
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.SetLoopCount(System.Int32)
+  name: SetLoopCount
+  nameWithType: Tweener<T>.SetLoopCount
+  fullName: YJL.Tween.Tweener<T>.SetLoopCount
+  nameWithType.vb: Tweener(Of T).SetLoopCount
+  fullName.vb: YJL.Tween.Tweener(Of T).SetLoopCount
+- uid: YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  commentId: M:YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  name: SetLoopCount(int)
+  nameWithType: ITweener.SetLoopCount(int)
+  fullName: YJL.Tween.ITweener.SetLoopCount(int)
+  nameWithType.vb: ITweener.SetLoopCount(Integer)
+  fullName.vb: YJL.Tween.ITweener.SetLoopCount(Integer)
+  name.vb: SetLoopCount(Integer)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.SetLoopCount(System.Int32)
+    name: SetLoopCount
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.SetLoopCount(System.Int32)
+    name: SetLoopCount
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.SetLoopCount(System.Int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: YJL.Tween.Tweener`1.OnStart*
+  commentId: Overload:YJL.Tween.Tweener`1.OnStart
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.OnStart(System.Action)
+  name: OnStart
+  nameWithType: Tweener<T>.OnStart
+  fullName: YJL.Tween.Tweener<T>.OnStart
+  nameWithType.vb: Tweener(Of T).OnStart
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStart
+- uid: YJL.Tween.ITweener.OnStart(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnStart(System.Action)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStart(System.Action)
+  name: OnStart(Action)
+  nameWithType: ITweener.OnStart(Action)
+  fullName: YJL.Tween.ITweener.OnStart(System.Action)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.OnStart(System.Action)
+    name: OnStart
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStart(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.OnStart(System.Action)
+    name: OnStart
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStart(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: YJL.Tween.Tweener`1.OnPlay*
+  commentId: Overload:YJL.Tween.Tweener`1.OnPlay
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.OnPlay(System.Action)
+  name: OnPlay
+  nameWithType: Tweener<T>.OnPlay
+  fullName: YJL.Tween.Tweener<T>.OnPlay
+  nameWithType.vb: Tweener(Of T).OnPlay
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPlay
+- uid: YJL.Tween.ITweener.OnPlay(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnPlay(System.Action)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPlay(System.Action)
+  name: OnPlay(Action)
+  nameWithType: ITweener.OnPlay(Action)
+  fullName: YJL.Tween.ITweener.OnPlay(System.Action)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.OnPlay(System.Action)
+    name: OnPlay
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPlay(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.OnPlay(System.Action)
+    name: OnPlay
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPlay(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YJL.Tween.Tweener`1.OnPause*
+  commentId: Overload:YJL.Tween.Tweener`1.OnPause
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.OnPause(System.Action)
+  name: OnPause
+  nameWithType: Tweener<T>.OnPause
+  fullName: YJL.Tween.Tweener<T>.OnPause
+  nameWithType.vb: Tweener(Of T).OnPause
+  fullName.vb: YJL.Tween.Tweener(Of T).OnPause
+- uid: YJL.Tween.ITweener.OnPause(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnPause(System.Action)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPause(System.Action)
+  name: OnPause(Action)
+  nameWithType: ITweener.OnPause(Action)
+  fullName: YJL.Tween.ITweener.OnPause(System.Action)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.OnPause(System.Action)
+    name: OnPause
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPause(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.OnPause(System.Action)
+    name: OnPause
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnPause(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YJL.Tween.Tweener`1.OnStop*
+  commentId: Overload:YJL.Tween.Tweener`1.OnStop
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.OnStop(System.Action)
+  name: OnStop
+  nameWithType: Tweener<T>.OnStop
+  fullName: YJL.Tween.Tweener<T>.OnStop
+  nameWithType.vb: Tweener(Of T).OnStop
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStop
+- uid: YJL.Tween.ITweener.OnStop(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnStop(System.Action)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStop(System.Action)
+  name: OnStop(Action)
+  nameWithType: ITweener.OnStop(Action)
+  fullName: YJL.Tween.ITweener.OnStop(System.Action)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.OnStop(System.Action)
+    name: OnStop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStop(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.OnStop(System.Action)
+    name: OnStop
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStop(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YJL.Tween.Tweener`1.OnComplete*
+  commentId: Overload:YJL.Tween.Tweener`1.OnComplete
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.OnComplete(System.Action)
+  name: OnComplete
+  nameWithType: Tweener<T>.OnComplete
+  fullName: YJL.Tween.Tweener<T>.OnComplete
+  nameWithType.vb: Tweener(Of T).OnComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).OnComplete
+- uid: YJL.Tween.ITweener.OnComplete(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnComplete(System.Action)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnComplete(System.Action)
+  name: OnComplete(Action)
+  nameWithType: ITweener.OnComplete(Action)
+  fullName: YJL.Tween.ITweener.OnComplete(System.Action)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.OnComplete(System.Action)
+    name: OnComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnComplete(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.OnComplete(System.Action)
+    name: OnComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnComplete(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+- uid: YJL.Tween.Tweener`1.OnStepComplete*
+  commentId: Overload:YJL.Tween.Tweener`1.OnStepComplete
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.OnStepComplete(System.Action)
+  name: OnStepComplete
+  nameWithType: Tweener<T>.OnStepComplete
+  fullName: YJL.Tween.Tweener<T>.OnStepComplete
+  nameWithType.vb: Tweener(Of T).OnStepComplete
+  fullName.vb: YJL.Tween.Tweener(Of T).OnStepComplete
+- uid: YJL.Tween.ITweener.OnStepComplete(System.Action)
+  commentId: M:YJL.Tween.ITweener.OnStepComplete(System.Action)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStepComplete(System.Action)
+  name: OnStepComplete(Action)
+  nameWithType: ITweener.OnStepComplete(Action)
+  fullName: YJL.Tween.ITweener.OnStepComplete(System.Action)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.OnStepComplete(System.Action)
+    name: OnStepComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStepComplete(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.OnStepComplete(System.Action)
+    name: OnStepComplete
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.OnStepComplete(System.Action)
+  - name: (
+  - uid: System.Action
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action
+  - name: )

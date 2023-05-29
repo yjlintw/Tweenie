@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: YJL.Tween.Ease
+  commentId: T:YJL.Tween.Ease
+  id: Ease
+  parent: YJL.Tween
+  children:
+  - YJL.Tween.Ease.EaseInOut
+  - YJL.Tween.Ease.Linear
+  langs:
+  - csharp
+  - vb
+  name: Ease
+  nameWithType: Ease
+  fullName: YJL.Tween.Ease
+  type: Enum
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Ease
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 8
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The ease enum
+  example: []
+  syntax:
+    content: public enum Ease
+    content.vb: Public Enum Ease
+- uid: YJL.Tween.Ease.Linear
+  commentId: F:YJL.Tween.Ease.Linear
+  id: Linear
+  parent: YJL.Tween.Ease
+  langs:
+  - csharp
+  - vb
+  name: Linear
+  nameWithType: Ease.Linear
+  fullName: YJL.Tween.Ease.Linear
+  type: Field
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Linear
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 13
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The linear ease
+  example: []
+  syntax:
+    content: Linear = 0
+    return:
+      type: YJL.Tween.Ease
+- uid: YJL.Tween.Ease.EaseInOut
+  commentId: F:YJL.Tween.Ease.EaseInOut
+  id: EaseInOut
+  parent: YJL.Tween.Ease
+  langs:
+  - csharp
+  - vb
+  name: EaseInOut
+  nameWithType: Ease.EaseInOut
+  fullName: YJL.Tween.Ease.EaseInOut
+  type: Field
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: EaseInOut
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 17
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: The ease in out ease
+  example: []
+  syntax:
+    content: EaseInOut = 1
+    return:
+      type: YJL.Tween.Ease
+references:
+- uid: YJL.Tween
+  commentId: N:YJL.Tween
+  href: YJL.html
+  name: YJL.Tween
+  nameWithType: YJL.Tween
+  fullName: YJL.Tween
+  spec.csharp:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+  spec.vb:
+  - uid: YJL
+    name: YJL
+    href: YJL.html
+  - name: .
+  - uid: YJL.Tween
+    name: Tween
+    href: YJL.Tween.html
+- uid: YJL.Tween.Ease
+  commentId: T:YJL.Tween.Ease
+  parent: YJL.Tween
+  href: YJL.Tween.Ease.html
+  name: Ease
+  nameWithType: Ease
+  fullName: YJL.Tween.Ease
