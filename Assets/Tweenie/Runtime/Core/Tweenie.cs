@@ -215,6 +215,9 @@ namespace YJL.Tween
                 }
             }
             _toAddSet.Clear();
+
+            // remove tweens that already marked as stop
+            _tweenerSet.ExceptWith(_toStopSet);
             
             foreach (ITweener tweener in _tweenerSet)
             {
