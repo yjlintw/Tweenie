@@ -30,7 +30,9 @@ items:
   - YJL.Tween.Tweener`1.Stop
   - YJL.Tween.Tweener`1.StopAfterStepComplete
   - YJL.Tween.Tweener`1.StopAfterStepCompleteFlag
+  - YJL.Tween.Tweener`1.Tag
   - YJL.Tween.Tweener`1.ToValue
+  - YJL.Tween.Tweener`1.UpdateTag(System.Object)
   langs:
   - csharp
   - vb
@@ -45,7 +47,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Tweener
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 250
+    startLine: 257
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -94,7 +96,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Param
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 256
+    startLine: 263
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -129,7 +131,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: FromValue
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 260
+    startLine: 267
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -164,7 +166,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: ToValue
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 264
+    startLine: 271
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -199,7 +201,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Duration
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 268
+    startLine: 275
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -234,7 +236,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: LerpFunc
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 272
+    startLine: 279
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -269,7 +271,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: IsCompleted
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 279
+    startLine: 286
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -304,7 +306,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: IsStepCompleted
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 283
+    startLine: 290
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -339,7 +341,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: StopAfterStepCompleteFlag
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 288
+    startLine: 295
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -374,7 +376,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: PauseAfterStepCompleteFlag
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 292
+    startLine: 299
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -391,6 +393,41 @@ items:
   - YJL.Tween.ITweener.PauseAfterStepCompleteFlag
   nameWithType.vb: Tweener(Of T).PauseAfterStepCompleteFlag
   fullName.vb: YJL.Tween.Tweener(Of T).PauseAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.Tag
+  commentId: P:YJL.Tween.Tweener`1.Tag
+  id: Tag
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: Tag
+  nameWithType: Tweener<T>.Tag
+  fullName: YJL.Tween.Tweener<T>.Tag
+  type: Property
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: Tag
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 304
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Tweener tag for bulk manipulation
+  example: []
+  syntax:
+    content: public object Tag { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property Tag As Object
+  overload: YJL.Tween.Tweener`1.Tag*
+  implements:
+  - YJL.Tween.ITweener.Tag
+  nameWithType.vb: Tweener(Of T).Tag
+  fullName.vb: YJL.Tween.Tweener(Of T).Tag
 - uid: YJL.Tween.Tweener`1.Play
   commentId: M:YJL.Tween.Tweener`1.Play
   id: Play
@@ -409,7 +446,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Play
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 425
+    startLine: 439
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -444,7 +481,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Pause
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 438
+    startLine: 452
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -479,7 +516,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Stop
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 447
+    startLine: 461
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -514,7 +551,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: StopAfterStepComplete
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 456
+    startLine: 470
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -549,7 +586,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: PauseAfterStepComplete
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 466
+    startLine: 480
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -584,7 +621,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Complete
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 476
+    startLine: 490
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -601,6 +638,46 @@ items:
   - YJL.Tween.ITweener.Complete
   nameWithType.vb: Tweener(Of T).Complete()
   fullName.vb: YJL.Tween.Tweener(Of T).Complete()
+- uid: YJL.Tween.Tweener`1.UpdateTag(System.Object)
+  commentId: M:YJL.Tween.Tweener`1.UpdateTag(System.Object)
+  id: UpdateTag(System.Object)
+  parent: YJL.Tween.Tweener`1
+  langs:
+  - csharp
+  - vb
+  name: UpdateTag(object)
+  nameWithType: Tweener<T>.UpdateTag(object)
+  fullName: YJL.Tween.Tweener<T>.UpdateTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweener.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: UpdateTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
+    startLine: 500
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Register this tweener with the new tag in Tweenie
+  example: []
+  syntax:
+    content: public ITweener UpdateTag(object newTag)
+    parameters:
+    - id: newTag
+      type: System.Object
+      description: ''
+    return:
+      type: YJL.Tween.ITweener
+      description: ''
+    content.vb: Public Function UpdateTag(newTag As Object) As ITweener
+  overload: YJL.Tween.Tweener`1.UpdateTag*
+  implements:
+  - YJL.Tween.ITweener.UpdateTag(System.Object)
+  nameWithType.vb: Tweener(Of T).UpdateTag(Object)
+  fullName.vb: YJL.Tween.Tweener(Of T).UpdateTag(Object)
+  name.vb: UpdateTag(Object)
 - uid: YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
   commentId: M:YJL.Tween.Tweener`1.SetEase(UnityEngine.AnimationCurve)
   id: SetEase(UnityEngine.AnimationCurve)
@@ -619,7 +696,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: SetEase
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 490
+    startLine: 514
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -658,7 +735,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: SetEase
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 501
+    startLine: 525
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -697,7 +774,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: SetLoop
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 522
+    startLine: 546
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -736,7 +813,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: SetLoop
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 533
+    startLine: 557
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -779,7 +856,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: SetLoopCount
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 545
+    startLine: 569
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -819,7 +896,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: OnStart
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 558
+    startLine: 582
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -858,7 +935,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: OnPlay
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 569
+    startLine: 593
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -897,7 +974,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: OnPause
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 580
+    startLine: 604
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -936,7 +1013,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: OnStop
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 591
+    startLine: 615
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -975,7 +1052,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: OnComplete
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 602
+    startLine: 626
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -1014,7 +1091,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: OnStepComplete
     path: ../Assets/Tweenie/Runtime/Core/Tweener.cs
-    startLine: 613
+    startLine: 637
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -1708,6 +1785,21 @@ references:
   name: PauseAfterStepCompleteFlag
   nameWithType: ITweener.PauseAfterStepCompleteFlag
   fullName: YJL.Tween.ITweener.PauseAfterStepCompleteFlag
+- uid: YJL.Tween.Tweener`1.Tag*
+  commentId: Overload:YJL.Tween.Tweener`1.Tag
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Tag
+  name: Tag
+  nameWithType: Tweener<T>.Tag
+  fullName: YJL.Tween.Tweener<T>.Tag
+  nameWithType.vb: Tweener(Of T).Tag
+  fullName.vb: YJL.Tween.Tweener(Of T).Tag
+- uid: YJL.Tween.ITweener.Tag
+  commentId: P:YJL.Tween.ITweener.Tag
+  parent: YJL.Tween.ITweener
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Tag
+  name: Tag
+  nameWithType: ITweener.Tag
+  fullName: YJL.Tween.ITweener.Tag
 - uid: YJL.Tween.Tweener`1.Play*
   commentId: Overload:YJL.Tween.Tweener`1.Play
   href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.Play
@@ -1869,6 +1961,45 @@ references:
     name: Complete
     href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.Complete
   - name: (
+  - name: )
+- uid: YJL.Tween.Tweener`1.UpdateTag*
+  commentId: Overload:YJL.Tween.Tweener`1.UpdateTag
+  href: YJL.Tween.Tweener-1.html#YJL.Tween.Tweener`1.UpdateTag(System.Object)
+  name: UpdateTag
+  nameWithType: Tweener<T>.UpdateTag
+  fullName: YJL.Tween.Tweener<T>.UpdateTag
+  nameWithType.vb: Tweener(Of T).UpdateTag
+  fullName.vb: YJL.Tween.Tweener(Of T).UpdateTag
+- uid: YJL.Tween.ITweener.UpdateTag(System.Object)
+  commentId: M:YJL.Tween.ITweener.UpdateTag(System.Object)
+  parent: YJL.Tween.ITweener
+  isExternal: true
+  href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.UpdateTag(System.Object)
+  name: UpdateTag(object)
+  nameWithType: ITweener.UpdateTag(object)
+  fullName: YJL.Tween.ITweener.UpdateTag(object)
+  nameWithType.vb: ITweener.UpdateTag(Object)
+  fullName.vb: YJL.Tween.ITweener.UpdateTag(Object)
+  name.vb: UpdateTag(Object)
+  spec.csharp:
+  - uid: YJL.Tween.ITweener.UpdateTag(System.Object)
+    name: UpdateTag
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.UpdateTag(System.Object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: YJL.Tween.ITweener.UpdateTag(System.Object)
+    name: UpdateTag
+    href: YJL.Tween.ITweener.html#YJL.Tween.ITweener.UpdateTag(System.Object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
 - uid: YJL.Tween.Tweener`1.SetEase*
   commentId: Overload:YJL.Tween.Tweener`1.SetEase

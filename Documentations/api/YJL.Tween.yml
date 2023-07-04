@@ -27,6 +27,12 @@ references:
   name: Tweenie
   nameWithType: Tweenie
   fullName: YJL.Tween.Tweenie
+- uid: YJL.Tween.TweenExtension
+  commentId: T:YJL.Tween.TweenExtension
+  href: YJL.Tween.TweenExtension.html
+  name: TweenExtension
+  nameWithType: TweenExtension
+  fullName: YJL.Tween.TweenExtension
 - uid: YJL.Tween.Ease
   commentId: T:YJL.Tween.Ease
   parent: YJL.Tween
@@ -98,12 +104,6 @@ references:
   - name: " "
   - name: T
   - name: )
-- uid: YJL.Tween.TweenExtension
-  commentId: T:YJL.Tween.TweenExtension
-  href: YJL.Tween.TweenExtension.html
-  name: TweenExtension
-  nameWithType: TweenExtension
-  fullName: YJL.Tween.TweenExtension
 - uid: YJL.Tween
   commentId: N:YJL.Tween
   href: YJL.html

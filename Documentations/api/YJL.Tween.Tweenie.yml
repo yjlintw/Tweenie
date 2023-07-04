@@ -6,20 +6,26 @@ items:
   parent: YJL.Tween
   children:
   - YJL.Tween.Tweenie.Complete(YJL.Tween.ITweener)
+  - YJL.Tween.Tweenie.CompleteTweenerTag(System.Object)
   - YJL.Tween.Tweenie.GetNumberOfRunningTweener
+  - YJL.Tween.Tweenie.GetTweenersFromTag(System.Object)
   - YJL.Tween.Tweenie.LateUpdate
   - YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
   - YJL.Tween.Tweenie.PauseAfterStepComplete(YJL.Tween.ITweener)
+  - YJL.Tween.Tweenie.PauseTweenerTag(System.Object)
   - YJL.Tween.Tweenie.Play(YJL.Tween.ITweener)
+  - YJL.Tween.Tweenie.PlayTweenerTag(System.Object)
+  - YJL.Tween.Tweenie.RemoveTag(System.Object)
   - YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
   - YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
-  - YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single)
-  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single)
-  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
-  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
-  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
-  - YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0})
+  - YJL.Tween.Tweenie.StopTweenerTag(System.Object)
+  - YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single,System.Object)
+  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single,System.Object)
+  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single,System.Object)
+  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Object)
+  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Object)
+  - YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single,System.Object)
+  - YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0},System.Object)
   - YJL.Tween.Tweenie.Update
   langs:
   - csharp
@@ -73,6 +79,7 @@ items:
   - UnityEngine.MonoBehaviour.StopCoroutine(System.String)
   - UnityEngine.MonoBehaviour.StopAllCoroutines
   - UnityEngine.MonoBehaviour.print(System.Object)
+  - UnityEngine.MonoBehaviour.destroyCancellationToken
   - UnityEngine.MonoBehaviour.useGUILayout
   - UnityEngine.MonoBehaviour.runInEditMode
   - UnityEngine.Behaviour.enabled
@@ -92,7 +99,9 @@ items:
   - UnityEngine.Component.GetComponentsInChildren``1(System.Boolean,System.Collections.Generic.List{{T}})
   - UnityEngine.Component.GetComponentsInChildren``1
   - UnityEngine.Component.GetComponentsInChildren``1(System.Collections.Generic.List{{T}})
+  - UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
   - UnityEngine.Component.GetComponentInParent(System.Type)
+  - UnityEngine.Component.GetComponentInParent``1(System.Boolean)
   - UnityEngine.Component.GetComponentInParent``1
   - UnityEngine.Component.GetComponentsInParent(System.Type,System.Boolean)
   - UnityEngine.Component.GetComponentsInParent(System.Type)
@@ -138,34 +147,46 @@ items:
   - UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
   - UnityEngine.Object.FindObjectsOfType(System.Type)
   - UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
   - UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
   - UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
   - UnityEngine.Object.DestroyObject(UnityEngine.Object)
   - UnityEngine.Object.FindSceneObjectsOfType(System.Type)
   - UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
   - UnityEngine.Object.FindObjectsOfType``1
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
   - UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
   - UnityEngine.Object.FindObjectOfType``1
   - UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType``1
+  - UnityEngine.Object.FindAnyObjectByType``1
+  - UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
   - UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
   - UnityEngine.Object.FindObjectOfType(System.Type)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type)
   - UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
   - UnityEngine.Object.ToString
   - UnityEngine.Object.name
   - UnityEngine.Object.hideFlags
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
-- uid: YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single)
-  commentId: M:YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single)
-  id: To(System.Action{System.Single},System.Single,System.Single,System.Single)
+- uid: YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single,System.Object)
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single,System.Object)
+  id: To(System.Action{System.Single},System.Single,System.Single,System.Single,System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To(Action<float>, float, float, float)
-  nameWithType: Tweenie.To(Action<float>, float, float, float)
-  fullName: YJL.Tween.Tweenie.To(System.Action<float>, float, float, float)
+  name: To(Action<float>, float, float, float, object)
+  nameWithType: Tweenie.To(Action<float>, float, float, float, object)
+  fullName: YJL.Tween.Tweenie.To(System.Action<float>, float, float, float, object)
   type: Method
   source:
     remote:
@@ -174,14 +195,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 43
+    startLine: 51
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Start a tweener, type float overload
   example: []
   syntax:
-    content: public static ITweener To(Action<float> param, float fromValue, float toValue, float duration)
+    content: public static ITweener To(Action<float> param, float fromValue, float toValue, float duration, object tag = null)
     parameters:
     - id: param
       type: System.Action{System.Single}
@@ -195,24 +216,27 @@ items:
     - id: duration
       type: System.Single
       description: The duration
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     return:
       type: YJL.Tween.ITweener
       description: The tweener
-    content.vb: Public Shared Function [To](param As Action(Of Single), fromValue As Single, toValue As Single, duration As Single) As ITweener
+    content.vb: Public Shared Function [To](param As Action(Of Single), fromValue As Single, toValue As Single, duration As Single, tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Action(Of Single), Single, Single, Single)
-  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of Single), Single, Single, Single)
-  name.vb: To(Action(Of Single), Single, Single, Single)
-- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
-  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
-  id: To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single)
+  nameWithType.vb: Tweenie.To(Action(Of Single), Single, Single, Single, Object)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of Single), Single, Single, Single, Object)
+  name.vb: To(Action(Of Single), Single, Single, Single, Object)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Object)
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Object)
+  id: To(System.Action{UnityEngine.Vector2},UnityEngine.Vector2,UnityEngine.Vector2,System.Single,System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To(Action<Vector2>, Vector2, Vector2, float)
-  nameWithType: Tweenie.To(Action<Vector2>, Vector2, Vector2, float)
-  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector2>, UnityEngine.Vector2, UnityEngine.Vector2, float)
+  name: To(Action<Vector2>, Vector2, Vector2, float, object)
+  nameWithType: Tweenie.To(Action<Vector2>, Vector2, Vector2, float, object)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector2>, UnityEngine.Vector2, UnityEngine.Vector2, float, object)
   type: Method
   source:
     remote:
@@ -221,14 +245,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 56
+    startLine: 65
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Start a tweener, type Vector2 overload
   example: []
   syntax:
-    content: public static ITweener To(Action<Vector2> param, Vector2 fromValue, Vector2 toValue, float duration)
+    content: public static ITweener To(Action<Vector2> param, Vector2 fromValue, Vector2 toValue, float duration, object tag = null)
     parameters:
     - id: param
       type: System.Action{UnityEngine.Vector2}
@@ -242,24 +266,27 @@ items:
     - id: duration
       type: System.Single
       description: The duration
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     return:
       type: YJL.Tween.ITweener
       description: The tweener
-    content.vb: Public Shared Function [To](param As Action(Of Vector2), fromValue As Vector2, toValue As Vector2, duration As Single) As ITweener
+    content.vb: Public Shared Function [To](param As Action(Of Vector2), fromValue As Vector2, toValue As Vector2, duration As Single, tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Action(Of Vector2), Vector2, Vector2, Single)
-  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector2), UnityEngine.Vector2, UnityEngine.Vector2, Single)
-  name.vb: To(Action(Of Vector2), Vector2, Vector2, Single)
-- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-  id: To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
+  nameWithType.vb: Tweenie.To(Action(Of Vector2), Vector2, Vector2, Single, Object)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector2), UnityEngine.Vector2, UnityEngine.Vector2, Single, Object)
+  name.vb: To(Action(Of Vector2), Vector2, Vector2, Single, Object)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Object)
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Object)
+  id: To(System.Action{UnityEngine.Vector3},UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To(Action<Vector3>, Vector3, Vector3, float)
-  nameWithType: Tweenie.To(Action<Vector3>, Vector3, Vector3, float)
-  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector3>, UnityEngine.Vector3, UnityEngine.Vector3, float)
+  name: To(Action<Vector3>, Vector3, Vector3, float, object)
+  nameWithType: Tweenie.To(Action<Vector3>, Vector3, Vector3, float, object)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector3>, UnityEngine.Vector3, UnityEngine.Vector3, float, object)
   type: Method
   source:
     remote:
@@ -268,14 +295,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 69
+    startLine: 79
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Start a tweener, type Vector3 overload
   example: []
   syntax:
-    content: public static ITweener To(Action<Vector3> param, Vector3 fromValue, Vector3 toValue, float duration)
+    content: public static ITweener To(Action<Vector3> param, Vector3 fromValue, Vector3 toValue, float duration, object tag = null)
     parameters:
     - id: param
       type: System.Action{UnityEngine.Vector3}
@@ -289,24 +316,27 @@ items:
     - id: duration
       type: System.Single
       description: The duration
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     return:
       type: YJL.Tween.ITweener
       description: The tweener
-    content.vb: Public Shared Function [To](param As Action(Of Vector3), fromValue As Vector3, toValue As Vector3, duration As Single) As ITweener
+    content.vb: Public Shared Function [To](param As Action(Of Vector3), fromValue As Vector3, toValue As Vector3, duration As Single, tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Action(Of Vector3), Vector3, Vector3, Single)
-  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector3), UnityEngine.Vector3, UnityEngine.Vector3, Single)
-  name.vb: To(Action(Of Vector3), Vector3, Vector3, Single)
-- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
-  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
-  id: To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single)
+  nameWithType.vb: Tweenie.To(Action(Of Vector3), Vector3, Vector3, Single, Object)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector3), UnityEngine.Vector3, UnityEngine.Vector3, Single, Object)
+  name.vb: To(Action(Of Vector3), Vector3, Vector3, Single, Object)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single,System.Object)
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single,System.Object)
+  id: To(System.Action{UnityEngine.Vector4},UnityEngine.Vector4,UnityEngine.Vector4,System.Single,System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To(Action<Vector4>, Vector4, Vector4, float)
-  nameWithType: Tweenie.To(Action<Vector4>, Vector4, Vector4, float)
-  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector4>, UnityEngine.Vector4, UnityEngine.Vector4, float)
+  name: To(Action<Vector4>, Vector4, Vector4, float, object)
+  nameWithType: Tweenie.To(Action<Vector4>, Vector4, Vector4, float, object)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Vector4>, UnityEngine.Vector4, UnityEngine.Vector4, float, object)
   type: Method
   source:
     remote:
@@ -315,14 +345,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 82
+    startLine: 93
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Start a tweener, type Vector4 overload
   example: []
   syntax:
-    content: public static ITweener To(Action<Vector4> param, Vector4 fromValue, Vector4 toValue, float duration)
+    content: public static ITweener To(Action<Vector4> param, Vector4 fromValue, Vector4 toValue, float duration, object tag = null)
     parameters:
     - id: param
       type: System.Action{UnityEngine.Vector4}
@@ -336,24 +366,27 @@ items:
     - id: duration
       type: System.Single
       description: The duration
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     return:
       type: YJL.Tween.ITweener
       description: The tweener
-    content.vb: Public Shared Function [To](param As Action(Of Vector4), fromValue As Vector4, toValue As Vector4, duration As Single) As ITweener
+    content.vb: Public Shared Function [To](param As Action(Of Vector4), fromValue As Vector4, toValue As Vector4, duration As Single, tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Action(Of Vector4), Vector4, Vector4, Single)
-  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector4), UnityEngine.Vector4, UnityEngine.Vector4, Single)
-  name.vb: To(Action(Of Vector4), Vector4, Vector4, Single)
-- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
-  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
-  id: To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
+  nameWithType.vb: Tweenie.To(Action(Of Vector4), Vector4, Vector4, Single, Object)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Vector4), UnityEngine.Vector4, UnityEngine.Vector4, Single, Object)
+  name.vb: To(Action(Of Vector4), Vector4, Vector4, Single, Object)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single,System.Object)
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single,System.Object)
+  id: To(System.Action{UnityEngine.Quaternion},UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single,System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To(Action<Quaternion>, Quaternion, Quaternion, float)
-  nameWithType: Tweenie.To(Action<Quaternion>, Quaternion, Quaternion, float)
-  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Quaternion>, UnityEngine.Quaternion, UnityEngine.Quaternion, float)
+  name: To(Action<Quaternion>, Quaternion, Quaternion, float, object)
+  nameWithType: Tweenie.To(Action<Quaternion>, Quaternion, Quaternion, float, object)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Quaternion>, UnityEngine.Quaternion, UnityEngine.Quaternion, float, object)
   type: Method
   source:
     remote:
@@ -362,14 +395,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 95
+    startLine: 107
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Start a tweener, type Quaternion overload
   example: []
   syntax:
-    content: public static ITweener To(Action<Quaternion> param, Quaternion fromValue, Quaternion toValue, float duration)
+    content: public static ITweener To(Action<Quaternion> param, Quaternion fromValue, Quaternion toValue, float duration, object tag = null)
     parameters:
     - id: param
       type: System.Action{UnityEngine.Quaternion}
@@ -383,24 +416,27 @@ items:
     - id: duration
       type: System.Single
       description: The duration
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     return:
       type: YJL.Tween.ITweener
       description: The tweener
-    content.vb: Public Shared Function [To](param As Action(Of Quaternion), fromValue As Quaternion, toValue As Quaternion, duration As Single) As ITweener
+    content.vb: Public Shared Function [To](param As Action(Of Quaternion), fromValue As Quaternion, toValue As Quaternion, duration As Single, tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Action(Of Quaternion), Quaternion, Quaternion, Single)
-  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Quaternion), UnityEngine.Quaternion, UnityEngine.Quaternion, Single)
-  name.vb: To(Action(Of Quaternion), Quaternion, Quaternion, Single)
-- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single)
-  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single)
-  id: To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single)
+  nameWithType.vb: Tweenie.To(Action(Of Quaternion), Quaternion, Quaternion, Single, Object)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Quaternion), UnityEngine.Quaternion, UnityEngine.Quaternion, Single, Object)
+  name.vb: To(Action(Of Quaternion), Quaternion, Quaternion, Single, Object)
+- uid: YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single,System.Object)
+  commentId: M:YJL.Tween.Tweenie.To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single,System.Object)
+  id: To(System.Action{UnityEngine.Color},UnityEngine.Color,UnityEngine.Color,System.Single,System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To(Action<Color>, Color, Color, float)
-  nameWithType: Tweenie.To(Action<Color>, Color, Color, float)
-  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Color>, UnityEngine.Color, UnityEngine.Color, float)
+  name: To(Action<Color>, Color, Color, float, object)
+  nameWithType: Tweenie.To(Action<Color>, Color, Color, float, object)
+  fullName: YJL.Tween.Tweenie.To(System.Action<UnityEngine.Color>, UnityEngine.Color, UnityEngine.Color, float, object)
   type: Method
   source:
     remote:
@@ -409,14 +445,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 108
+    startLine: 121
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Start a tweener, type Coilor overload
   example: []
   syntax:
-    content: public static ITweener To(Action<Color> param, Color fromValue, Color toValue, float duration)
+    content: public static ITweener To(Action<Color> param, Color fromValue, Color toValue, float duration, object tag = null)
     parameters:
     - id: param
       type: System.Action{UnityEngine.Color}
@@ -430,24 +466,27 @@ items:
     - id: duration
       type: System.Single
       description: The duration
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     return:
       type: YJL.Tween.ITweener
       description: The tweener
-    content.vb: Public Shared Function [To](param As Action(Of Color), fromValue As Color, toValue As Color, duration As Single) As ITweener
+    content.vb: Public Shared Function [To](param As Action(Of Color), fromValue As Color, toValue As Color, duration As Single, tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Action(Of Color), Color, Color, Single)
-  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Color), UnityEngine.Color, UnityEngine.Color, Single)
-  name.vb: To(Action(Of Color), Color, Color, Single)
-- uid: YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0})
-  commentId: M:YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0})
-  id: To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0})
+  nameWithType.vb: Tweenie.To(Action(Of Color), Color, Color, Single, Object)
+  fullName.vb: YJL.Tween.Tweenie.To(System.Action(Of UnityEngine.Color), UnityEngine.Color, UnityEngine.Color, Single, Object)
+  name.vb: To(Action(Of Color), Color, Color, Single, Object)
+- uid: YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0},System.Object)
+  commentId: M:YJL.Tween.Tweenie.To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0},System.Object)
+  id: To``1(System.Action{``0},``0,``0,System.Single,System.Func{``0,``0,System.Single,``0},System.Object)
   parent: YJL.Tween.Tweenie
   langs:
   - csharp
   - vb
-  name: To<T>(Action<T>, T, T, float, Func<T, T, float, T>)
-  nameWithType: Tweenie.To<T>(Action<T>, T, T, float, Func<T, T, float, T>)
-  fullName: YJL.Tween.Tweenie.To<T>(System.Action<T>, T, T, float, System.Func<T, T, float, T>)
+  name: To<T>(Action<T>, T, T, float, Func<T, T, float, T>, object)
+  nameWithType: Tweenie.To<T>(Action<T>, T, T, float, Func<T, T, float, T>, object)
+  fullName: YJL.Tween.Tweenie.To<T>(System.Action<T>, T, T, float, System.Func<T, T, float, T>, object)
   type: Method
   source:
     remote:
@@ -456,14 +495,14 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: To
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 125
+    startLine: 139
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
   summary: Basic To Method
   example: []
   syntax:
-    content: public static ITweener To<T>(Action<T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc)
+    content: public static ITweener To<T>(Action<T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc, object tag = null)
     parameters:
     - id: param
       type: System.Action{{T}}
@@ -480,17 +519,20 @@ items:
     - id: lerpFunc
       type: System.Func{{T},{T},System.Single,{T}}
       description: Interpolation Function
+    - id: tag
+      type: System.Object
+      description: Tag to manage tweener in bulk
     typeParameters:
     - id: T
       description: Parameter Type
     return:
       type: YJL.Tween.ITweener
       description: ITweener for method chaining
-    content.vb: Public Shared Function [To](Of T)(param As Action(Of T), fromValue As T, toValue As T, duration As Single, lerpFunc As Func(Of T, T, Single, T)) As ITweener
+    content.vb: Public Shared Function [To](Of T)(param As Action(Of T), fromValue As T, toValue As T, duration As Single, lerpFunc As Func(Of T, T, Single, T), tag As Object = Nothing) As ITweener
   overload: YJL.Tween.Tweenie.To*
-  nameWithType.vb: Tweenie.To(Of T)(Action(Of T), T, T, Single, Func(Of T, T, Single, T))
-  fullName.vb: YJL.Tween.Tweenie.To(Of T)(System.Action(Of T), T, T, Single, System.Func(Of T, T, Single, T))
-  name.vb: To(Of T)(Action(Of T), T, T, Single, Func(Of T, T, Single, T))
+  nameWithType.vb: Tweenie.To(Of T)(Action(Of T), T, T, Single, Func(Of T, T, Single, T), Object)
+  fullName.vb: YJL.Tween.Tweenie.To(Of T)(System.Action(Of T), T, T, Single, System.Func(Of T, T, Single, T), Object)
+  name.vb: To(Of T)(Action(Of T), T, T, Single, Func(Of T, T, Single, T), Object)
 - uid: YJL.Tween.Tweenie.Play(YJL.Tween.ITweener)
   commentId: M:YJL.Tween.Tweenie.Play(YJL.Tween.ITweener)
   id: Play(YJL.Tween.ITweener)
@@ -509,7 +551,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Play
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 140
+    startLine: 154
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -526,6 +568,41 @@ items:
       description: ''
     content.vb: Public Shared Function Play(tweener As ITweener) As ITweener
   overload: YJL.Tween.Tweenie.Play*
+- uid: YJL.Tween.Tweenie.PlayTweenerTag(System.Object)
+  commentId: M:YJL.Tween.Tweenie.PlayTweenerTag(System.Object)
+  id: PlayTweenerTag(System.Object)
+  parent: YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: PlayTweenerTag(object)
+  nameWithType: Tweenie.PlayTweenerTag(object)
+  fullName: YJL.Tween.Tweenie.PlayTweenerTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweenie.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PlayTweenerTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
+    startLine: 164
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Play tweeners in bulk with the tag
+  example: []
+  syntax:
+    content: public static void PlayTweenerTag(object tag)
+    parameters:
+    - id: tag
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub PlayTweenerTag(tag As Object)
+  overload: YJL.Tween.Tweenie.PlayTweenerTag*
+  nameWithType.vb: Tweenie.PlayTweenerTag(Object)
+  fullName.vb: YJL.Tween.Tweenie.PlayTweenerTag(Object)
+  name.vb: PlayTweenerTag(Object)
 - uid: YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
   commentId: M:YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
   id: Pause(YJL.Tween.ITweener)
@@ -544,7 +621,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Pause
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 151
+    startLine: 177
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -561,6 +638,41 @@ items:
       description: ''
     content.vb: Public Shared Function Pause(tweener As ITweener) As ITweener
   overload: YJL.Tween.Tweenie.Pause*
+- uid: YJL.Tween.Tweenie.PauseTweenerTag(System.Object)
+  commentId: M:YJL.Tween.Tweenie.PauseTweenerTag(System.Object)
+  id: PauseTweenerTag(System.Object)
+  parent: YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: PauseTweenerTag(object)
+  nameWithType: Tweenie.PauseTweenerTag(object)
+  fullName: YJL.Tween.Tweenie.PauseTweenerTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweenie.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: PauseTweenerTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
+    startLine: 187
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Pause tweeners in bulk with the tag
+  example: []
+  syntax:
+    content: public static void PauseTweenerTag(object tag)
+    parameters:
+    - id: tag
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub PauseTweenerTag(tag As Object)
+  overload: YJL.Tween.Tweenie.PauseTweenerTag*
+  nameWithType.vb: Tweenie.PauseTweenerTag(Object)
+  fullName.vb: YJL.Tween.Tweenie.PauseTweenerTag(Object)
+  name.vb: PauseTweenerTag(Object)
 - uid: YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
   commentId: M:YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
   id: Stop(YJL.Tween.ITweener)
@@ -579,7 +691,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Stop
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 162
+    startLine: 200
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -596,6 +708,41 @@ items:
       description: ''
     content.vb: Public Shared Function [Stop](tweener As ITweener) As ITweener
   overload: YJL.Tween.Tweenie.Stop*
+- uid: YJL.Tween.Tweenie.StopTweenerTag(System.Object)
+  commentId: M:YJL.Tween.Tweenie.StopTweenerTag(System.Object)
+  id: StopTweenerTag(System.Object)
+  parent: YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: StopTweenerTag(object)
+  nameWithType: Tweenie.StopTweenerTag(object)
+  fullName: YJL.Tween.Tweenie.StopTweenerTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweenie.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: StopTweenerTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
+    startLine: 210
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Stop tweeners in bulk with the tag
+  example: []
+  syntax:
+    content: public static void StopTweenerTag(object tag)
+    parameters:
+    - id: tag
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub StopTweenerTag(tag As Object)
+  overload: YJL.Tween.Tweenie.StopTweenerTag*
+  nameWithType.vb: Tweenie.StopTweenerTag(Object)
+  fullName.vb: YJL.Tween.Tweenie.StopTweenerTag(Object)
+  name.vb: StopTweenerTag(Object)
 - uid: YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
   commentId: M:YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
   id: StopAfterStepComplete(YJL.Tween.ITweener)
@@ -614,7 +761,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: StopAfterStepComplete
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 173
+    startLine: 223
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -649,7 +796,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: PauseAfterStepComplete
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 183
+    startLine: 233
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -684,7 +831,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Complete
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 193
+    startLine: 243
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -701,6 +848,114 @@ items:
       description: ''
     content.vb: Public Shared Function Complete(tweener As ITweener) As ITweener
   overload: YJL.Tween.Tweenie.Complete*
+- uid: YJL.Tween.Tweenie.CompleteTweenerTag(System.Object)
+  commentId: M:YJL.Tween.Tweenie.CompleteTweenerTag(System.Object)
+  id: CompleteTweenerTag(System.Object)
+  parent: YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: CompleteTweenerTag(object)
+  nameWithType: Tweenie.CompleteTweenerTag(object)
+  fullName: YJL.Tween.Tweenie.CompleteTweenerTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweenie.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: CompleteTweenerTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
+    startLine: 253
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Complete tweener in bulk with the tag
+  example: []
+  syntax:
+    content: public static void CompleteTweenerTag(object tag)
+    parameters:
+    - id: tag
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub CompleteTweenerTag(tag As Object)
+  overload: YJL.Tween.Tweenie.CompleteTweenerTag*
+  nameWithType.vb: Tweenie.CompleteTweenerTag(Object)
+  fullName.vb: YJL.Tween.Tweenie.CompleteTweenerTag(Object)
+  name.vb: CompleteTweenerTag(Object)
+- uid: YJL.Tween.Tweenie.RemoveTag(System.Object)
+  commentId: M:YJL.Tween.Tweenie.RemoveTag(System.Object)
+  id: RemoveTag(System.Object)
+  parent: YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: RemoveTag(object)
+  nameWithType: Tweenie.RemoveTag(object)
+  fullName: YJL.Tween.Tweenie.RemoveTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweenie.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: RemoveTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
+    startLine: 265
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Remove tag from bulk editing
+  example: []
+  syntax:
+    content: public static void RemoveTag(object tag)
+    parameters:
+    - id: tag
+      type: System.Object
+      description: ''
+    content.vb: Public Shared Sub RemoveTag(tag As Object)
+  overload: YJL.Tween.Tweenie.RemoveTag*
+  nameWithType.vb: Tweenie.RemoveTag(Object)
+  fullName.vb: YJL.Tween.Tweenie.RemoveTag(Object)
+  name.vb: RemoveTag(Object)
+- uid: YJL.Tween.Tweenie.GetTweenersFromTag(System.Object)
+  commentId: M:YJL.Tween.Tweenie.GetTweenersFromTag(System.Object)
+  id: GetTweenersFromTag(System.Object)
+  parent: YJL.Tween.Tweenie
+  langs:
+  - csharp
+  - vb
+  name: GetTweenersFromTag(object)
+  nameWithType: Tweenie.GetTweenersFromTag(object)
+  fullName: YJL.Tween.Tweenie.GetTweenersFromTag(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/Tweenie/Runtime/Core/Tweenie.cs
+      branch: main
+      repo: git@github.com:yjlintw/Tweenie.git
+    id: GetTweenersFromTag
+    path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
+    startLine: 275
+  assemblies:
+  - YJL.Tweenie
+  namespace: YJL.Tween
+  summary: Get tweeners under the tag
+  example: []
+  syntax:
+    content: public static ISet<ITweener> GetTweenersFromTag(object tag)
+    parameters:
+    - id: tag
+      type: System.Object
+      description: ''
+    return:
+      type: System.Collections.Generic.ISet{YJL.Tween.ITweener}
+      description: ''
+    content.vb: Public Shared Function GetTweenersFromTag(tag As Object) As ISet(Of ITweener)
+  overload: YJL.Tween.Tweenie.GetTweenersFromTag*
+  nameWithType.vb: Tweenie.GetTweenersFromTag(Object)
+  fullName.vb: YJL.Tween.Tweenie.GetTweenersFromTag(Object)
+  name.vb: GetTweenersFromTag(Object)
 - uid: YJL.Tween.Tweenie.Update
   commentId: M:YJL.Tween.Tweenie.Update
   id: Update
@@ -719,7 +974,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: Update
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 205
+    startLine: 315
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -747,7 +1002,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: LateUpdate
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 248
+    startLine: 361
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -775,7 +1030,7 @@ items:
       repo: git@github.com:yjlintw/Tweenie.git
     id: GetNumberOfRunningTweener
     path: ../Assets/Tweenie/Runtime/Core/Tweenie.cs
-    startLine: 279
+    startLine: 392
   assemblies:
   - YJL.Tweenie
   namespace: YJL.Tween
@@ -1422,6 +1677,13 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: UnityEngine.MonoBehaviour.destroyCancellationToken
+  commentId: P:UnityEngine.MonoBehaviour.destroyCancellationToken
+  parent: UnityEngine.MonoBehaviour
+  isExternal: true
+  name: destroyCancellationToken
+  nameWithType: MonoBehaviour.destroyCancellationToken
+  fullName: UnityEngine.MonoBehaviour.destroyCancellationToken
 - uid: UnityEngine.MonoBehaviour.useGUILayout
   commentId: P:UnityEngine.MonoBehaviour.useGUILayout
   parent: UnityEngine.MonoBehaviour
@@ -2002,6 +2264,49 @@ references:
   - name: T
   - name: )
   - name: )
+- uid: UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+  parent: UnityEngine.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: GetComponentInParent(Type, bool)
+  nameWithType: Component.GetComponentInParent(Type, bool)
+  fullName: UnityEngine.Component.GetComponentInParent(System.Type, bool)
+  nameWithType.vb: Component.GetComponentInParent(Type, Boolean)
+  fullName.vb: UnityEngine.Component.GetComponentInParent(System.Type, Boolean)
+  name.vb: GetComponentInParent(Type, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
 - uid: UnityEngine.Component.GetComponentInParent(System.Type)
   commentId: M:UnityEngine.Component.GetComponentInParent(System.Type)
   parent: UnityEngine.Component
@@ -2029,6 +2334,45 @@ references:
     name: Type
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+  commentId: M:UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+  parent: UnityEngine.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: GetComponentInParent<T>(bool)
+  nameWithType: Component.GetComponentInParent<T>(bool)
+  fullName: UnityEngine.Component.GetComponentInParent<T>(bool)
+  nameWithType.vb: Component.GetComponentInParent(Of T)(Boolean)
+  fullName.vb: UnityEngine.Component.GetComponentInParent(Of T)(Boolean)
+  name.vb: GetComponentInParent(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: UnityEngine.Component.GetComponentInParent``1
   commentId: M:UnityEngine.Component.GetComponentInParent``1
@@ -3701,6 +4045,92 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
 - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
   commentId: M:UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
   parent: UnityEngine.Object
@@ -3878,6 +4308,42 @@ references:
   - name: )
   - name: (
   - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
 - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
   commentId: M:UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
   parent: UnityEngine.Object
@@ -3916,6 +4382,52 @@ references:
     name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
   - name: )
 - uid: UnityEngine.Object.FindObjectOfType``1
   commentId: M:UnityEngine.Object.FindObjectOfType``1
@@ -3986,6 +4498,138 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>()
+  nameWithType: Object.FindFirstObjectByType<T>()
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>()
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)()
+  name.vb: FindFirstObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>()
+  nameWithType: Object.FindAnyObjectByType<T>()
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>()
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)()
+  name.vb: FindAnyObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindFirstObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindAnyObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
 - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
   commentId: M:UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
   parent: UnityEngine.Object
@@ -4042,6 +4686,62 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.type
   - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type)
+  nameWithType: Object.FindFirstObjectByType(Type)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type)
+  nameWithType: Object.FindAnyObjectByType(Type)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
 - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
   commentId: M:UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
   parent: UnityEngine.Object
@@ -4084,6 +4784,82 @@ references:
     name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
   - name: )
 - uid: UnityEngine.Object.ToString
   commentId: M:UnityEngine.Object.ToString
@@ -4796,7 +5572,7 @@ references:
   - name: )
 - uid: YJL.Tween.Tweenie.To*
   commentId: Overload:YJL.Tween.Tweenie.To
-  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single)
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.To(System.Action{System.Single},System.Single,System.Single,System.Single,System.Object)
   name: To
   nameWithType: Tweenie.To
   fullName: YJL.Tween.Tweenie.To
@@ -5225,18 +6001,36 @@ references:
   name: Play
   nameWithType: Tweenie.Play
   fullName: YJL.Tween.Tweenie.Play
+- uid: YJL.Tween.Tweenie.PlayTweenerTag*
+  commentId: Overload:YJL.Tween.Tweenie.PlayTweenerTag
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.PlayTweenerTag(System.Object)
+  name: PlayTweenerTag
+  nameWithType: Tweenie.PlayTweenerTag
+  fullName: YJL.Tween.Tweenie.PlayTweenerTag
 - uid: YJL.Tween.Tweenie.Pause*
   commentId: Overload:YJL.Tween.Tweenie.Pause
   href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.Pause(YJL.Tween.ITweener)
   name: Pause
   nameWithType: Tweenie.Pause
   fullName: YJL.Tween.Tweenie.Pause
+- uid: YJL.Tween.Tweenie.PauseTweenerTag*
+  commentId: Overload:YJL.Tween.Tweenie.PauseTweenerTag
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.PauseTweenerTag(System.Object)
+  name: PauseTweenerTag
+  nameWithType: Tweenie.PauseTweenerTag
+  fullName: YJL.Tween.Tweenie.PauseTweenerTag
 - uid: YJL.Tween.Tweenie.Stop*
   commentId: Overload:YJL.Tween.Tweenie.Stop
   href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.Stop(YJL.Tween.ITweener)
   name: Stop
   nameWithType: Tweenie.Stop
   fullName: YJL.Tween.Tweenie.Stop
+- uid: YJL.Tween.Tweenie.StopTweenerTag*
+  commentId: Overload:YJL.Tween.Tweenie.StopTweenerTag
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.StopTweenerTag(System.Object)
+  name: StopTweenerTag
+  nameWithType: Tweenie.StopTweenerTag
+  fullName: YJL.Tween.Tweenie.StopTweenerTag
 - uid: YJL.Tween.Tweenie.StopAfterStepComplete*
   commentId: Overload:YJL.Tween.Tweenie.StopAfterStepComplete
   href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.StopAfterStepComplete(YJL.Tween.ITweener)
@@ -5255,6 +6049,122 @@ references:
   name: Complete
   nameWithType: Tweenie.Complete
   fullName: YJL.Tween.Tweenie.Complete
+- uid: YJL.Tween.Tweenie.CompleteTweenerTag*
+  commentId: Overload:YJL.Tween.Tweenie.CompleteTweenerTag
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.CompleteTweenerTag(System.Object)
+  name: CompleteTweenerTag
+  nameWithType: Tweenie.CompleteTweenerTag
+  fullName: YJL.Tween.Tweenie.CompleteTweenerTag
+- uid: YJL.Tween.Tweenie.RemoveTag*
+  commentId: Overload:YJL.Tween.Tweenie.RemoveTag
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.RemoveTag(System.Object)
+  name: RemoveTag
+  nameWithType: Tweenie.RemoveTag
+  fullName: YJL.Tween.Tweenie.RemoveTag
+- uid: YJL.Tween.Tweenie.GetTweenersFromTag*
+  commentId: Overload:YJL.Tween.Tweenie.GetTweenersFromTag
+  href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.GetTweenersFromTag(System.Object)
+  name: GetTweenersFromTag
+  nameWithType: Tweenie.GetTweenersFromTag
+  fullName: YJL.Tween.Tweenie.GetTweenersFromTag
+- uid: System.Collections.Generic.ISet{YJL.Tween.ITweener}
+  commentId: T:System.Collections.Generic.ISet{YJL.Tween.ITweener}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ISet`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  name: ISet<ITweener>
+  nameWithType: ISet<ITweener>
+  fullName: System.Collections.Generic.ISet<YJL.Tween.ITweener>
+  nameWithType.vb: ISet(Of ITweener)
+  fullName.vb: System.Collections.Generic.ISet(Of YJL.Tween.ITweener)
+  name.vb: ISet(Of ITweener)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - uid: YJL.Tween.ITweener
+    name: ITweener
+    href: YJL.Tween.ITweener.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: YJL.Tween.ITweener
+    name: ITweener
+    href: YJL.Tween.ITweener.html
+  - name: )
+- uid: System.Collections.Generic.ISet`1
+  commentId: T:System.Collections.Generic.ISet`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  name: ISet<T>
+  nameWithType: ISet<T>
+  fullName: System.Collections.Generic.ISet<T>
+  nameWithType.vb: ISet(Of T)
+  fullName.vb: System.Collections.Generic.ISet(Of T)
+  name.vb: ISet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ISet`1
+    name: ISet
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iset-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: YJL.Tween.Tweenie.Update*
   commentId: Overload:YJL.Tween.Tweenie.Update
   href: YJL.Tween.Tweenie.html#YJL.Tween.Tweenie.Update

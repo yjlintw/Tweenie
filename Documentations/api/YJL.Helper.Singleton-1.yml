@@ -55,6 +55,7 @@ items:
   - UnityEngine.MonoBehaviour.StopCoroutine(System.String)
   - UnityEngine.MonoBehaviour.StopAllCoroutines
   - UnityEngine.MonoBehaviour.print(System.Object)
+  - UnityEngine.MonoBehaviour.destroyCancellationToken
   - UnityEngine.MonoBehaviour.useGUILayout
   - UnityEngine.MonoBehaviour.runInEditMode
   - UnityEngine.Behaviour.enabled
@@ -74,7 +75,9 @@ items:
   - UnityEngine.Component.GetComponentsInChildren``1(System.Boolean,System.Collections.Generic.List{{T}})
   - UnityEngine.Component.GetComponentsInChildren``1
   - UnityEngine.Component.GetComponentsInChildren``1(System.Collections.Generic.List{{T}})
+  - UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
   - UnityEngine.Component.GetComponentInParent(System.Type)
+  - UnityEngine.Component.GetComponentInParent``1(System.Boolean)
   - UnityEngine.Component.GetComponentInParent``1
   - UnityEngine.Component.GetComponentsInParent(System.Type,System.Boolean)
   - UnityEngine.Component.GetComponentsInParent(System.Type)
@@ -120,18 +123,30 @@ items:
   - UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
   - UnityEngine.Object.FindObjectsOfType(System.Type)
   - UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  - UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
   - UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
   - UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
   - UnityEngine.Object.DestroyObject(UnityEngine.Object)
   - UnityEngine.Object.FindSceneObjectsOfType(System.Type)
   - UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
   - UnityEngine.Object.FindObjectsOfType``1
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
   - UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  - UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
   - UnityEngine.Object.FindObjectOfType``1
   - UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType``1
+  - UnityEngine.Object.FindAnyObjectByType``1
+  - UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
   - UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
   - UnityEngine.Object.FindObjectOfType(System.Type)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type)
   - UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  - UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
   - UnityEngine.Object.ToString
   - UnityEngine.Object.name
   - UnityEngine.Object.hideFlags
@@ -753,6 +768,13 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+- uid: UnityEngine.MonoBehaviour.destroyCancellationToken
+  commentId: P:UnityEngine.MonoBehaviour.destroyCancellationToken
+  parent: UnityEngine.MonoBehaviour
+  isExternal: true
+  name: destroyCancellationToken
+  nameWithType: MonoBehaviour.destroyCancellationToken
+  fullName: UnityEngine.MonoBehaviour.destroyCancellationToken
 - uid: UnityEngine.MonoBehaviour.useGUILayout
   commentId: P:UnityEngine.MonoBehaviour.useGUILayout
   parent: UnityEngine.MonoBehaviour
@@ -1333,6 +1355,49 @@ references:
   - name: T
   - name: )
   - name: )
+- uid: UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+  parent: UnityEngine.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: GetComponentInParent(Type, bool)
+  nameWithType: Component.GetComponentInParent(Type, bool)
+  fullName: UnityEngine.Component.GetComponentInParent(System.Type, bool)
+  nameWithType.vb: Component.GetComponentInParent(Type, Boolean)
+  fullName.vb: UnityEngine.Component.GetComponentInParent(System.Type, Boolean)
+  name.vb: GetComponentInParent(Type, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Component.GetComponentInParent(System.Type,System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
 - uid: UnityEngine.Component.GetComponentInParent(System.Type)
   commentId: M:UnityEngine.Component.GetComponentInParent(System.Type)
   parent: UnityEngine.Component
@@ -1360,6 +1425,45 @@ references:
     name: Type
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+  commentId: M:UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+  parent: UnityEngine.Component
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: GetComponentInParent<T>(bool)
+  nameWithType: Component.GetComponentInParent<T>(bool)
+  fullName: UnityEngine.Component.GetComponentInParent<T>(bool)
+  nameWithType.vb: Component.GetComponentInParent(Of T)(Boolean)
+  fullName.vb: UnityEngine.Component.GetComponentInParent(Of T)(Boolean)
+  name.vb: GetComponentInParent(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Component.GetComponentInParent``1(System.Boolean)
+    name: GetComponentInParent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
 - uid: UnityEngine.Component.GetComponentInParent``1
   commentId: M:UnityEngine.Component.GetComponentInParent``1
@@ -3032,6 +3136,92 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType(System.Type, UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType(System.Type,UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
 - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
   commentId: M:UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
   parent: UnityEngine.Object
@@ -3209,6 +3399,42 @@ references:
   - name: )
   - name: (
   - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
 - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
   commentId: M:UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
   parent: UnityEngine.Object
@@ -3247,6 +3473,52 @@ references:
     name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  commentId: M:UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  nameWithType: Object.FindObjectsByType<T>(FindObjectsInactive, FindObjectsSortMode)
+  fullName: UnityEngine.Object.FindObjectsByType<T>(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  nameWithType.vb: Object.FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  fullName.vb: UnityEngine.Object.FindObjectsByType(Of T)(UnityEngine.FindObjectsInactive, UnityEngine.FindObjectsSortMode)
+  name.vb: FindObjectsByType(Of T)(FindObjectsInactive, FindObjectsSortMode)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsByType``1(UnityEngine.FindObjectsInactive,UnityEngine.FindObjectsSortMode)
+    name: FindObjectsByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsSortMode
+    name: FindObjectsSortMode
+    isExternal: true
   - name: )
 - uid: UnityEngine.Object.FindObjectOfType``1
   commentId: M:UnityEngine.Object.FindObjectOfType``1
@@ -3317,6 +3589,138 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>()
+  nameWithType: Object.FindFirstObjectByType<T>()
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>()
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)()
+  name.vb: FindFirstObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>()
+  nameWithType: Object.FindAnyObjectByType<T>()
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>()
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)()
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)()
+  name.vb: FindAnyObjectByType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindFirstObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindFirstObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindFirstObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindFirstObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindAnyObjectByType<T>(FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType<T>(FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType<T>(UnityEngine.FindObjectsInactive)
+  nameWithType.vb: Object.FindAnyObjectByType(Of T)(FindObjectsInactive)
+  fullName.vb: UnityEngine.Object.FindAnyObjectByType(Of T)(UnityEngine.FindObjectsInactive)
+  name.vb: FindAnyObjectByType(Of T)(FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType``1(UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
 - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
   commentId: M:UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
   parent: UnityEngine.Object
@@ -3373,6 +3777,62 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.type
   - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type)
+  nameWithType: Object.FindFirstObjectByType(Type)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type)
+  nameWithType: Object.FindAnyObjectByType(Type)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
 - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
   commentId: M:UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
   parent: UnityEngine.Object
@@ -3415,6 +3875,82 @@ references:
     name: Boolean
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindFirstObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindFirstObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindFirstObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindFirstObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindFirstObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+- uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  commentId: M:UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+  parent: UnityEngine.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: FindAnyObjectByType(Type, FindObjectsInactive)
+  nameWithType: Object.FindAnyObjectByType(Type, FindObjectsInactive)
+  fullName: UnityEngine.Object.FindAnyObjectByType(System.Type, UnityEngine.FindObjectsInactive)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindAnyObjectByType(System.Type,UnityEngine.FindObjectsInactive)
+    name: FindAnyObjectByType
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: UnityEngine.FindObjectsInactive
+    name: FindObjectsInactive
+    isExternal: true
   - name: )
 - uid: UnityEngine.Object.ToString
   commentId: M:UnityEngine.Object.ToString
