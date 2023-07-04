@@ -112,6 +112,11 @@ namespace YJL.Tween
         ///     Flag shows if the tweener should pause after it reaches to a step complete
         /// </summary>
         public bool PauseAfterStepCompleteFlag { get; }
+        
+        /// <summary>
+        ///     Tweener tag for bulk manipulation
+        /// </summary>
+        public object Tag { get;}
         #endregion
         
         #region Update
@@ -158,6 +163,8 @@ namespace YJL.Tween
         /// <param name="count"></param>
         /// <returns></returns>
         ITweener SetLoopCount(int count);
+
+        ITweener UpdateTag(object newTag);
         #endregion
         
         #region Tweener Controls        
@@ -291,6 +298,12 @@ namespace YJL.Tween
         ///     Flag shows if the tweener should pause after it reaches to a step complete
         /// </summary>
         public bool PauseAfterStepCompleteFlag { get; private set; }
+
+        /// <summary>
+        ///     Tweener tag for bulk manipulation
+        /// </summary>
+        public object Tag { get; private set; }
+
         #endregion
         
         #region Tweener Callback
@@ -356,7 +369,7 @@ namespace YJL.Tween
         /// <param name="toValue">To value</param>
         /// <param name="duration">Duration</param>
         /// <param name="lerpFunc">The interpolation func</param>
-        internal Tweener(Action<T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc)
+        internal Tweener(Action<T> param, T fromValue, T toValue, float duration, Func<T, T, float, T> lerpFunc, object tag = null)
         {
             _curve = AnimationCurve.Linear(0, 0, duration, 1);
             _loopMode = Loop.Default;
@@ -372,6 +385,7 @@ namespace YJL.Tween
             IsStepCompleted = false;
             StopAfterStepCompleteFlag = false;
             PauseAfterStepCompleteFlag = false;
+            UpdateTag(tag);
         }
         #endregion
 
@@ -479,7 +493,17 @@ namespace YJL.Tween
             return Tweenie.Complete(this);
         }
 
-        
+        /// <summary>
+        ///     Register this tweener with the new tag in Tweenie
+        /// </summary>
+        /// <param name="newTag"></param>
+        /// <returns></returns>
+        public ITweener UpdateTag(object newTag)
+        {
+            Tweenie.UpdateTag(this, newTag);
+            Tag = newTag;
+            return this;
+        }
         #endregion
         
         #region Modify Tweener Settings

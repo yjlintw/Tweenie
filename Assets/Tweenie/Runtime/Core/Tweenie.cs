@@ -32,7 +32,14 @@ namespace YJL.Tween
         /// </summary>
         private static ISet<ITweener> _toCompleteSet = new HashSet<ITweener>();
 
+        /// <summary>
+        ///     A dictionary that keep reference tweener under a certain tag for bulk manipulation
+        /// </summary>
+        private static Dictionary<object, ISet<ITweener>> _tagTweenerTable = new Dictionary<object, ISet<ITweener>>(); 
+
+
         #region Tween Setup - Frequency used type overloading
+
         /// <summary>
         ///     Start a tweener, type float overload
         /// </summary>
@@ -40,10 +47,11 @@ namespace YJL.Tween
         /// <param name="fromValue">The from value</param>
         /// <param name="toValue">The to value</param>
         /// <param name="duration">The duration</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <returns>The tweener</returns>
-        public static ITweener To(Action<float> param, float fromValue, float toValue, float duration)
+        public static ITweener To(Action<float> param, float fromValue, float toValue, float duration, object tag = null)
         {
-            return To(param, fromValue, toValue, duration, Mathf.Lerp);
+            return To(param, fromValue, toValue, duration, Mathf.Lerp, tag);
         }
 
         /// <summary>
@@ -53,10 +61,11 @@ namespace YJL.Tween
         /// <param name="fromValue">The from value</param>
         /// <param name="toValue">The to value</param>
         /// <param name="duration">The duration</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <returns>The tweener</returns>
-        public static ITweener To(Action<Vector2> param, Vector2 fromValue, Vector2 toValue, float duration)
+        public static ITweener To(Action<Vector2> param, Vector2 fromValue, Vector2 toValue, float duration, object tag = null)
         {
-            return To(param, fromValue, toValue, duration, Vector2.Lerp);
+            return To(param, fromValue, toValue, duration, Vector2.Lerp, tag);
         }
         
         /// <summary>
@@ -66,10 +75,11 @@ namespace YJL.Tween
         /// <param name="fromValue">The from value</param>
         /// <param name="toValue">The to value</param>
         /// <param name="duration">The duration</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <returns>The tweener</returns>
-        public static ITweener To(Action<Vector3> param, Vector3 fromValue, Vector3 toValue, float duration)
+        public static ITweener To(Action<Vector3> param, Vector3 fromValue, Vector3 toValue, float duration, object tag = null)
         {
-            return To(param, fromValue, toValue, duration, Vector3.Lerp);
+            return To(param, fromValue, toValue, duration, Vector3.Lerp, tag);
         }
 
         /// <summary>
@@ -79,10 +89,11 @@ namespace YJL.Tween
         /// <param name="fromValue">The from value</param>
         /// <param name="toValue">The to value</param>
         /// <param name="duration">The duration</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <returns>The tweener</returns>
-        public static ITweener To(Action<Vector4> param, Vector4 fromValue, Vector4 toValue, float duration)
+        public static ITweener To(Action<Vector4> param, Vector4 fromValue, Vector4 toValue, float duration, object tag = null)
         {
-            return To(param, fromValue, toValue, duration, Vector4.Lerp);
+            return To(param, fromValue, toValue, duration, Vector4.Lerp, tag);
         }
 
         /// <summary>
@@ -92,10 +103,11 @@ namespace YJL.Tween
         /// <param name="fromValue">The from value</param>
         /// <param name="toValue">The to value</param>
         /// <param name="duration">The duration</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <returns>The tweener</returns>
-        public static ITweener To(Action<Quaternion> param, Quaternion fromValue, Quaternion toValue, float duration)
+        public static ITweener To(Action<Quaternion> param, Quaternion fromValue, Quaternion toValue, float duration, object tag = null)
         {
-            return To(param, fromValue, toValue, duration, Quaternion.Lerp);
+            return To(param, fromValue, toValue, duration, Quaternion.Lerp, tag);
         }
 
         /// <summary>
@@ -105,10 +117,11 @@ namespace YJL.Tween
         /// <param name="fromValue">The from value</param>
         /// <param name="toValue">The to value</param>
         /// <param name="duration">The duration</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <returns>The tweener</returns>
-        public static ITweener To(Action<Color> param, Color fromValue, Color toValue, float duration)
+        public static ITweener To(Action<Color> param, Color fromValue, Color toValue, float duration, object tag = null)
         {
-            return To(param, fromValue, toValue, duration, Color.Lerp);
+            return To(param, fromValue, toValue, duration, Color.Lerp, tag);
         }
         #endregion
 
@@ -121,12 +134,13 @@ namespace YJL.Tween
         /// <param name="toValue">Ending Value</param>
         /// <param name="duration">Duration from Start to End</param>
         /// <param name="lerpFunc">Interpolation Function</param>
+        /// <param name="tag">Tag to manage tweener in bulk</param>
         /// <typeparam name="T">Parameter Type</typeparam>
         /// <returns>ITweener for method chaining</returns>
-        public static ITweener To<T>(Action<T> param, T fromValue, T toValue, float duration, Func<T,T,float,T> lerpFunc)
+        public static ITweener To<T>(Action<T> param, T fromValue, T toValue, float duration, Func<T,T,float,T> lerpFunc, object tag = null)
         {
             Init();
-            ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc);
+            ITweener tweener = new Tweener<T>(param, fromValue, toValue, duration, lerpFunc, tag);
             _toAddSet.Add(tweener);
             return tweener;
         }
@@ -143,6 +157,18 @@ namespace YJL.Tween
             _toAddSet.Add(tweener);
             return tweener;
         }
+        
+        /// <summary>
+        ///     Play tweeners in bulk with the tag
+        /// </summary>
+        /// <param name="tag"></param>
+        public static void PlayTweenerTag(object tag)
+        {
+            if (_tagTweenerTable.TryGetValue(tag, out ISet<ITweener> tweenerSet))
+            {
+                _toAddSet.UnionWith(tweenerSet);
+            }
+        }
 
         /// <summary>
         ///     Pause the Tweener, Tweener will stop at its current location
@@ -156,6 +182,18 @@ namespace YJL.Tween
         }
 
         /// <summary>
+        ///     Pause tweeners in bulk with the tag
+        /// </summary>
+        /// <param name="tag"></param>
+        public static void PauseTweenerTag(object tag)
+        {
+            if (_tagTweenerTable.TryGetValue(tag, out ISet<ITweener> tweenerSet))
+            {
+                _toPauseSet.UnionWith(tweenerSet);
+            }
+        }
+
+        /// <summary>
         ///     Stop the Tweener, Tweener will jump back to its starting location
         /// </summary>
         /// <param name="tweener"></param>
@@ -164,6 +202,18 @@ namespace YJL.Tween
         {
             _toStopSet.Add(tweener);
             return tweener;
+        }
+        
+        /// <summary>
+        ///     Stop tweeners in bulk with the tag
+        /// </summary>
+        /// <param name="tag"></param>
+        public static void StopTweenerTag(object tag)
+        {
+            if (_tagTweenerTable.TryGetValue(tag, out ISet<ITweener> tweenerSet))
+            {
+                _toStopSet.UnionWith(tweenerSet);
+            }
         }
 
         /// <summary>
@@ -195,6 +245,66 @@ namespace YJL.Tween
         {
             _toCompleteSet.Add(tweener);
             return tweener;
+        }
+        
+        /// <summary>
+        ///     Complete tweener in bulk with the tag
+        /// </summary>
+        /// <param name="tag"></param>
+        public static void CompleteTweenerTag(object tag)
+        {
+            if (_tagTweenerTable.TryGetValue(tag, out ISet<ITweener> tweenerSet))
+            {
+                _toCompleteSet.UnionWith(tweenerSet);
+            }
+        }
+
+        /// <summary>
+        ///     Remove tag from bulk editing
+        /// </summary>
+        /// <param name="tag"></param>
+        public static void RemoveTag(object tag)
+        {
+            _tagTweenerTable.Remove(tag);
+        }
+
+        /// <summary>
+        ///     Get tweeners under the tag
+        /// </summary>
+        /// <param name="tag"></param>
+        /// <returns></returns>
+        public static ISet<ITweener> GetTweenersFromTag(object tag)
+        {
+            return _tagTweenerTable.TryGetValue(tag, out ISet<ITweener> tweenerSet) ? tweenerSet : null;
+        }
+        
+        /// <summary>
+        ///     Update tweener from the old tag to the new tag
+        /// </summary>
+        /// <param name="tweener">target tweener</param>
+        /// <param name="newTag">new tag</param>
+        internal static void UpdateTag(ITweener tweener, object newTag)
+        {
+            if (tweener.Tag != null && _tagTweenerTable.TryGetValue(tweener.Tag, out ISet<ITweener> oldSet))
+            {
+                oldSet.Remove(tweener);
+            }
+
+            if (newTag == null)
+            {
+                return;
+            }
+            
+            if (_tagTweenerTable.TryGetValue(newTag, out ISet<ITweener> newSet))
+            {
+                newSet.Add(tweener);
+            }
+            else
+            {
+                newSet = new HashSet<ITweener>();
+                newSet.Add(tweener);
+                _tagTweenerTable[newTag] = newSet;
+            }
         }
         
         #endregion
